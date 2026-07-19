@@ -13,8 +13,8 @@
   --mid-gray:   #888888;
   --soft-gray:  #F5F5F5;
   --border-line:#E0E0E0;
-  --leaf-green: #9CCC65;
-  --leaf-green-pale: #DCEDC8;
+  --leaf-green: #4FC3F7;
+  --leaf-green-pale: #D6EFFF;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
@@ -125,7 +125,7 @@ body {
 .detail-body { max-width:680px; margin:0 auto; padding:36px 28px 90px; display:flex; flex-direction:column; gap:20px; }
 .persp-card { background: var(--soft-gray); border-radius:6px; padding:30px 28px; }
 .persp-badge {
-  display:inline-block; background: var(--leaf-green-pale); color:#33691E;
+  display:inline-block; background: var(--leaf-green-pale); color:#01579B;
   font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
   padding:5px 13px; border-radius:2px; margin-bottom:18px;
 }
@@ -168,6 +168,34 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
 .fab-top.show { opacity:1; pointer-events:auto; transform: translateY(0); }
 .fab-top:hover { background: var(--soft-gray); border-color: var(--charcoal); }
 
+/* reading toolbar: font size + voice narration */
+.reading-toolbar {
+  position: sticky; top: 53px; z-index: 40;
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-line);
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:center;
+  gap: 22px; padding: 10px 20px;
+}
+.toolbar-group { display:flex; align-items:center; gap:8px; }
+.toolbar-label { font-size:11.5px; color:#6E6E6E; font-weight:700; }
+.fontsize-btn, .rate-btn, .voice-btn {
+  background: var(--white); border:1px solid var(--border-line); color:var(--charcoal);
+  font-weight:700; border-radius:16px; cursor:pointer; font-family:inherit;
+  padding: 5px 12px;
+}
+.fontsize-btn.active, .rate-btn.active { background: var(--leaf-green-pale); border-color: var(--leaf-green); color:#01579B; }
+.voice-btn { padding: 6px 16px; font-size:12.5px; }
+.voice-btn.speaking { background: var(--leaf-green-pale); border-color: var(--leaf-green); color:#01579B; }
+.rate-btn { font-size:12px; }
+
+body.font-sm .persp-body .para { font-size: 13px; }
+body.font-lg .persp-body .para { font-size: 19px; }
+
+@media (max-width:600px) {
+  .reading-toolbar { gap: 12px; padding: 8px 12px; top: 53px; }
+  .toolbar-label { display:none; }
+}
+
 @media (max-width:600px) {
   .ghost-word { font-size:130px; }
   .ghost-num { font-size:90px; }
@@ -179,7 +207,7 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
 }
 
 @media print {
-  .topnav, .fab-toc, .fab-top, .back-btn, .print-btn, .page-nav, #view-list { display:none !important; }
+  .topnav, .fab-toc, .fab-top, .back-btn, .print-btn, .page-nav, #view-list, .reading-toolbar { display:none !important; }
   #view-detail { display:block !important; }
   .detail-panel { display:none !important; }
   .detail-panel.active { display:block !important; }
@@ -410,6 +438,21 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
 </div>
 
 <div id="view-detail">
+  <div class="reading-toolbar">
+    <div class="toolbar-group">
+      <span class="toolbar-label">글씨크기</span>
+      <button class="fontsize-btn" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
+      <button class="fontsize-btn active" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
+      <button class="fontsize-btn" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+    </div>
+    <div class="toolbar-group">
+      <button class="voice-btn" id="voicePlayBtn" onclick="toggleVoice()">▶ 음성으로 듣기</button>
+      <span class="toolbar-label">배속</span>
+      <button class="rate-btn active" onclick="setRate(1, this)">1x</button>
+      <button class="rate-btn" onclick="setRate(1.25, this)">1.25x</button>
+      <button class="rate-btn" onclick="setRate(1.5, this)">1.5x</button>
+    </div>
+  </div>
   
     <section class="detail-panel" id="detail-01">
       <div class="detail-header">
@@ -2384,7 +2427,11 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
 <button class="fab-top" id="fabTop" onclick="scrollToTop()" aria-label="맨 위로">↑</button>
 
 <script>
+var currentRate = 1;
+var isSpeaking = false;
+
 function showDetail(id) {
+  stopVoice();
   document.getElementById('view-list').style.display = 'none';
   document.getElementById('view-detail').style.display = 'block';
   document.querySelectorAll('.detail-panel').forEach(function(p) { p.classList.remove('active'); });
@@ -2393,6 +2440,7 @@ function showDetail(id) {
   updateFab();
 }
 function showList() {
+  stopVoice();
   document.getElementById('view-detail').style.display = 'none';
   document.getElementById('view-list').style.display = 'block';
   window.scrollTo(0, 0);
@@ -2410,6 +2458,69 @@ function updateFab() {
   if (scrolled) { fabTop.classList.add('show'); } else { fabTop.classList.remove('show'); }
 }
 window.addEventListener('scroll', updateFab);
+
+// ---- Font size control ----
+function setFontSize(size, btnEl) {
+  document.body.classList.remove('font-sm', 'font-lg');
+  if (size === 'sm' || size === 'lg') { document.body.classList.add('font-' + size); }
+  document.querySelectorAll('.fontsize-btn').forEach(function(b) { b.classList.remove('active'); });
+  btnEl.classList.add('active');
+}
+
+// ---- Voice narration (Web Speech API) ----
+function getActivePanelText() {
+  var active = document.querySelector('.detail-panel.active');
+  if (!active) return '';
+  var paras = active.querySelectorAll('.persp-body .para');
+  var texts = [];
+  paras.forEach(function(p) { texts.push(p.textContent); });
+  return texts.join('. ');
+}
+function pickKoreanVoice() {
+  var voices = window.speechSynthesis.getVoices();
+  for (var i = 0; i < voices.length; i++) {
+    if (voices[i].lang && voices[i].lang.indexOf('ko') === 0) return voices[i];
+  }
+  return voices.length ? voices[0] : null;
+}
+function updateVoiceButton() {
+  var btn = document.getElementById('voicePlayBtn');
+  if (!btn) return;
+  if (isSpeaking) { btn.textContent = '⏸ 정지'; btn.classList.add('speaking'); }
+  else { btn.textContent = '▶ 음성으로 듣기'; btn.classList.remove('speaking'); }
+}
+function speakNow() {
+  var text = getActivePanelText();
+  if (!text || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  var utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'ko-KR';
+  utter.rate = currentRate;
+  var v = pickKoreanVoice();
+  if (v) utter.voice = v;
+  utter.onend = function() { isSpeaking = false; updateVoiceButton(); };
+  utter.onerror = function() { isSpeaking = false; updateVoiceButton(); };
+  window.speechSynthesis.speak(utter);
+  isSpeaking = true;
+  updateVoiceButton();
+}
+function toggleVoice() {
+  if (isSpeaking) { stopVoice(); } else { speakNow(); }
+}
+function stopVoice() {
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  isSpeaking = false;
+  updateVoiceButton();
+}
+function setRate(r, btnEl) {
+  currentRate = r;
+  document.querySelectorAll('.rate-btn').forEach(function(b) { b.classList.remove('active'); });
+  btnEl.classList.add('active');
+  if (isSpeaking) { speakNow(); }
+}
+if (window.speechSynthesis) {
+  window.speechSynthesis.onvoiceschanged = function() { /* voices ready */ };
+}
 </script>
 
 </body>
