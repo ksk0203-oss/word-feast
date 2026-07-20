@@ -77,12 +77,13 @@ body {
 .toc-grid { display:flex; flex-direction:column; gap:12px; margin-bottom:6px; }
 .toc-card {
   display:flex; align-items:center; justify-content:space-between; gap:14px;
-  background: var(--white); border:1px solid var(--border-line);
-  padding: 18px 24px; border-radius: 6px; cursor:pointer;
+  background: var(--white); border:none;
+  padding: 18px 24px; border-radius: 10px; cursor:pointer;
   font-family: inherit; text-align:left; width:100%;
-  transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 3px 12px rgba(28,28,28,0.13);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
-.toc-card:hover { border-color: var(--charcoal); transform: translateX(3px); box-shadow: 0 4px 14px rgba(0,0,0,0.06); }
+.toc-card:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(28,28,28,0.20); }
 .toc-line { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 .toc-num { font-size:15px; font-weight:800; color: var(--charcoal); flex-shrink:0; }
 .toc-date { font-size:13px; color:#6E6E6E; font-weight:600; flex-shrink:0; }
@@ -118,6 +119,22 @@ body {
   cursor:pointer; font-family:inherit;
 }
 .print-btn:hover { border-color: var(--charcoal); background:var(--soft-gray); }
+
+.print-notice {
+  position: fixed; inset:0; z-index: 100;
+  background: rgba(0,0,0,0.45);
+  display:flex; align-items:center; justify-content:center;
+  padding: 24px;
+}
+.print-notice-box {
+  background: var(--white); border-radius: 12px; padding: 26px 24px;
+  max-width: 340px; text-align:center; box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+.print-notice-box p { font-size:14px; line-height:1.7; color:var(--charcoal); margin-bottom:10px; text-align:center; }
+.print-notice-close {
+  margin-top: 8px; background: var(--charcoal); color:var(--white); border:none;
+  border-radius: 20px; padding: 9px 22px; font-size:13px; font-weight:700; cursor:pointer; font-family:inherit;
+}
 .detail-caption { position:relative; z-index:2; font-size:11.5px; letter-spacing:2px; color:#6E6E6E; font-weight:700; text-transform:uppercase; }
 .detail-title { position:relative; z-index:2; font-size:28px; font-weight:800; color:var(--charcoal); margin-top:16px; line-height:1.4; }
 .detail-scripture { position:relative; z-index:2; font-size:14.5px; color:var(--charcoal); margin-top:8px; font-weight:600; }
@@ -173,9 +190,12 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
   position: sticky; top: 53px; z-index: 40;
   background: rgba(255,255,255,0.97); backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-line);
-  display:flex; flex-wrap:wrap; align-items:center; justify-content:center;
+  display:flex; flex-wrap:nowrap; align-items:center; justify-content:center;
   gap: 22px; padding: 10px 20px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.reading-toolbar::-webkit-scrollbar { display:none; }
 .toolbar-group { display:flex; align-items:center; gap:8px; }
 .toolbar-label { font-size:11.5px; color:#6E6E6E; font-weight:700; }
 .fontsize-btn, .rate-btn, .voice-btn {
@@ -192,7 +212,11 @@ body.font-sm .persp-body .para { font-size: 13px; }
 body.font-lg .persp-body .para { font-size: 19px; }
 
 @media (max-width:600px) {
-  .reading-toolbar { gap: 12px; padding: 8px 12px; top: 53px; }
+  .reading-toolbar { gap: 6px; padding: 8px 10px; top: 53px; justify-content:flex-start; }
+  .toolbar-group { gap: 5px; flex-shrink:0; }
+  .fontsize-btn, .rate-btn, .voice-btn { padding: 5px 9px; white-space:nowrap; }
+  .voice-btn { padding: 5px 11px; font-size:11.5px; }
+  .rate-btn { font-size:11px; padding: 5px 8px; }
   .toolbar-label { display:none; }
 }
 
@@ -233,7 +257,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <div class="hero-inner">
       <p class="hero-caption">Word Feast · 2026</p>
       <h1 class="hero-title">말씀잔치</h1>
-      <p class="hero-sub">성령강림절 후 열 번째 주일부터 왕이신 그리스도 주일, 대림절과 성탄절까지,<br>8월부터 12월까지 스물세 편의 말씀을 신학적·주석적·목회적·설교적 관점으로 함께 나눕니다.</p>
+      <p class="hero-sub">성령강림절 후 열 번째 주일부터 왕이신 그리스도 주일, 대림절과 성탄절까지,<br>신학적·주석적·목회적·설교적 관점으로 함께 나눕니다.</p>
     </div>
   </div>
   <div class="toc-wrap">
@@ -446,7 +470,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <button class="fontsize-btn" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
     </div>
     <div class="toolbar-group">
-      <button class="voice-btn" id="voicePlayBtn" onclick="toggleVoice()">▶ 음성으로 듣기</button>
+      <button class="voice-btn" id="voicePlayBtn" onclick="toggleVoice()">▶ 듣기</button>
       <span class="toolbar-label">배속</span>
       <button class="rate-btn active" onclick="setRate(1, this)">1x</button>
       <button class="rate-btn" onclick="setRate(1.25, this)">1.25x</button>
@@ -458,7 +482,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">08</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 열번째 주일</p>
         <h2 class="detail-title">2026년 8월 2일</h2>
         <p class="detail-scripture">마태복음 14:13-21</p>
@@ -529,7 +553,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">08</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열한째 주일</p>
         <h2 class="detail-title">2026년 8월 9일</h2>
         <p class="detail-scripture">마태복음 14:22-33</p>
@@ -618,7 +642,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">08</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열두째 주일</p>
         <h2 class="detail-title">2026년 8월 16일</h2>
         <p class="detail-scripture">마태복음 15:10-20, 21-28</p>
@@ -704,7 +728,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">08</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열셋째 주일</p>
         <h2 class="detail-title">2026년 8월 23일</h2>
         <p class="detail-scripture">마태복음 16:13-20</p>
@@ -790,7 +814,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">08</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열넷째 주일</p>
         <h2 class="detail-title">2026년 8월 30일</h2>
         <p class="detail-scripture">마태복음 16:21-28</p>
@@ -873,7 +897,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">09</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 열다섯째 주일</p>
         <h2 class="detail-title">2026년 9월 6일</h2>
         <p class="detail-scripture">마태복음 18:15-20</p>
@@ -942,7 +966,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">09</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열여섯째 주일</p>
         <h2 class="detail-title">2026년 9월 13일</h2>
         <p class="detail-scripture">마태복음 18:21-35</p>
@@ -1029,7 +1053,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">09</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열일곱째 주일</p>
         <h2 class="detail-title">2026년 9월 20일</h2>
         <p class="detail-scripture">마태복음 20:1-16</p>
@@ -1118,7 +1142,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">09</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열여덟째 주일</p>
         <h2 class="detail-title">2026년 9월 27일</h2>
         <p class="detail-scripture">마태복음 21:23-32</p>
@@ -1197,7 +1221,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">10</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 열아홉째 주일</p>
         <h2 class="detail-title">2026년 10월 4일</h2>
         <p class="detail-scripture">마태복음 21:33-46</p>
@@ -1280,7 +1304,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">10</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스무째 주일</p>
         <h2 class="detail-title">2026년 10월 11일</h2>
         <p class="detail-scripture">마태복음 22:1-14</p>
@@ -1362,7 +1386,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">10</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스물한째 주일</p>
         <h2 class="detail-title">2026년 10월 18일</h2>
         <p class="detail-scripture">마태복음 22:15-22</p>
@@ -1453,7 +1477,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">10</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스물두째 주일</p>
         <h2 class="detail-title">2026년 10월 25일</h2>
         <p class="detail-scripture">마태복음 22:34-46</p>
@@ -1539,7 +1563,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">11</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스물셋째 주일</p>
         <h2 class="detail-title">2026년 11월 1일</h2>
         <p class="detail-scripture">마태복음 23:1-12</p>
@@ -1625,7 +1649,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">11</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스물넷째 주일</p>
         <h2 class="detail-title">2026년 11월 8일</h2>
         <p class="detail-scripture">마태복음 25:1-13</p>
@@ -1714,7 +1738,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">11</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성령강림절 후 스물다섯째 주일</p>
         <h2 class="detail-title">2026년 11월 15일</h2>
         <p class="detail-scripture">마태복음 25:14-30</p>
@@ -1801,7 +1825,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">11</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">왕이신 그리스도 주일</p>
         <h2 class="detail-title">2026년 11월 22일</h2>
         <p class="detail-scripture">마태복음 25:31-46</p>
@@ -1884,7 +1908,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">11</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">대림절 첫째 주일</p>
         <h2 class="detail-title">2026년 11월 29일</h2>
         <p class="detail-scripture">마태복음 24:36-44</p>
@@ -1977,7 +2001,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">12</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">대림절 둘째 주일</p>
         <h2 class="detail-title">2026년 12월 6일</h2>
         <p class="detail-scripture">마태복음 3:1-12</p>
@@ -2080,7 +2104,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">12</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">대림절 셋째 주일</p>
         <h2 class="detail-title">2026년 12월 13일</h2>
         <p class="detail-scripture">마태복음 11:2-12</p>
@@ -2171,7 +2195,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">12</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">대림절 넷째 주일</p>
         <h2 class="detail-title">2026년 12월 20일</h2>
         <p class="detail-scripture">마태복음 1:18-25</p>
@@ -2257,7 +2281,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">12</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성탄절</p>
         <h2 class="detail-title">2026년 12월 25일</h2>
         <p class="detail-scripture">요한복음 1:1-14</p>
@@ -2344,7 +2368,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
       <div class="detail-header">
         <div class="ghost-num">12</div>
         <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="window.print()" title="인쇄하기">🖨 인쇄</button>
+        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
         <p class="detail-caption">성탄절 후 첫째 주일</p>
         <h2 class="detail-title">2026년 12월 27일</h2>
         <p class="detail-scripture">마태복음 2:13-23</p>
@@ -2467,14 +2491,17 @@ function setFontSize(size, btnEl) {
   btnEl.classList.add('active');
 }
 
-// ---- Voice narration (Web Speech API) ----
-function getActivePanelText() {
+// ---- Voice narration (Web Speech API), sentence-by-sentence queue ----
+var paragraphsQueue = [];
+var currentParaIndex = 0;
+
+function getActiveParagraphs() {
   var active = document.querySelector('.detail-panel.active');
-  if (!active) return '';
+  if (!active) return [];
   var paras = active.querySelectorAll('.persp-body .para');
-  var texts = [];
-  paras.forEach(function(p) { texts.push(p.textContent); });
-  return texts.join('. ');
+  var arr = [];
+  paras.forEach(function(p) { arr.push(p.textContent); });
+  return arr;
 }
 function pickKoreanVoice() {
   var voices = window.speechSynthesis.getVoices();
@@ -2487,39 +2514,81 @@ function updateVoiceButton() {
   var btn = document.getElementById('voicePlayBtn');
   if (!btn) return;
   if (isSpeaking) { btn.textContent = '⏸ 정지'; btn.classList.add('speaking'); }
-  else { btn.textContent = '▶ 음성으로 듣기'; btn.classList.remove('speaking'); }
+  else { btn.textContent = '▶ 듣기'; btn.classList.remove('speaking'); }
 }
-function speakNow() {
-  var text = getActivePanelText();
-  if (!text || !window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  var utter = new SpeechSynthesisUtterance(text);
+function speakParagraph(index) {
+  if (index >= paragraphsQueue.length) { isSpeaking = false; updateVoiceButton(); return; }
+  var utter = new SpeechSynthesisUtterance(paragraphsQueue[index]);
   utter.lang = 'ko-KR';
   utter.rate = currentRate;
   var v = pickKoreanVoice();
   if (v) utter.voice = v;
-  utter.onend = function() { isSpeaking = false; updateVoiceButton(); };
+  utter.onend = function() {
+    if (!isSpeaking) return;
+    currentParaIndex = index + 1;
+    speakParagraph(currentParaIndex);
+  };
   utter.onerror = function() { isSpeaking = false; updateVoiceButton(); };
   window.speechSynthesis.speak(utter);
+}
+function speakNow() {
+  paragraphsQueue = getActiveParagraphs();
+  currentParaIndex = 0;
+  if (!paragraphsQueue.length || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
   isSpeaking = true;
   updateVoiceButton();
+  speakParagraph(currentParaIndex);
 }
 function toggleVoice() {
   if (isSpeaking) { stopVoice(); } else { speakNow(); }
 }
 function stopVoice() {
-  if (window.speechSynthesis) window.speechSynthesis.cancel();
   isSpeaking = false;
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
   updateVoiceButton();
 }
 function setRate(r, btnEl) {
   currentRate = r;
   document.querySelectorAll('.rate-btn').forEach(function(b) { b.classList.remove('active'); });
   btnEl.classList.add('active');
-  if (isSpeaking) { speakNow(); }
+  if (isSpeaking) {
+    window.speechSynthesis.cancel();
+    speakParagraph(currentParaIndex);
+  }
 }
 if (window.speechSynthesis) {
   window.speechSynthesis.onvoiceschanged = function() { /* voices ready */ };
+}
+// ---- Print (with in-app browser fallback) ----
+function isInAppBrowser() {
+  var ua = navigator.userAgent || '';
+  return /KAKAOTALK|NAVER|Instagram|FBAN|FBAV|Line/i.test(ua);
+}
+function handlePrint() {
+  if (isInAppBrowser()) {
+    showPrintNotice();
+    return;
+  }
+  try {
+    window.print();
+  } catch (e) {
+    showPrintNotice();
+  }
+}
+function showPrintNotice() {
+  var existing = document.getElementById('printNotice');
+  if (existing) { existing.remove(); }
+  var notice = document.createElement('div');
+  notice.id = 'printNotice';
+  notice.className = 'print-notice';
+  notice.innerHTML =
+    '<div class="print-notice-box">' +
+      '<p><strong>이 브라우저에서는 인쇄가 지원되지 않아요.</strong></p>' +
+      '<p>우측 상단 메뉴(⋮ 또는 ···)에서 <b>"다른 브라우저로 열기"</b> 또는 <b>"Safari/Chrome에서 열기"</b>를 선택한 뒤 다시 인쇄해 주세요.</p>' +
+      '<button onclick="document.getElementById(\'printNotice\').remove()" class="print-notice-close">닫기</button>' +
+    '</div>';
+  document.body.appendChild(notice);
 }
 </script>
 
