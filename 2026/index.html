@@ -98,7 +98,7 @@ body {
 
 .detail-header {
   position:relative; overflow:hidden;
-  padding: 40px 28px 44px; text-align:center;
+  padding: 64px 28px 44px; text-align:center;
   border-bottom: 1px solid var(--border-line);
 }
 .ghost-num {
@@ -107,10 +107,10 @@ body {
   line-height:1; z-index:0; user-select:none; pointer-events:none; white-space:nowrap;
 }
 .back-btn {
-  position:relative; z-index:2;
+  position:absolute; top:40px; left:24px; z-index:3;
   background:none; border:1px solid var(--border-line); color:var(--charcoal);
   font-size:12px; font-weight:700; padding:7px 16px; border-radius:20px;
-  cursor:pointer; font-family:inherit; margin-bottom: 28px;
+  cursor:pointer; font-family:inherit;
 }
 .back-btn:hover { border-color: var(--charcoal); background:var(--soft-gray); }
 .print-btn {
@@ -255,7 +255,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
   .detail-title { font-size:22px; }
   .persp-card { padding:22px 20px; }
   .print-btn { top:16px; right:16px; padding:6px 12px; font-size:11px; }
-  .back-btn { margin-top: 36px; }
+  .back-btn { top:16px; left:16px; padding:6px 12px; font-size:11px; }
 
   /* readability improvements for mobile */
   body { text-align: left; }
