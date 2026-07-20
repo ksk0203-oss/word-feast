@@ -101,20 +101,23 @@ body {
   padding: 64px 28px 44px; text-align:center;
   border-bottom: 1px solid var(--border-line);
 }
+.detail-header-inner {
+  position:relative; max-width:680px; margin:0 auto;
+}
 .ghost-num {
   position:absolute; top:-20px; left:50%; transform:translateX(-50%);
   font-size:150px; font-weight:800; color:var(--ghost-gray);
   line-height:1; z-index:0; user-select:none; pointer-events:none; white-space:nowrap;
 }
 .back-btn {
-  position:absolute; top:40px; left:24px; z-index:3;
+  position:absolute; top:0; left:0; z-index:3;
   background:none; border:1px solid var(--border-line); color:var(--charcoal);
   font-size:12px; font-weight:700; padding:7px 16px; border-radius:20px;
   cursor:pointer; font-family:inherit;
 }
 .back-btn:hover { border-color: var(--charcoal); background:var(--soft-gray); }
 .print-btn {
-  position:absolute; top:40px; right:24px; z-index:3;
+  position:absolute; top:0; right:0; z-index:3;
   background:none; border:1px solid var(--border-line); color:var(--charcoal);
   font-size:12px; font-weight:700; padding:7px 16px; border-radius:20px;
   cursor:pointer; font-family:inherit;
@@ -254,8 +257,8 @@ body.font-lg .persp-body .para { font-size: 19px; }
   .hero-title { font-size:38px; }
   .detail-title { font-size:22px; }
   .persp-card { padding:22px 20px; }
-  .print-btn { top:16px; right:16px; padding:6px 12px; font-size:11px; }
-  .back-btn { top:16px; left:16px; padding:6px 12px; font-size:11px; }
+  .print-btn { padding:6px 12px; font-size:11px; }
+  .back-btn { padding:6px 12px; font-size:11px; }
 
   /* readability improvements for mobile */
   body { text-align: left; }
@@ -474,11 +477,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-01">
       <div class="detail-header">
         <div class="ghost-num">08</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 열번째 주일</p>
-        <h2 class="detail-title">2026년 8월 2일</h2>
-        <p class="detail-scripture">마태복음 14:13-21</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 열번째 주일</p>
+          <h2 class="detail-title">2026년 8월 2일</h2>
+          <p class="detail-scripture">마태복음 14:13-21</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -569,11 +574,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-02">
       <div class="detail-header">
         <div class="ghost-num">08</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열한째 주일</p>
-        <h2 class="detail-title">2026년 8월 9일</h2>
-        <p class="detail-scripture">마태복음 14:22-33</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열한째 주일</p>
+          <h2 class="detail-title">2026년 8월 9일</h2>
+          <p class="detail-scripture">마태복음 14:22-33</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -664,11 +671,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-03">
       <div class="detail-header">
         <div class="ghost-num">08</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열두째 주일</p>
-        <h2 class="detail-title">2026년 8월 16일</h2>
-        <p class="detail-scripture">마태복음 15:10-20, 21-28</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열두째 주일</p>
+          <h2 class="detail-title">2026년 8월 16일</h2>
+          <p class="detail-scripture">마태복음 15:10-20, 21-28</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -757,11 +766,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-04">
       <div class="detail-header">
         <div class="ghost-num">08</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열셋째 주일</p>
-        <h2 class="detail-title">2026년 8월 23일</h2>
-        <p class="detail-scripture">마태복음 16:13-20</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열셋째 주일</p>
+          <h2 class="detail-title">2026년 8월 23일</h2>
+          <p class="detail-scripture">마태복음 16:13-20</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -849,11 +860,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-05">
       <div class="detail-header">
         <div class="ghost-num">08</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열넷째 주일</p>
-        <h2 class="detail-title">2026년 8월 30일</h2>
-        <p class="detail-scripture">마태복음 16:21-28</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열넷째 주일</p>
+          <h2 class="detail-title">2026년 8월 30일</h2>
+          <p class="detail-scripture">마태복음 16:21-28</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -938,11 +951,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-06">
       <div class="detail-header">
         <div class="ghost-num">09</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 열다섯째 주일</p>
-        <h2 class="detail-title">2026년 9월 6일</h2>
-        <p class="detail-scripture">마태복음 18:15-20</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 열다섯째 주일</p>
+          <h2 class="detail-title">2026년 9월 6일</h2>
+          <p class="detail-scripture">마태복음 18:15-20</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1013,11 +1028,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-07">
       <div class="detail-header">
         <div class="ghost-num">09</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열여섯째 주일</p>
-        <h2 class="detail-title">2026년 9월 13일</h2>
-        <p class="detail-scripture">마태복음 18:21-35</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열여섯째 주일</p>
+          <h2 class="detail-title">2026년 9월 13일</h2>
+          <p class="detail-scripture">마태복음 18:21-35</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1106,11 +1123,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-08">
       <div class="detail-header">
         <div class="ghost-num">09</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열일곱째 주일</p>
-        <h2 class="detail-title">2026년 9월 20일</h2>
-        <p class="detail-scripture">마태복음 20:1-16</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열일곱째 주일</p>
+          <h2 class="detail-title">2026년 9월 20일</h2>
+          <p class="detail-scripture">마태복음 20:1-16</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1201,11 +1220,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-09">
       <div class="detail-header">
         <div class="ghost-num">09</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열여덟째 주일</p>
-        <h2 class="detail-title">2026년 9월 27일</h2>
-        <p class="detail-scripture">마태복음 21:23-32</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열여덟째 주일</p>
+          <h2 class="detail-title">2026년 9월 27일</h2>
+          <p class="detail-scripture">마태복음 21:23-32</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1286,11 +1307,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-10">
       <div class="detail-header">
         <div class="ghost-num">10</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 열아홉째 주일</p>
-        <h2 class="detail-title">2026년 10월 4일</h2>
-        <p class="detail-scripture">마태복음 21:33-46</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 열아홉째 주일</p>
+          <h2 class="detail-title">2026년 10월 4일</h2>
+          <p class="detail-scripture">마태복음 21:33-46</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1375,11 +1398,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-11">
       <div class="detail-header">
         <div class="ghost-num">10</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스무째 주일</p>
-        <h2 class="detail-title">2026년 10월 11일</h2>
-        <p class="detail-scripture">마태복음 22:1-14</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스무째 주일</p>
+          <h2 class="detail-title">2026년 10월 11일</h2>
+          <p class="detail-scripture">마태복음 22:1-14</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1463,11 +1488,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-12">
       <div class="detail-header">
         <div class="ghost-num">10</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스물한째 주일</p>
-        <h2 class="detail-title">2026년 10월 18일</h2>
-        <p class="detail-scripture">마태복음 22:15-22</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스물한째 주일</p>
+          <h2 class="detail-title">2026년 10월 18일</h2>
+          <p class="detail-scripture">마태복음 22:15-22</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1560,11 +1587,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-13">
       <div class="detail-header">
         <div class="ghost-num">10</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스물두째 주일</p>
-        <h2 class="detail-title">2026년 10월 25일</h2>
-        <p class="detail-scripture">마태복음 22:34-46</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스물두째 주일</p>
+          <h2 class="detail-title">2026년 10월 25일</h2>
+          <p class="detail-scripture">마태복음 22:34-46</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1652,11 +1681,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-14">
       <div class="detail-header">
         <div class="ghost-num">11</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스물셋째 주일</p>
-        <h2 class="detail-title">2026년 11월 1일</h2>
-        <p class="detail-scripture">마태복음 23:1-12</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스물셋째 주일</p>
+          <h2 class="detail-title">2026년 11월 1일</h2>
+          <p class="detail-scripture">마태복음 23:1-12</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1744,11 +1775,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-15">
       <div class="detail-header">
         <div class="ghost-num">11</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스물넷째 주일</p>
-        <h2 class="detail-title">2026년 11월 8일</h2>
-        <p class="detail-scripture">마태복음 25:1-13</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스물넷째 주일</p>
+          <h2 class="detail-title">2026년 11월 8일</h2>
+          <p class="detail-scripture">마태복음 25:1-13</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1839,11 +1872,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-16">
       <div class="detail-header">
         <div class="ghost-num">11</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">성령강림절 후 스물다섯째 주일</p>
-        <h2 class="detail-title">2026년 11월 15일</h2>
-        <p class="detail-scripture">마태복음 25:14-30</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">성령강림절 후 스물다섯째 주일</p>
+          <h2 class="detail-title">2026년 11월 15일</h2>
+          <p class="detail-scripture">마태복음 25:14-30</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -1932,11 +1967,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-17">
       <div class="detail-header">
         <div class="ghost-num">11</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">왕이신 그리스도 주일</p>
-        <h2 class="detail-title">2026년 11월 22일</h2>
-        <p class="detail-scripture">마태복음 25:31-46</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">왕이신 그리스도 주일</p>
+          <h2 class="detail-title">2026년 11월 22일</h2>
+          <p class="detail-scripture">마태복음 25:31-46</p>
+        </div>
       </div>
       <div class="detail-body">
         
@@ -2021,11 +2058,13 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <section class="detail-panel" id="detail-18">
       <div class="detail-header">
         <div class="ghost-num">11</div>
-        <button class="back-btn" onclick="showList()">← 목차</button>
-        <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
-        <p class="detail-caption">대림절 첫째 주일</p>
-        <h2 class="detail-title">2026년 11월 29일</h2>
-        <p class="detail-scripture">마태복음 24:36-44</p>
+        <div class="detail-header-inner">
+          <button class="back-btn" onclick="showList()">← 목차</button>
+          <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
+          <p class="detail-caption">대림절 첫째 주일</p>
+          <h2 class="detail-title">2026년 11월 29일</h2>
+          <p class="detail-scripture">마태복음 24:36-44</p>
+        </div>
       </div>
       <div class="detail-body">
         
