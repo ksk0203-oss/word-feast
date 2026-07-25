@@ -298,6 +298,16 @@ footer.site-footer { text-align:center; padding: 26px 24px; font-size:11px; colo
 
 body.font-sm .persp-body .para { font-size: 13px; }
 body.font-lg .persp-body .para { font-size: 19px; }
+body.font-sm .scripture-body .scripture-para { font-size: 13.5px; }
+body.font-lg .scripture-body .scripture-para { font-size: 19.5px; }
+body.font-sm .greek-summary { font-size: 13.5px; }
+body.font-lg .greek-summary { font-size: 19px; }
+body.font-sm .greek-text { font-size: 13px; }
+body.font-lg .greek-text { font-size: 19px; }
+body.font-sm .greek-note { font-size: 10.5px; }
+body.font-lg .greek-note { font-size: 14px; }
+body.font-sm .trans-text { font-size: 12px; }
+body.font-lg .trans-text { font-size: 16px; }
 
 @media (max-width:600px) {
   .reading-toolbar { gap: 6px; padding: 8px 10px; top: 53px; justify-content:space-between; }
@@ -2238,6 +2248,14 @@ body.font-lg .persp-body .para { font-size: 19px; }
 </div>
 
 <section class="greek-panel" id="greekPanel">
+  <div class="reading-toolbar">
+    <div class="toolbar-group">
+      <span class="toolbar-label">글씨크기</span>
+      <button class="fontsize-btn" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
+      <button class="fontsize-btn active" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
+      <button class="fontsize-btn" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+    </div>
+  </div>
   <div class="detail-header">
     <div class="ghost-num">GR</div>
     <div class="detail-header-inner">
