@@ -77,6 +77,7 @@ body {
 .toc-month-label:first-of-type { margin-top:22px; }
 .toc-grid { display:flex; flex-direction:column; gap:12px; margin-bottom:6px; }
 .toc-card {
+  position: relative;
   display:flex; align-items:center; justify-content:space-between; gap:14px;
   background: var(--white); border:none;
   padding: 18px 24px; border-radius: 10px; cursor:pointer;
@@ -85,6 +86,17 @@ body {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .toc-card:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(28,28,28,0.20); }
+.sticker-icon {
+  position: absolute; top: -10px; right: -8px; z-index: 6;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+  color: #fff; display:flex; align-items:center; justify-content:center;
+  font-size: 13px; font-weight: 800; letter-spacing: -0.3px;
+  border: 2.5px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transform: rotate(-12deg); cursor: pointer;
+  transition: transform .15s ease;
+}
+.sticker-icon:hover { transform: rotate(-12deg) scale(1.12); }
 .toc-line { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 .toc-num { font-size:15px; font-weight:800; color: var(--charcoal); flex-shrink:0; }
 .toc-date { font-size:13px; color:#6E6E6E; font-weight:600; flex-shrink:0; }
@@ -156,6 +168,40 @@ body {
 .scripture-body .scripture-para { font-family: inherit; font-weight:400; font-size:16.5px; line-height:2.05; color:#3A3A3A; margin-bottom:14px; text-align:justify; }
 .scripture-body .scripture-para:last-child { margin-bottom:0; }
 .scripture-body sup { font-family: inherit; font-size:0.7em; font-weight:800; color:#01579B; margin-right:2px; }
+
+/* Greek exegesis panel */
+.greek-panel { display:none; }
+.greek-verse-card {
+  background: var(--soft-gray); border-radius:6px; padding:26px 26px;
+  border-left: 4px solid #29B6F6;
+}
+.greek-verse-num {
+  display:inline-block; background: #29B6F6; color:#fff;
+  font-size:11px; font-weight:800; letter-spacing:0.5px;
+  padding:4px 11px; border-radius:2px; margin-bottom:14px;
+}
+.greek-text {
+  font-family: Georgia, 'Times New Roman', serif; font-style:italic;
+  font-size:16px; line-height:1.8; color:#01579B; margin-bottom:12px;
+}
+.greek-summary { font-size:16px; line-height:1.9; color:#3A3A3A; margin-bottom:10px; text-align:justify; }
+.greek-note { font-size:12px; line-height:1.7; color:#8890A0; }
+
+.sticker-row {
+  display:flex; align-items:center; gap:10px; padding: 4px 4px 0;
+  cursor:pointer;
+}
+.sticker-icon-inline {
+  flex-shrink:0; width: 38px; height: 38px; border-radius: 50%;
+  background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+  color: #fff; display:flex; align-items:center; justify-content:center;
+  font-size: 13px; font-weight: 800; letter-spacing: -0.3px;
+  border: 2.5px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.22);
+  transform: rotate(-10deg); cursor: pointer;
+  transition: transform .15s ease;
+}
+.sticker-row:hover .sticker-icon-inline { transform: rotate(-10deg) scale(1.1); }
+.sticker-row-label { font-size:13px; font-weight:700; color:#01579B; }
 .persp-badge {
   display:inline-block; background: var(--leaf-green-pale); color:#01579B;
   font-size:13px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
@@ -303,6 +349,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
     <p class="toc-month-label">8월</p>
 <div class="toc-grid">
       <button class="toc-card" onclick="showDetail('01')">
+        <span class="sticker-icon" onclick="event.stopPropagation(); showGreek();" title="헬라어 원어 강해 보기">GR</span>
         <span class="toc-line">
           <span class="toc-num">첫번째주</span>
           <span class="toc-date">2026.8.2</span>
@@ -311,6 +358,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('02')">
+        
         <span class="toc-line">
           <span class="toc-num">두번째주</span>
           <span class="toc-date">2026.8.9</span>
@@ -319,6 +367,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('03')">
+        
         <span class="toc-line">
           <span class="toc-num">세번째주</span>
           <span class="toc-date">2026.8.16</span>
@@ -327,6 +376,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('04')">
+        
         <span class="toc-line">
           <span class="toc-num">네번째주</span>
           <span class="toc-date">2026.8.23</span>
@@ -335,6 +385,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('05')">
+        
         <span class="toc-line">
           <span class="toc-num">다섯번째주</span>
           <span class="toc-date">2026.8.30</span>
@@ -345,6 +396,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
 <p class="toc-month-label">9월</p>
 <div class="toc-grid">
       <button class="toc-card" onclick="showDetail('06')">
+        
         <span class="toc-line">
           <span class="toc-num">첫번째주</span>
           <span class="toc-date">2026.9.6</span>
@@ -353,6 +405,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('07')">
+        
         <span class="toc-line">
           <span class="toc-num">두번째주</span>
           <span class="toc-date">2026.9.13</span>
@@ -361,6 +414,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('08')">
+        
         <span class="toc-line">
           <span class="toc-num">세번째주</span>
           <span class="toc-date">2026.9.20</span>
@@ -369,6 +423,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('09')">
+        
         <span class="toc-line">
           <span class="toc-num">네번째주</span>
           <span class="toc-date">2026.9.27</span>
@@ -379,6 +434,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
 <p class="toc-month-label">10월</p>
 <div class="toc-grid">
       <button class="toc-card" onclick="showDetail('10')">
+        
         <span class="toc-line">
           <span class="toc-num">첫번째주</span>
           <span class="toc-date">2026.10.4</span>
@@ -387,6 +443,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('11')">
+        
         <span class="toc-line">
           <span class="toc-num">두번째주</span>
           <span class="toc-date">2026.10.11</span>
@@ -395,6 +452,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('12')">
+        
         <span class="toc-line">
           <span class="toc-num">세번째주</span>
           <span class="toc-date">2026.10.18</span>
@@ -403,6 +461,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('13')">
+        
         <span class="toc-line">
           <span class="toc-num">네번째주</span>
           <span class="toc-date">2026.10.25</span>
@@ -413,6 +472,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
 <p class="toc-month-label">11월</p>
 <div class="toc-grid">
       <button class="toc-card" onclick="showDetail('14')">
+        
         <span class="toc-line">
           <span class="toc-num">첫번째주</span>
           <span class="toc-date">2026.11.1</span>
@@ -421,6 +481,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('15')">
+        
         <span class="toc-line">
           <span class="toc-num">두번째주</span>
           <span class="toc-date">2026.11.8</span>
@@ -429,6 +490,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('16')">
+        
         <span class="toc-line">
           <span class="toc-num">세번째주</span>
           <span class="toc-date">2026.11.15</span>
@@ -437,6 +499,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('17')">
+        
         <span class="toc-line">
           <span class="toc-num">네번째주</span>
           <span class="toc-date">2026.11.22</span>
@@ -445,6 +508,7 @@ body.font-lg .persp-body .para { font-size: 19px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('18')">
+        
         <span class="toc-line">
           <span class="toc-num">다섯번째주</span>
           <span class="toc-date">2026.11.29</span>
@@ -492,6 +556,10 @@ body.font-lg .persp-body .para { font-size: 19px; }
             <p class="scripture-para"><sup>13</sup> 예수께서 들으시고 배를 타고 떠나사 따로 빈 들에 가시니 무리가 듣고 여러 고을로부터 걸어서 따라간지라 <sup>14</sup> 예수께서 나오사 큰 무리를 보시고 불쌍히 여기사 그 중에 있는 병자를 고쳐 주시니라 <sup>15</sup> 저녁이 되매 제자들이 나아와 이르되 이 곳은 빈 들이요 때도 이미 저물었으니 무리를 보내어 마을에 들어가 먹을 것을 사 먹게 하소서 <sup>16</sup> 예수께서 이르시되 갈 것 없다 너희가 먹을 것을 주라 <sup>17</sup> 제자들이 이르되 여기 우리에게 있는 것은 떡 다섯 개와 물고기 두 마리뿐이니이다 <sup>18</sup> 이르시되 그것을 내게 가져오라 하시고 <sup>19</sup> 무리를 명하여 잔디 위에 앉히시고 떡 다섯 개와 물고기 두 마리를 가지사 하늘을 우러러 축사하시고 떡을 떼어 제자들에게 주시매 제자들이 무리에게 주니 <sup>20</sup> 다 배불리 먹고 남은 조각을 열두 바구니에 차게 거두었으며 <sup>21</sup> 먹은 사람은 여자와 어린이 외에 오천 명이나 되었더라</p>
           </div>
         </article>
+        <div class="sticker-row" onclick="showGreek();">
+          <span class="sticker-icon-inline" title="헬라어 원어 강해 보기">GR</span>
+          <span class="sticker-row-label">헬라어 원어 강해 보기</span>
+        </div>
         
           <article class="persp-card">
             <span class="persp-badge">신학적 관점</span>
@@ -2158,6 +2226,79 @@ body.font-lg .persp-body .para { font-size: 19px; }
     </section>
 </div>
 
+<section class="greek-panel" id="greekPanel">
+  <div class="detail-header">
+    <div class="ghost-num">GR</div>
+    <div class="detail-header-inner">
+      <button class="back-btn" onclick="showList()">← 목차</button>
+      <p class="detail-caption">헬라어 원어 강해</p>
+      <h2 class="detail-title">성령강림절 후 열째 주일</h2>
+      <p class="detail-scripture">마태복음 14:13-21</p>
+    </div>
+  </div>
+  <div class="detail-body">
+    
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:13</span>
+          <p class="greek-text">δὲ Ἀκούσας ὁ Ἰησοῦς ἀνεχώρησεν* ἐκεῖθεν / ἐν πλοίῳ** εἰς ἔρημον τόπον κατ’ ἰδίαν·*** καὶ ἀκούσαντες οἱ ὄχλοι ἠκολούθησαν αὐτῷ / πεζῇ**** ἀπὸ τῶν πόλεων.</p>
+          <p class="greek-summary">예수가 들은 후에 거기서 ‘배를 타고 따로 외떨어진 곳으로’ 물러났다. 그러자 무리들이 들은 후에 ‘도시들로부터 걸어서’ 예수를 쫓았다.</p>
+          <p class="greek-note">*직.과.능.3단 ἀναχωρέω=ἀνά떨어져+χωρέω가다 **명.여격 ἐν πλοίῳ배를 타고(배로) ***형.대 κατ’ ἰδίαν따로(ἴδιος 개인의)****부사 πεζῇ걸어서(육로로)</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:14</span>
+          <p class="greek-text">καὶ ἐξελθὼν* εἶδεν** πολὺν ὄχλον, / καὶ ἐσπλαγχνίσθη*** ἐπ’ αὐτοῖς καὶ ἐθεράπευσεν**** τοὺς ἀρρώστους* αὐτῶν. 그래서 예수는 그들 가운데서 아픈 사람들을 치료했다</p>
+          <p class="greek-summary">예수가 배에서 나온 후에 큰 무리를 보았다. 예수는 무리들에게 깊은 아픔을 느꼈다. 그래서 예수는 그들 가운데서 아픈 사람들을 치료했다.</p>
+          <p class="greek-note">*분.2과.능.주.남단 ἐξέρχομαι나가다, 나오다 **직.2과.능.3단 ὁράω보다 ***직.과.수(디포).3단 σπλαγχνίζομαι불쌍히 여기다****직.과.능.3단 θεραπεύω치료하다 *형.대 ἄρρωστος병든, 아픈</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:15</span>
+          <p class="greek-text">ὀψίας δὲ γενομένης / προσῆλθον* αὐτῷ οἱ μαθηταὶ λέγοντες· / Ἔρημός ἐστιν** ὁ τόπος καὶ ἡ ὥρα*** ἤδη παρῆλθεν·**** / ἀπόλυσον* τοὺς ὄχλους, / ἵνα ἀπελθόντες** εἰς τὰς κώμας ἀγοράσωσιν*** ἑαυτοῖς**** βρώματα. 자신들을 위해 먹을 것들을 사도록</p>
+          <p class="greek-summary">저녁이 되었을 때, 제자들이 예수에게 가까이 다가와 말한다. “이 곳은 외딴 곳입니다. 그런데다 이미 때가 지났습니다. 무리들이 ‘마을들 안으로 가서 자신들의 먹을 것들을 사도록’ 무리들을 해산시키세요.”</p>
+          <p class="greek-note">*직.2과.능.3복 προσέρχομαι=πρός향하여+ἔρχομαι오다 **직.현.능.3단 εἰμί이다 ***명.주 ὥρα시간, 때 ****직.2과.능.3단 παρέρχομαι=παρά옆으로+ἔρχομαι오다 *명.과.능.2단 ἀπολύω=ἀπό~로부터+λύω풀다 **분.2과.능.주.남복 ἀπέρχομαι=ἀπό~로부터+ἔρχομαι가다,오다 ***가.과.능.3복 ἀγοράζω사다 ***재귀대명사 ἑαυτοῦ 자기 자신의</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:16</span>
+          <p class="greek-text">ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς· / Οὐ χρείαν* ἔχουσιν** ἀπελθεῖν·*** / δότε**** αὐτοῖς ὑμεῖς* φαγεῖν.**</p>
+          <p class="greek-summary">그러자 예수가 제자들에게 말했다. “그들이 가야할 필요 없다. 너희가 그들에게 먹을 것을 주어라.”</p>
+          <p class="greek-note">*명.대 χρεία필요 **직.현.능.3복 ἔχω가지다 ***부정사.2과.능 ἀπέρχομαι ****명.2과.능.2복 δίδωμι주다 *인칭대명사.주.2복 ὑμεῖς 명령어의 주어(강조의미) **부정사.2과.능 ἐσθίω먹다</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:17</span>
+          <p class="greek-text">οἱ δὲ λέγουσιν αὐτῷ· / Οὐκ ἔχομεν* / ὧδε εἰ μὴ** πέντε ἄρτους καὶ δύο ἰχθύας.</p>
+          <p class="greek-summary">그러자 제자들이 예수에게 말했다. “우리가 가진 것이 없습니다. 여기에는 떡 다섯 개와 물고기 두 마리 뿐입니다.”</p>
+          <p class="greek-note">*직.현.능.1복 ἔχω가지다 **ὧδε εἰ μὴ여기 ~외에는, 여기에 있는 것은 ~뿐</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:18</span>
+          <p class="greek-text">ὁ δὲ εἶπεν· / Φέρετέ* μοι ὧδε** αὐτούς. 그러자 예수가 말했다 /너희는 그것들을 여기에 나에게로 가져오라</p>
+          <p class="greek-summary">그러자 예수가 말했다. “너희는 그것들을 여기에 나에게로 가져오라.”</p>
+          <p class="greek-note">*명.현.능.2복 φέρω가져오다, 데려오다 **부사 ὧδε여기, 이곳에</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:19</span>
+          <p class="greek-text">καὶ κελεύσας* / τοὺς ὄχλους ἀνακλιθῆναι** ἐπὶ τοῦ χόρτου, / λαβὼν / τοὺς πέντε ἄρτους καὶ τοὺς δύο ἰχθύας, / ἀναβλέψας***εἰς τὸν οὐρανὸν εὐλόγησεν****/καὶ κλάσας* ἔδωκεν**τοῖς μαθηταῖς τοὺς ἄρτους / δὲ οἱ μαθηταὶ τοῖς ὄχλοις. 떡들을 / 그러자 제자들이 무리들에게 (주었다)</p>
+          <p class="greek-summary">그런 후에 예수가 ‘무리들을 풀밭 위에 자리 잡고 앉으라고’ 명령한 후에 떡 다섯 개와 물고기 두 마리를 받아들고 하늘을 우러러 보며 감사 드렸다. 그리고는 예수가 떡들을 떼어서 제자들에게 주었다. 그러자 제자들이 무리들에게 주었다.</p>
+          <p class="greek-note">*분.과.능.주.남단 κελεύω명령하다 **부정사.과.수 ἀνακλίνω=ἀνά위로+κλίνω눕히다 ***분.과.능.주.남단 ἀναβλέπω=ἀνά위로+βλέπω보다****직.과.능.3단 εὐλογέω=εὖ좋은+λόγος말 *분.과.주.남단 κλάω떼다 **직.과.능.3단 δίδωμι주다</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:20</span>
+          <p class="greek-text">καὶ ἔφαγον πάντες* / καὶ ἐχορτάσθησαν,** / καὶ ἦραν*** / τὸ περισσεῦον****τῶν κλασμάτων δώδεκα* κοφίνους πλήρεις.** 열두 바구니 가득 차게</p>
+          <p class="greek-summary">모든 사람들이 먹고 배부르게 되었다. 그러고도 그들이 ‘먹고 남은 부스러기들로부터’ 열두 바구니 가득 차게 거두었다.</p>
+          <p class="greek-note">*형.주.남복 πᾶς모든 **직.과.수.3복 χορτάζω먹이다, 배부르게 하다 ***직.과.능.3복 αἴρω들어올리다 ****분.현.능.목.중성단수 περισσεύω너치다, 남다 *형.기수 δέκα열+δύο둘 **형.목.남복 πλήρης가득 찬, 충만한</p>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:21</span>
+          <p class="greek-text">οἱ δὲ ἐσθίοντες* ἦσαν ἄνδρες** ὡσεὶ πεντακισχίλιοι*** / χωρὶς****γυναικῶν καὶ παιδίων.</p>
+          <p class="greek-summary">그런데 먹은 사람들이 ‘여자들과 어린 아이들을 제외하고’ 남자들만 약 오천 명 이었다.</p>
+          <p class="greek-note">*분.현.능.주.남복 ἐσθίω먹다 **명.주.남복 ἀνήρ남자 ***형.기수 πέντε다섯+χιλιοι천 ****전(부사).소 χωρίς~없이, ~을 제외하고</p>
+        </article>
+    <div class="page-nav">
+      <span></span>
+      <button class="pn-btn" onclick="showList()">목차로 돌아가기 ›</button>
+    </div>
+  </div>
+</section>
+
 <button class="fab-toc" id="fabToc" onclick="showList()">↑ 목차로 돌아가기</button>
 <button class="fab-top" id="fabTop" onclick="scrollToTop()" aria-label="맨 위로">↑</button>
 
@@ -2173,8 +2314,19 @@ function showDetail(id) {
   stopVoice();
   document.getElementById('view-list').style.display = 'none';
   document.getElementById('view-detail').style.display = 'block';
+  var gp0 = document.getElementById('greekPanel');
+  if (gp0) gp0.style.display = 'none';
   document.querySelectorAll('.detail-panel').forEach(function(p) { p.classList.remove('active'); });
   document.getElementById('detail-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+  updateFab();
+  setTimeout(updateScrollThumb, 50);
+}
+function showGreek() {
+  stopVoice();
+  document.getElementById('view-list').style.display = 'none';
+  document.getElementById('view-detail').style.display = 'none';
+  document.getElementById('greekPanel').style.display = 'block';
   window.scrollTo(0, 0);
   updateFab();
   setTimeout(updateScrollThumb, 50);
@@ -2182,6 +2334,8 @@ function showDetail(id) {
 function showList() {
   stopVoice();
   document.getElementById('view-detail').style.display = 'none';
+  var gp1 = document.getElementById('greekPanel');
+  if (gp1) gp1.style.display = 'none';
   document.getElementById('view-list').style.display = 'block';
   window.scrollTo(0, 0);
   updateFab();
@@ -2193,7 +2347,8 @@ function scrollToTop() {
 function updateFab() {
   var fabToc = document.getElementById('fabToc');
   var fabTop = document.getElementById('fabTop');
-  var inDetail = document.getElementById('view-detail').style.display === 'block';
+  var gp2 = document.getElementById('greekPanel');
+  var inDetail = document.getElementById('view-detail').style.display === 'block' || (gp2 && gp2.style.display === 'block');
   var scrolled = window.scrollY > 300;
   if (inDetail && scrolled) { fabToc.classList.add('show'); } else { fabToc.classList.remove('show'); }
   if (scrolled) { fabTop.classList.add('show'); } else { fabTop.classList.remove('show'); }
