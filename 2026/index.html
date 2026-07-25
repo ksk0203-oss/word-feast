@@ -187,6 +187,17 @@ body {
 .greek-summary { font-size:16px; line-height:1.9; color:#3A3A3A; margin-bottom:10px; text-align:justify; }
 .greek-note { font-size:12px; line-height:1.7; color:#8890A0; }
 
+.trans-block {
+  margin-top:16px; padding-top:14px; border-top:1px dashed var(--border-line);
+  display:flex; flex-direction:column; gap:9px;
+}
+.trans-row { display:flex; align-items:baseline; gap:10px; }
+.trans-label {
+  flex-shrink:0; width:52px; font-size:10.5px; font-weight:800; color:#01579B;
+  letter-spacing:0.3px; text-transform:uppercase;
+}
+.trans-text { font-size:13.5px; line-height:1.7; color:#4A4F5C; }
+
 .sticker-row {
   display:flex; align-items:center; gap:10px; padding: 4px 4px 0;
   cursor:pointer;
@@ -2243,54 +2254,207 @@ body.font-lg .persp-body .para { font-size: 19px; }
           <p class="greek-text">δὲ Ἀκούσας ὁ Ἰησοῦς ἀνεχώρησεν* ἐκεῖθεν / ἐν πλοίῳ** εἰς ἔρημον τόπον κατ’ ἰδίαν·*** καὶ ἀκούσαντες οἱ ὄχλοι ἠκολούθησαν αὐτῷ / πεζῇ**** ἀπὸ τῶν πόλεων.</p>
           <p class="greek-summary">예수가 들은 후에 거기서 ‘배를 타고 따로 외떨어진 곳으로’ 물러났다. 그러자 무리들이 들은 후에 ‘도시들로부터 걸어서’ 예수를 쫓았다.</p>
           <p class="greek-note">*직.과.능.3단 ἀναχωρέω=ἀνά떨어져+χωρέω가다 **명.여격 ἐν πλοίῳ배를 타고(배로) ***형.대 κατ’ ἰδίαν따로(ἴδιος 개인의)****부사 πεζῇ걸어서(육로로)</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 그 말을 들으시고, 거기에서 배를 타고, 따로 외딴 곳으로 물러가셨다. 이 소문이 퍼지니, 무리가 여러 동네에서 몰려나와서, 걸어서 예수를 따라왔다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">When Jesus heard what had happened, he withdrew by boat privately to a solitary place. Hearing of this, the crowds followed him on foot from the towns.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">When Jesus heard of it, he departed thence by ship into a desert place apart: and when the people had heard thereof, they followed him on foot out of the cities.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">Now when Jesus heard it, he withdrew from thence in a boat, to a desert place apart: and when the multitudes heard thereof, they followed him on foot from the cities.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:14</span>
           <p class="greek-text">καὶ ἐξελθὼν* εἶδεν** πολὺν ὄχλον, / καὶ ἐσπλαγχνίσθη*** ἐπ’ αὐτοῖς καὶ ἐθεράπευσεν**** τοὺς ἀρρώστους* αὐτῶν. 그래서 예수는 그들 가운데서 아픈 사람들을 치료했다</p>
           <p class="greek-summary">예수가 배에서 나온 후에 큰 무리를 보았다. 예수는 무리들에게 깊은 아픔을 느꼈다. 그래서 예수는 그들 가운데서 아픈 사람들을 치료했다.</p>
           <p class="greek-note">*분.2과.능.주.남단 ἐξέρχομαι나가다, 나오다 **직.2과.능.3단 ὁράω보다 ***직.과.수(디포).3단 σπλαγχνίζομαι불쌍히 여기다****직.과.능.3단 θεραπεύω치료하다 *형.대 ἄρρωστος병든, 아픈</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 배에서 내려서, 큰 무리를 보시고, 그들을 불쌍히 여기시고, 그들 가운데서 앓는 사람들을 고쳐 주셨다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">When Jesus landed and saw a large crowd, he had compassion on them and healed their sick.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And Jesus went forth, and saw a great multitude, and was moved with compassion toward them, and he healed their sick.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And he came forth, and saw a great multitude, and he had compassion on them, and healed their sick.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:15</span>
           <p class="greek-text">ὀψίας δὲ γενομένης / προσῆλθον* αὐτῷ οἱ μαθηταὶ λέγοντες· / Ἔρημός ἐστιν** ὁ τόπος καὶ ἡ ὥρα*** ἤδη παρῆλθεν·**** / ἀπόλυσον* τοὺς ὄχλους, / ἵνα ἀπελθόντες** εἰς τὰς κώμας ἀγοράσωσιν*** ἑαυτοῖς**** βρώματα. 자신들을 위해 먹을 것들을 사도록</p>
           <p class="greek-summary">저녁이 되었을 때, 제자들이 예수에게 가까이 다가와 말한다. “이 곳은 외딴 곳입니다. 그런데다 이미 때가 지났습니다. 무리들이 ‘마을들 안으로 가서 자신들의 먹을 것들을 사도록’ 무리들을 해산시키세요.”</p>
           <p class="greek-note">*직.2과.능.3복 προσέρχομαι=πρός향하여+ἔρχομαι오다 **직.현.능.3단 εἰμί이다 ***명.주 ὥρα시간, 때 ****직.2과.능.3단 παρέρχομαι=παρά옆으로+ἔρχομαι오다 *명.과.능.2단 ἀπολύω=ἀπό~로부터+λύω풀다 **분.2과.능.주.남복 ἀπέρχομαι=ἀπό~로부터+ἔρχομαι가다,오다 ***가.과.능.3복 ἀγοράζω사다 ***재귀대명사 ἑαυτοῦ 자기 자신의</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">저녁때가 되니, 제자들이 예수께 다가와서 말하였다. &quot;여기는 빈 들이고, 날도 이미 저물었습니다. 그러니 무리를 헤쳐 보내어, 제각기 먹을 것을 사먹게, 마을로 보내시는 것이 좋겠습니다.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">As evening approached, the disciples came to him and said, &quot;This is a remote place, and it&#x27;s already getting late. Send the crowds away, so they can go to the villages and buy themselves some food.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And when it was evening, his disciples came to him, saying, This is a desert place, and the time is now past; send the multitude away, that they may go into the villages, and buy themselves victuals.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And when even was come, the disciples came to him, saying, The place is desert, and the time is already past; send the multitudes away, that they may go into the villages, and buy themselves food.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:16</span>
           <p class="greek-text">ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς· / Οὐ χρείαν* ἔχουσιν** ἀπελθεῖν·*** / δότε**** αὐτοῖς ὑμεῖς* φαγεῖν.**</p>
           <p class="greek-summary">그러자 예수가 제자들에게 말했다. “그들이 가야할 필요 없다. 너희가 그들에게 먹을 것을 주어라.”</p>
           <p class="greek-note">*명.대 χρεία필요 **직.현.능.3복 ἔχω가지다 ***부정사.2과.능 ἀπέρχομαι ****명.2과.능.2복 δίδωμι주다 *인칭대명사.주.2복 ὑμεῖς 명령어의 주어(강조의미) **부정사.2과.능 ἐσθίω먹다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 그들에게 말씀하셨다. &quot;그들이 물러갈 필요 없다. 너희가 그들에게 먹을 것을 주어라.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">Jesus replied, &quot;They do not need to go away. You give them something to eat.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">But Jesus said unto them, They need not depart; give ye them to eat.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">But Jesus said unto them, They have no need to go away; give ye them to eat.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:17</span>
           <p class="greek-text">οἱ δὲ λέγουσιν αὐτῷ· / Οὐκ ἔχομεν* / ὧδε εἰ μὴ** πέντε ἄρτους καὶ δύο ἰχθύας.</p>
           <p class="greek-summary">그러자 제자들이 예수에게 말했다. “우리가 가진 것이 없습니다. 여기에는 떡 다섯 개와 물고기 두 마리 뿐입니다.”</p>
           <p class="greek-note">*직.현.능.1복 ἔχω가지다 **ὧδε εἰ μὴ여기 ~외에는, 여기에 있는 것은 ~뿐</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">제자들이 예수께 말하였다. &quot;우리에게 있는 것이라고는, 빵 다섯 개와 물고기 두 마리밖에 없습니다.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">&quot;We have here only five loaves of bread and two fish,&quot; they answered.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And they say unto him, We have here but five loaves, and two fishes.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And they say unto him, We have here but five loaves, and two fishes.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:18</span>
           <p class="greek-text">ὁ δὲ εἶπεν· / Φέρετέ* μοι ὧδε** αὐτούς. 그러자 예수가 말했다 /너희는 그것들을 여기에 나에게로 가져오라</p>
           <p class="greek-summary">그러자 예수가 말했다. “너희는 그것들을 여기에 나에게로 가져오라.”</p>
           <p class="greek-note">*명.현.능.2복 φέρω가져오다, 데려오다 **부사 ὧδε여기, 이곳에</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">이 때에 예수께서 말씀하셨다. &quot;그것들을 이리로 가져 오너라.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">&quot;Bring them here to me,&quot; he said.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">He said, Bring them hither to me.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And he said, Bring them hither to me.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:19</span>
           <p class="greek-text">καὶ κελεύσας* / τοὺς ὄχλους ἀνακλιθῆναι** ἐπὶ τοῦ χόρτου, / λαβὼν / τοὺς πέντε ἄρτους καὶ τοὺς δύο ἰχθύας, / ἀναβλέψας***εἰς τὸν οὐρανὸν εὐλόγησεν****/καὶ κλάσας* ἔδωκεν**τοῖς μαθηταῖς τοὺς ἄρτους / δὲ οἱ μαθηταὶ τοῖς ὄχλοις. 떡들을 / 그러자 제자들이 무리들에게 (주었다)</p>
           <p class="greek-summary">그런 후에 예수가 ‘무리들을 풀밭 위에 자리 잡고 앉으라고’ 명령한 후에 떡 다섯 개와 물고기 두 마리를 받아들고 하늘을 우러러 보며 감사 드렸다. 그리고는 예수가 떡들을 떼어서 제자들에게 주었다. 그러자 제자들이 무리들에게 주었다.</p>
           <p class="greek-note">*분.과.능.주.남단 κελεύω명령하다 **부정사.과.수 ἀνακλίνω=ἀνά위로+κλίνω눕히다 ***분.과.능.주.남단 ἀναβλέπω=ἀνά위로+βλέπω보다****직.과.능.3단 εὐλογέω=εὖ좋은+λόγος말 *분.과.주.남단 κλάω떼다 **직.과.능.3단 δίδωμι주다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">그리고 예수께서는 무리를 풀밭에 앉게 하시고 나서, 빵 다섯 개와 물고기 두 마리를 들고, 하늘을 우러러 보시고 축복 기도를 드리신 다음에, 떼어서 제자들에게 주시니, 제자들이 이를 무리에게 나누어주었다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">And he directed the people to sit down on the grass. Taking the five loaves and the two fish and looking up to heaven, he gave thanks and broke the loaves. Then he gave them to the disciples, and the disciples gave them to the people.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And he commanded the multitude to sit down on the grass, and took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake, and gave the loaves to his disciples, and the disciples to the multitude.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And he commanded the multitudes to sit down on the grass; and he took the five loaves, and the two fishes, and looking up to heaven, he blessed, and brake and gave the loaves to the disciples, and the disciples to the multitudes.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:20</span>
           <p class="greek-text">καὶ ἔφαγον πάντες* / καὶ ἐχορτάσθησαν,** / καὶ ἦραν*** / τὸ περισσεῦον****τῶν κλασμάτων δώδεκα* κοφίνους πλήρεις.** 열두 바구니 가득 차게</p>
           <p class="greek-summary">모든 사람들이 먹고 배부르게 되었다. 그러고도 그들이 ‘먹고 남은 부스러기들로부터’ 열두 바구니 가득 차게 거두었다.</p>
           <p class="greek-note">*형.주.남복 πᾶς모든 **직.과.수.3복 χορτάζω먹이다, 배부르게 하다 ***직.과.능.3복 αἴρω들어올리다 ****분.현.능.목.중성단수 περισσεύω너치다, 남다 *형.기수 δέκα열+δύο둘 **형.목.남복 πλήρης가득 찬, 충만한</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">그들은 모두 배불리 먹었다. 남은 부스러기를 모으니, 열두 광주리에 가득 찼다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">They all ate and were satisfied, and the disciples picked up twelve basketfuls of broken pieces that were left over.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And they did all eat, and were filled: and they took up of the fragments that remained twelve baskets full.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And they all ate, and were filled: and they took up that which remained over of the broken pieces, twelve baskets full.</span>
+              </div></div>
         </article>
         <article class="greek-verse-card">
           <span class="greek-verse-num">14:21</span>
           <p class="greek-text">οἱ δὲ ἐσθίοντες* ἦσαν ἄνδρες** ὡσεὶ πεντακισχίλιοι*** / χωρὶς****γυναικῶν καὶ παιδίων.</p>
           <p class="greek-summary">그런데 먹은 사람들이 ‘여자들과 어린 아이들을 제외하고’ 남자들만 약 오천 명 이었다.</p>
           <p class="greek-note">*분.현.능.주.남복 ἐσθίω먹다 **명.주.남복 ἀνήρ남자 ***형.기수 πέντε다섯+χιλιοι천 ****전(부사).소 χωρίς~없이, ~을 제외하고</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">먹은 사람은 여자들과 어린아이들 외에, 어른 남자만도 오천 명쯤 되었다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">The number of those who ate was about five thousand men, besides women and children.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And they that had eaten were about five thousand men, beside women and children.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And they that did eat were about five thousand men, besides women and children.</span>
+              </div></div>
         </article>
     <div class="page-nav">
       <span></span>
