@@ -370,7 +370,7 @@ body.font-lg .trans-text { font-size: 16px; }
     <p class="toc-month-label">8월</p>
 <div class="toc-grid">
       <button class="toc-card" onclick="showDetail('01')">
-        <span class="sticker-icon" onclick="event.stopPropagation(); showGreek();" title="헬라어 원어 강해 보기">GR</span>
+        <span class="sticker-icon" onclick="event.stopPropagation(); showGreek('greek-0802');" title="헬라어 원어 강해 보기">GR</span>
         <span class="toc-line">
           <span class="toc-num">첫번째주</span>
           <span class="toc-date">2026.8.2</span>
@@ -379,7 +379,7 @@ body.font-lg .trans-text { font-size: 16px; }
         <span class="toc-arrow">→</span>
       </button>
       <button class="toc-card" onclick="showDetail('02')">
-        
+        <span class="sticker-icon" onclick="event.stopPropagation(); showGreek('greek-0809');" title="헬라어 원어 강해 보기">GR</span>
         <span class="toc-line">
           <span class="toc-num">두번째주</span>
           <span class="toc-date">2026.8.9</span>
@@ -577,7 +577,7 @@ body.font-lg .trans-text { font-size: 16px; }
             <p class="scripture-para"><sup>13</sup> 예수께서 들으시고 배를 타고 떠나사 따로 빈 들에 가시니 무리가 듣고 여러 고을로부터 걸어서 따라간지라 <sup>14</sup> 예수께서 나오사 큰 무리를 보시고 불쌍히 여기사 그 중에 있는 병자를 고쳐 주시니라 <sup>15</sup> 저녁이 되매 제자들이 나아와 이르되 이 곳은 빈 들이요 때도 이미 저물었으니 무리를 보내어 마을에 들어가 먹을 것을 사 먹게 하소서 <sup>16</sup> 예수께서 이르시되 갈 것 없다 너희가 먹을 것을 주라 <sup>17</sup> 제자들이 이르되 여기 우리에게 있는 것은 떡 다섯 개와 물고기 두 마리뿐이니이다 <sup>18</sup> 이르시되 그것을 내게 가져오라 하시고 <sup>19</sup> 무리를 명하여 잔디 위에 앉히시고 떡 다섯 개와 물고기 두 마리를 가지사 하늘을 우러러 축사하시고 떡을 떼어 제자들에게 주시매 제자들이 무리에게 주니 <sup>20</sup> 다 배불리 먹고 남은 조각을 열두 바구니에 차게 거두었으며 <sup>21</sup> 먹은 사람은 여자와 어린이 외에 오천 명이나 되었더라</p>
           </div>
         </article>
-        <div class="sticker-row" onclick="showGreek();">
+        <div class="sticker-row" onclick="showGreek('greek-0802');">
           <span class="sticker-icon-inline" title="헬라어 원어 강해 보기">GR</span>
           <span class="sticker-row-label">헬라어 원어 강해 보기</span>
         </div>
@@ -678,6 +678,10 @@ body.font-lg .trans-text { font-size: 16px; }
             <p class="scripture-para"><sup>22</sup> 예수께서 즉시 제자들을 재촉하사 자기가 무리를 보내는 동안에 배를 타고 앞서 건너편으로 가게 하시고 <sup>23</sup> 무리를 보내신 후에 기도하러 따로 산에 올라가시니라 저물매 거기 혼자 계시더니 <sup>24</sup> 배가 이미 육지에서 수 리나 떠나서 바람이 거스르므로 물결로 말미암아 고난을 당하더라 <sup>25</sup> 밤 사경에 예수께서 바다 위로 걸어서 제자들에게 오시니 <sup>26</sup> 제자들이 그가 바다 위로 걸어오심을 보고 놀라 유령이라 하며 무서워하여 소리 지르거늘 <sup>27</sup> 예수께서 즉시 이르시되 안심하라 나니 두려워하지 말라 <sup>28</sup> 베드로가 대답하여 이르되 주여 만일 주님이시거든 나를 명하사 물 위로 오라 하소서 하니 <sup>29</sup> 오라 하시니 베드로가 배에서 내려 물 위로 걸어서 예수께로 가되 <sup>30</sup> 바람을 보고 무서워 빠져 가는지라 소리 질러 이르되 주여 나를 구원하소서 하니 <sup>31</sup> 예수께서 즉시 손을 내밀어 그를 붙잡으시며 이르시되 믿음이 작은 자여 왜 의심하였느냐 하시고 <sup>32</sup> 배에 함께 오르매 바람이 그치는지라 <sup>33</sup> 배에 있는 사람들이 예수께 절하며 이르되 진실로 하나님의 아들이로소이다 하더라</p>
           </div>
         </article>
+        <div class="sticker-row" onclick="showGreek('greek-0809');">
+          <span class="sticker-icon-inline" title="헬라어 원어 강해 보기">GR</span>
+          <span class="sticker-row-label">헬라어 원어 강해 보기</span>
+        </div>
         
           <article class="persp-card">
             <span class="persp-badge">신학적 관점</span>
@@ -2247,7 +2251,8 @@ body.font-lg .trans-text { font-size: 16px; }
     </section>
 </div>
 
-<section class="greek-panel" id="greekPanel">
+
+<section class="greek-panel" id="greek-0802">
   <div class="reading-toolbar">
     <div class="toolbar-group">
       <span class="toolbar-label">글씨크기</span>
@@ -2480,6 +2485,308 @@ body.font-lg .trans-text { font-size: 16px; }
     </div>
   </div>
 </section>
+<section class="greek-panel" id="greek-0809">
+  <div class="reading-toolbar">
+    <div class="toolbar-group">
+      <span class="toolbar-label">글씨크기</span>
+      <button class="fontsize-btn" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
+      <button class="fontsize-btn active" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
+      <button class="fontsize-btn" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+    </div>
+  </div>
+  <div class="detail-header">
+    <div class="ghost-num">GR</div>
+    <div class="detail-header-inner">
+      <button class="back-btn" onclick="showList()">← 목차</button>
+      <p class="detail-caption">헬라어 원어 강해</p>
+      <h2 class="detail-title">성령강림절 후 열한째 주일</h2>
+      <p class="detail-scripture">마태복음 14:22-33</p>
+    </div>
+  </div>
+  <div class="detail-body">
+    
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:22</span>
+          <p class="greek-text">Καὶ εὐθέως ἠνάγκασεν* τοὺς μαθητὰς ἐμβῆναι εἰς πλοῖον / καὶ προάγειν** αὐτὸν εἰς τὸ πέραν,*** ἕως**** οὗ ἀπολύσῃ τοὺς ὄχλους. 예수가 무리들을 해산하는 하는 동안에</p>
+          <p class="greek-summary">곧바로 예수가 무리들을 흩어 보내는 동안에 제자들을 ‘배에 타서 자기보다 앞서서 건너편으로 가라고’ 다그쳤다.</p>
+          <p class="greek-note">*직.과.능.3단 ἀναγκάζω강요하다 **부정사.현.능 προάγω앞서가다, 이끌다 ***부사 πέραν건너편 ****전치사 ἕως+가정법 ~하기까지, 동안에</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서는 곧 제자들을 재촉하여 배에 태워서, 자기보다 먼저 건너편으로 가게 하시고, 그 동안에 무리를 헤쳐 보내셨다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">Immediately Jesus made the disciples get into the boat and go on ahead of him to the other side, while he dismissed the crowd.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And straightway Jesus constrained his disciples to get into a ship, and to go before him unto the other side, while he sent the multitudes away.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And straightway he constrained the disciples to enter into the boat, and to go before him unto the other side, till he should send the multitudes away.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:23</span>
+          <p class="greek-text">καὶ ἀπολύσας τοὺς ὄχλους / ἀνέβη εἰς τὸ ὄρος κατ’ ἰδίαν* προσεύξασθαι.** ὀψίας δὲ γενομένης μόνος ἦν*** ἐκεῖ. 그런데 저녁이 되어서도 예수는 거기에 홀로 머물렀다</p>
+          <p class="greek-summary">예수가 무리들을 흩어 보낸 후에 기도하려고 한적한 산으로 올라갔다. 저녁이 되어서도 예수는 거기에 홀로 머물렀다.</p>
+          <p class="greek-note">*형.대 ἴδιος자기의, 자기만의 **부정사.과.수(디포) προσεύχομαι기도하다 ***직.미완.능.3단 εἰμί있다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">무리를 헤쳐 보내신 뒤에, 예수께서는 따로 기도하시려고 산에 올라가셨다. 날이 이미 저물었을 때에, 예수께서는 홀로 거기에 계셨다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">After he had dismissed them, he went up on a mountainside by himself to pray. Later that night, he was there alone,</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And after he had sent the multitudes away, he went up into the mountain apart to pray: and when even was come, he was there alone.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:24</span>
+          <p class="greek-text">τὸ δὲ πλοῖον ἤδη σταδίους* πολλοὺς ἀπὸ τῆς γῆς ἀπεῖχεν,** / βασανιζόμενον*** ὑπὸ τῶν κυμάτων, γὰρ ἦν ἐναντίος**** ὁ ἄνεμος.* 왜냐하면 맞바람이 치고 이었기 때문이다</p>
+          <p class="greek-summary">그런데 배가 이미 뭍에서 멀리 떨어져 있었다. 배는 파도들로 말미암아 요동친다. 왜냐하면 맞바람이 치고 있었기 때문이다.</p>
+          <p class="greek-note">*명.목.남복 στάδιος약177~185m **직.미완.능.3단 ἀπέχω떨어지다 ***분.현.수.주.중성단수 βασανίζω시달리게 하다 ****형.주 ἐναντίος맞서는, 대항하는 *명.주 ἄνεμος바람</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">제자들이 탄 배는, 그 사이에 이미 육지에서 멀리 떨어져 있었는데, 풍랑에 몹시 시달리고 있었다. 바람이 거슬러서 불어왔기 때문이다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">and the boat was already a considerable distance from land, buffeted by the waves because the wind was against it.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">But the ship was now in the midst of the sea, tossed with waves: for the wind was contrary.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">But the boat was now in the midst of the sea, distressed by the waves; for the wind was contrary.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:25</span>
+          <p class="greek-text">τετάρτῃ* δὲ φυλακῇ** τῆς νυκτὸς ἦλθεν πρὸς αὐτοὺς / περιπατῶν*** ἐπὶ τὴν θάλασσαν.****</p>
+          <p class="greek-summary">그런데 밤 네 번째 파수시간에 예수가 바다 위를 걸어서 제자들에게 왔다.</p>
+          <p class="greek-note">*형.서수.여격 τέταρτος네 번째 **명.여격 φυλακή파수(경계시간) ***분.현.능.주.남단 περιπατέω걷다, 거닐다 ****명.목 θάλασσα바다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">이른 새벽에 예수께서 바다 위로 걸어서 제자들에게로 가셨다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">Shortly before dawn Jesus went out to them, walking on the lake.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And in the fourth watch of the night Jesus went unto them, walking on the sea.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And in the fourth watch of the night he came unto them, walking upon the sea.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:26</span>
+          <p class="greek-text">οἱ δὲ μαθηταὶ ἰδόντες αὐτὸν / ἐπὶ τῆς θαλάσσης περιπατοῦντα / ἐταράχθησαν* / λέγοντες ὅτι Φάντασμά** ἐστιν, / καὶ ἀπὸ τοῦ φόβου*** ἔκραξαν.****</p>
+          <p class="greek-summary">그러자 제자들이 바다 위를 걸어오는 예수를 본 후에 겁에 질려서 ‘저것은 유령이다’라고 말한다. 제자들은 두려움으로 말미암아 소리를 질러댔다.</p>
+          <p class="greek-note">*직.과.수.3복 ταράσσω흔들리다, 겁에 질리다 **명.주 φάντασμα환영, 유령 ***명.속 φόβος두려움 ****직.과.능.3복 κράζω소리치다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">제자들이, 예수께서 바다 위로 걸어오시는 것을 보고, 겁에 질려서 &quot;유령이다!&quot; 하며 두려워서 소리를 질렀다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">When the disciples saw him walking on the lake, they were terrified. &quot;It&#x27;s a ghost,&quot; they said, and cried out in fear.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And when the disciples saw him walking on the sea, they were troubled, saying, It is a spirit; and they cried out for fear.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And when the disciples saw him walking on the sea, they were troubled, saying, It is a ghost; and they cried out for fear.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:27</span>
+          <p class="greek-text">εὐθὺς δὲ ἐλάλησεν αὐτοῖς ὁ Ἰησοῦς / λέγων· / Θαρσεῖτε,* / ἐγώ εἰμι· / μὴ φοβεῖσθε.**</p>
+          <p class="greek-summary">그래서 곧바로 예수가 제자들에게 ‘이렇게’ 말했다. “너희는 안심하라. 나다. 너희는 두려워하지 말라.”</p>
+          <p class="greek-note">*명.현.능.2복 θαρσέω용기를 내다, 담대하다 **명.현.중수(디포).2복 φοβέομαι두려워하다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 곧 그들에게 말씀하셨다. &quot;안심하여라. 나다. 두려워하지 말아라.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">But Jesus immediately said to them: &quot;Take courage! It is I. Don&#x27;t be afraid.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">But straightway Jesus spake unto them, saying, Be of good cheer; it is I; be not afraid.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">But straightway Jesus spake unto them, saying, Be of good cheer; it is I; be not afraid.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:28</span>
+          <p class="greek-text">Ἀποκριθεὶς* δὲ αὐτῷ ὁ Πέτρος εἶπεν· / Κύριε, εἰ σὺ εἶ,** / κέλευσόν*** με ἐλθεῖν πρὸς σὲ ἐπὶ****τὰ ὕδατα· 물위로 (걸어서) 당신에게 오라고</p>
+          <p class="greek-summary">그러자 베드로가 예수에게 응답하여 말했다. “주님, 만일 당신이 주님이라면, 나에게 ‘물위로 (걸어서) 당신에게 오라고 명령하십시오.”</p>
+          <p class="greek-note">*분.과.수(디포).주.남단 ἀποκρίνομαι대답하다, 응답하다 **직.현.능.3단 εἰμί~이다, εἰ σὺ εἶ만일 당신이 ~이라면 ***명.과.능.3단 κελεύω명령하다, 지시하다 ****</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">베드로가 예수께 말하였다. &quot;주님, 주님이시면, 나더러 물 위로 걸어서, 주님께로 오라고 명령하십시오.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">&quot;Lord, if it&#x27;s you,&quot; Peter replied, &quot;tell me to come to you on the water.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And Peter answered him and said, Lord, if it be thou, bid me come unto thee on the water.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And Peter answered him and said, Lord, if it be thou, bid me come unto thee upon the waters.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:29</span>
+          <p class="greek-text">ὁ δὲ εἶπεν· / Ἐλθέ.* / καὶ καταβὰς** ἀπὸ τοῦ πλοίου Πέτρος / περιεπάτησεν*** ἐπὶ τὰ ὕδατα καὶ ἦλθεν****πρὸς τὸν Ἰησοῦν. 그리고 베드로가 예수에게로 갔다</p>
+          <p class="greek-summary">예수가 말했다. “오라.” 그래서 베드로가 배에서 내린 후에 물위를 걸어서 예수에게로 갔다.</p>
+          <p class="greek-note">*명.2과.능.2단 ἔρχομαι오다, 가다 **분.2과.능.주.남단 καταβαίνω내려오다 ***직.과.능.3단 περιπατέω걷다 ****직.2과.능.3단 ἔρχομαι</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 &quot;오너라!&quot; 하고 말씀하셨다. 베드로는 배에서 내려, 물 위로 걸어서, 예수께로 갔다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">&quot;Come,&quot; he said. Then Peter got down out of the boat, walked on the water and came toward Jesus.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And he said, Come. And when Peter was come down out of the ship, he walked on the water, to go to Jesus.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And he said, Come. And Peter went down from the boat, and walked upon the waters to come to Jesus.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:30</span>
+          <p class="greek-text">βλέπων δὲ τὸν ἄνεμον ἰσχυρὸν* ἐφοβήθη,** / καὶ ἀρξάμενος καταποντίζεσθαι*** ἔκραξεν / λέγων· Κύριε, σῶσόν****με. 주님, 나를 구해주십시오</p>
+          <p class="greek-summary">그러나 베드로는 거센 바람을 보고 무서워졌다. 베드로가 물에 빠져 들어가기 시작하면서 ‘이렇게’ 소리쳤다. “주님, 저를 구해주십시오.”</p>
+          <p class="greek-note">*형.목 ἰσχυρός강한, 힘센 **직.과.수(디포).3단 φοβέομαι ***부정사.현.수 가라앉다, 빠지다 ****명.과.능.2단 σῴζω구하다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">그러나 베드로는 거센 바람이 불어오는 것을 보고, 무서움에 사로잡혀서, 물에 빠져 들어가게 되었다. 그 때에 그는 &quot;주님, 살려 주십시오&quot; 하고 외쳤다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">But when he saw the wind, he was afraid and, beginning to sink, cried out, &quot;Lord, save me!&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">But when he saw the wind boisterous, he was afraid; and beginning to sink, he cried, saying, Lord, save me.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">But when he saw the wind, he was afraid; and beginning to sink, he cried out, saying, Lord, save me.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:31</span>
+          <p class="greek-text">εὐθέως δὲ ὁ Ἰησοῦς ἐκτείνας* τὴν χεῖρα / ἐπελάβετο** αὐτοῦ / καὶ λέγει αὐτῷ· Ὀλιγόπιστε,*** εἰς τί****ἐδίστασας;* 믿음이 작은 자여, 너는 무엇 때문에 의심하였느냐</p>
+          <p class="greek-summary">그러자 곧바로 예수가 손을 뻗어서 베드로를 붙잡았다. 예수가 베드로에게 말한다. “믿음이 작은 자여, 그대는 무엇 때문에 의심하였는가?”</p>
+          <p class="greek-note">*분.과.능.주.남단 ἐκτείνω내밀다, 뻗다 **직.2과.중(디포).3단 ἐπιλαμβάνομαι=ἐπί위에서+λαμβάνομαι잡다 ***형(대명사적).호 ὀλιγόπιστος=ὀλίγος작은+πίστις믿음, 신뢰 ****의문대명사.목 τί무엇, 누구 *직.과.능.2단 διστάζω의심하다, 망설이다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">예수께서 곧 손을 내밀어서, 그를 붙잡고 말씀하셨다. &quot;믿음이 적은 사람아, 왜 의심하였느냐?&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">Immediately Jesus reached out his hand and caught him. &quot;You of little faith,&quot; he said, &quot;why did you doubt?&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And immediately Jesus stretched forth his hand, and caught him, and said unto him, O thou of little faith, wherefore didst thou doubt?</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And immediately Jesus stretched forth his hand, and took hold of him, and saith unto him, O thou of little faith, wherefore didst thou doubt?</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:32</span>
+          <p class="greek-text">καὶ ἀναβάντων* αὐτῶν εἰς τὸ πλοῖον / ἐκόπασεν** ὁ ἄνεμος.</p>
+          <p class="greek-summary">그런데 예수와 베드로가 함께 배에 오른 후에 바람이 그쳤다.</p>
+          <p class="greek-note">*분.2과.능.소.남복 ἀναβαίνω올라가다 **직.과.능.3단 κοπάζω그치다, 잠잠하다</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">그리고 그들이 함께 배에 오르니, 바람이 그쳤다.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">And when they climbed into the boat, the wind died down.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">And when they were come into the ship, the wind ceased.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And when they were gone up into the boat, the wind ceased.</span>
+              </div></div>
+        </article>
+        <article class="greek-verse-card">
+          <span class="greek-verse-num">14:33</span>
+          <p class="greek-text">οἱ δὲ ἐν τῷ πλοίῳ προσεκύνησαν* αὐτῷ / λέγοντες· / Ἀληθῶς** θεοῦ υἱὸς*** εἶ.</p>
+          <p class="greek-summary">배 안에 있는 사람들이 예수에게 엎드려 절하며 말했다. “참으로 당신은 하나님의 아들이십니다.”</p>
+          <p class="greek-note">*직.과.능.3복 προσκυνέω엎드려 절하다(경배, 예배하다) **부사 ἀληθῶς참으로, 진실로 ***명.주 υἱὸς아들</p>
+          <div class="trans-block">
+              <div class="trans-row">
+                <span class="trans-label">새번역</span>
+                <span class="trans-text">배 안에 있던 사람들은 그에게 무릎을 꿇고 말하였다. &quot;선생님은 참으로 하나님의 아들이십니다.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">NIV</span>
+                <span class="trans-text">Then those who were in the boat worshiped him, saying, &quot;Truly you are the Son of God.&quot;</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">KJV</span>
+                <span class="trans-text">Then they that were in the ship came and worshipped him, saying, Of a truth thou art the Son of God.</span>
+              </div>
+              <div class="trans-row">
+                <span class="trans-label">ASV</span>
+                <span class="trans-text">And they that were in the boat worshipped him, saying, Of a truth thou art the Son of God.</span>
+              </div></div>
+        </article>
+    <div class="page-nav">
+      <span></span>
+      <button class="pn-btn" onclick="showList()">목차로 돌아가기 ›</button>
+    </div>
+  </div>
+</section>
 
 <button class="fab-toc" id="fabToc" onclick="showList()">↑ 목차로 돌아가기</button>
 <button class="fab-top" id="fabTop" onclick="scrollToTop()" aria-label="맨 위로">↑</button>
@@ -2492,23 +2799,27 @@ body.font-lg .trans-text { font-size: 16px; }
 var currentRate = 1;
 var isSpeaking = false;
 
+function hideAllGreekPanels() {
+  document.querySelectorAll('.greek-panel').forEach(function(p) { p.style.display = 'none'; });
+}
 function showDetail(id) {
   stopVoice();
   document.getElementById('view-list').style.display = 'none';
   document.getElementById('view-detail').style.display = 'block';
-  var gp0 = document.getElementById('greekPanel');
-  if (gp0) gp0.style.display = 'none';
+  hideAllGreekPanels();
   document.querySelectorAll('.detail-panel').forEach(function(p) { p.classList.remove('active'); });
   document.getElementById('detail-' + id).classList.add('active');
   window.scrollTo(0, 0);
   updateFab();
   setTimeout(updateScrollThumb, 50);
 }
-function showGreek() {
+function showGreek(id) {
   stopVoice();
   document.getElementById('view-list').style.display = 'none';
   document.getElementById('view-detail').style.display = 'none';
-  document.getElementById('greekPanel').style.display = 'block';
+  hideAllGreekPanels();
+  var gp = document.getElementById(id);
+  if (gp) gp.style.display = 'block';
   window.scrollTo(0, 0);
   updateFab();
   setTimeout(updateScrollThumb, 50);
@@ -2516,8 +2827,7 @@ function showGreek() {
 function showList() {
   stopVoice();
   document.getElementById('view-detail').style.display = 'none';
-  var gp1 = document.getElementById('greekPanel');
-  if (gp1) gp1.style.display = 'none';
+  hideAllGreekPanels();
   document.getElementById('view-list').style.display = 'block';
   window.scrollTo(0, 0);
   updateFab();
@@ -2529,8 +2839,9 @@ function scrollToTop() {
 function updateFab() {
   var fabToc = document.getElementById('fabToc');
   var fabTop = document.getElementById('fabTop');
-  var gp2 = document.getElementById('greekPanel');
-  var inDetail = document.getElementById('view-detail').style.display === 'block' || (gp2 && gp2.style.display === 'block');
+  var greekOpen = false;
+  document.querySelectorAll('.greek-panel').forEach(function(p) { if (p.style.display === 'block') greekOpen = true; });
+  var inDetail = document.getElementById('view-detail').style.display === 'block' || greekOpen;
   var scrolled = window.scrollY > 300;
   if (inDetail && scrolled) { fabToc.classList.add('show'); } else { fabToc.classList.remove('show'); }
   if (scrolled) { fabTop.classList.add('show'); } else { fabTop.classList.remove('show'); }
