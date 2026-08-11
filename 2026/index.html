@@ -336,13 +336,13 @@ body.font-lg .trans-text { font-size: 16px; }
 }
 
 @media print {
-  .topnav, .fab-toc, .fab-top, .back-btn, .print-btn, .page-nav, #view-list, .reading-toolbar { display:none !important; }
+  .topnav, .fab-toc, .fab-top, .back-btn, .print-btn, .page-nav, #view-list, .reading-toolbar, .sticker-icon, .sticker-row, .scroll-track { display:none !important; }
   #view-detail { display:block !important; }
   .detail-panel { display:none !important; }
   .detail-panel.active { display:block !important; }
   .ghost-num { color:#F0F0F0; }
   body { text-align: justify; }
-  .persp-card { break-inside: avoid; box-shadow:none; }
+  .persp-card, .greek-verse-card { break-inside: avoid; box-shadow:none; }
 }
 </style>
 </head>
@@ -2269,6 +2269,7 @@ body.font-lg .trans-text { font-size: 16px; }
     <div class="ghost-num">GR</div>
     <div class="detail-header-inner">
       <button class="back-btn" onclick="showList()">← 목차</button>
+      <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
       <p class="detail-caption">헬라어 원어 강해</p>
       <h2 class="detail-title">성령강림절 후 열째 주일</h2>
       <p class="detail-scripture">마태복음 14:13-21</p>
@@ -2502,6 +2503,7 @@ body.font-lg .trans-text { font-size: 16px; }
     <div class="ghost-num">GR</div>
     <div class="detail-header-inner">
       <button class="back-btn" onclick="showList()">← 목차</button>
+      <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
       <p class="detail-caption">헬라어 원어 강해</p>
       <h2 class="detail-title">성령강림절 후 열한째 주일</h2>
       <p class="detail-scripture">마태복음 14:22-33</p>
@@ -2805,6 +2807,7 @@ body.font-lg .trans-text { font-size: 16px; }
     <div class="ghost-num">GR</div>
     <div class="detail-header-inner">
       <button class="back-btn" onclick="showList()">← 목차</button>
+      <button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>
       <p class="detail-caption">헬라어 원어 강해</p>
       <h2 class="detail-title">성령강림절 후 열두째 주일</h2>
       <p class="detail-scripture">마태복음 15:21-28</p>
@@ -3154,8 +3157,23 @@ function updateVoiceButton() {
   if (isSpeaking) { btn.textContent = '⏸ 정지'; btn.classList.add('speaking'); }
   else { btn.textContent = '▶ 듣기'; btn.classList.remove('speaking'); }
 }
-function speakParagraph(index) {
-  if (index >= paragraphsQueue.length) { isSpeaking = false; updateVoiceButton(); return; }
+var ttsWatchdog = null;
+function startTtsWatchdog() {
+  stopTtsWatchdog();
+  // Android Chrome/Samsung Internet sometimes silently kills long-running speech.
+  // Nudging pause/resume periodically keeps the engine alive.
+  ttsWatchdog = setInterval(function() {
+    if (window.speechSynthesis && window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
+      window.speechSynthesis.resume();
+    }
+  }, 5000);
+}
+function stopTtsWatchdog() {
+  if (ttsWatchdog) { clearInterval(ttsWatchdog); ttsWatchdog = null; }
+}
+function speakParagraphNow(index) {
+  if (index >= paragraphsQueue.length) { isSpeaking = false; stopTtsWatchdog(); updateVoiceButton(); return; }
   var utter = new SpeechSynthesisUtterance(paragraphsQueue[index]);
   utter.lang = 'ko-KR';
   utter.rate = currentRate;
@@ -3166,23 +3184,57 @@ function speakParagraph(index) {
     currentParaIndex = index + 1;
     speakParagraph(currentParaIndex);
   };
-  utter.onerror = function() { isSpeaking = false; updateVoiceButton(); };
+  utter.onerror = function() {
+    // retry once on Android/Samsung, which sometimes throws a spurious error on the first utterance
+    if (!index && !utter._retried) {
+      utter._retried = true;
+      setTimeout(function() { speakParagraphNow(index); }, 300);
+      return;
+    }
+    isSpeaking = false;
+    stopTtsWatchdog();
+    updateVoiceButton();
+  };
   window.speechSynthesis.speak(utter);
+}
+function speakParagraph(index) {
+  if (index >= paragraphsQueue.length) { isSpeaking = false; stopTtsWatchdog(); updateVoiceButton(); return; }
+  // Small delay avoids a known Android Chrome/Samsung Internet bug where speak()
+  // called right after cancel() (or right after the previous utterance) is dropped silently.
+  window.speechSynthesis.cancel();
+  setTimeout(function() { speakParagraphNow(index); }, 80);
 }
 function speakNow() {
   paragraphsQueue = getActiveParagraphs();
   currentParaIndex = 0;
   if (!paragraphsQueue.length || !window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
   isSpeaking = true;
   updateVoiceButton();
-  speakParagraph(currentParaIndex);
+  function begin() {
+    startTtsWatchdog();
+    speakParagraph(currentParaIndex);
+  }
+  var voices = window.speechSynthesis.getVoices();
+  if (!voices.length) {
+    // Voices haven't loaded yet (common on first use on Android) — wait for them.
+    var fired = false;
+    window.speechSynthesis.onvoiceschanged = function() {
+      if (fired) return;
+      fired = true;
+      begin();
+    };
+    // Fallback in case onvoiceschanged never fires on this device
+    setTimeout(function() { if (!fired) { fired = true; begin(); } }, 600);
+  } else {
+    begin();
+  }
 }
 function toggleVoice() {
   if (isSpeaking) { stopVoice(); } else { speakNow(); }
 }
 function stopVoice() {
   isSpeaking = false;
+  stopTtsWatchdog();
   if (window.speechSynthesis) window.speechSynthesis.cancel();
   updateVoiceButton();
 }
