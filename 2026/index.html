@@ -56,7 +56,7 @@ function renderToc(items) {
     months[mo].forEach(function(it, wk){
       var wkLabel = ORDINAL_WEEK[wk] || ((wk+1) + '번째주');
       var sticker = it.greek_id
-        ? '<a class="sticker-icon" href="greek/detail.html?id=' + encodeURIComponent(it.greek_id) + '" onclick="event.stopPropagation();" title="헬라어 원어 강해 보기">GR</a>'
+        ? '<span class="sticker-icon" onclick="event.stopPropagation(); event.preventDefault(); window.location.href=\'greek/detail.html?id=' + encodeURIComponent(it.greek_id) + '\';" title="헬라어 원어 강해 보기">GR</span>'
         : '';
       html += '<a class="toc-card" href="sermon/detail.html?id=' + encodeURIComponent(it.id) + '">' +
         sticker +
