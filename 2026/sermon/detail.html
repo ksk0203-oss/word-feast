@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>말씀잔치 — 참된평화를만드는사람들</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">2026</span>
+    <span class="brand-name">참된평화를만드는사람들</span>
+  </div>
+  <span class="nav-sub">말씀잔치</span>
+</nav>
+
+<div class="reading-toolbar">
+  <div class="toolbar-group">
+    <span class="toolbar-label">글씨크기</span>
+    <button class="fontsize-btn" data-size="sm" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
+    <button class="fontsize-btn active" data-size="md" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
+    <button class="fontsize-btn" data-size="lg" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+  </div>
+  <div class="toolbar-group">
+    <button class="voice-btn" id="voicePlayBtn" onclick="toggleVoice()">▶ 듣기</button>
+    <span class="toolbar-label">배속</span>
+    <button class="rate-btn active" onclick="setRate(1, this)">1x</button>
+    <button class="rate-btn" onclick="setRate(1.25, this)">1.25x</button>
+    <button class="rate-btn" onclick="setRate(1.5, this)">1.5x</button>
+  </div>
+</div>
+
+<div id="content" data-tts-scope>
+  <div class="detail-header">
+    <div class="detail-header-inner">
+      <p class="detail-caption">불러오는 중…</p>
+    </div>
+  </div>
+</div>
+
+<button class="fab-top" id="fabTop" onclick="scrollToTop()" aria-label="맨 위로">↑</button>
+<div class="scroll-track" id="scrollTrack"><div class="scroll-thumb" id="scrollThumb"></div></div>
+
+<script src="../assets/app.js"></script>
+<script>
+function renderSermon(entry, all) {
+  document.title = entry.date_title + ' — 말씀잔치';
+  var idx = all.findIndex(function(s){ return s.id === entry.id; });
+  var prev = idx > 0 ? all[idx-1] : null;
+  var next = idx < all.length-1 ? all[idx+1] : null;
+
+  var stickerHtml = entry.greek_id
+    ? '<a class="sticker-row" href="../greek/detail.html?id=' + encodeURIComponent(entry.greek_id) + '">' +
+        '<span class="sticker-icon-inline" title="헬라어 원어 강해 보기">GR</span>' +
+        '<span class="sticker-row-label">헬라어 원어 강해 보기</span>' +
+      '</a>'
+    : '';
+
+  var scriptureHtml = entry.scripture_html
+    ? '<article class="scripture-card"><div class="scripture-body">' + entry.scripture_html + '</div></article>' + stickerHtml
+    : '';
+
+  var cardsHtml = '';
+  entry.sections.forEach(function(s){
+    cardsHtml += '<article class="persp-card">' +
+      '<span class="persp-badge">' + esc(s.title) + '</span>' +
+      '<div class="persp-body">' + s.html + '</div>' +
+    '</article>';
+  });
+
+  var navHtml = '<div class="page-nav">';
+  navHtml += prev
+    ? '<a class="pn-btn" href="detail.html?id=' + encodeURIComponent(prev.id) + '">‹ 이전 주일</a>'
+    : '<span></span>';
+  navHtml += next
+    ? '<a class="pn-btn" href="detail.html?id=' + encodeURIComponent(next.id) + '">다음 주일 ›</a>'
+    : '<a class="pn-btn" href="../index.html">목차로 돌아가기 ›</a>';
+  navHtml += '</div>';
+
+  document.getElementById('content').innerHTML =
+    '<div class="detail-header">' +
+      '<div class="ghost-num">' + esc(entry.month) + '</div>' +
+      '<div class="detail-header-inner">' +
+        '<a class="back-btn" href="../index.html">← 목차</a>' +
+        '<button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>' +
+        '<p class="detail-caption">' + esc(entry.caption) + '</p>' +
+        '<h2 class="detail-title">' + esc(entry.date_title) + '</h2>' +
+        '<p class="detail-scripture">' + esc(entry.scripture) + '</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="detail-body">' + scriptureHtml + cardsHtml + navHtml + '</div>';
+
+  updateScrollThumb();
+}
+
+var params = new URLSearchParams(window.location.search);
+var id = params.get('id');
+
+fetch('../data/sermons.json')
+  .then(function(r){ return r.json(); })
+  .then(function(all){
+    var entry = all.find(function(s){ return s.id === id; });
+    if (!entry) {
+      document.getElementById('content').innerHTML =
+        '<div class="detail-header"><div class="detail-header-inner">' +
+        '<a class="back-btn" href="../index.html">← 목차</a>' +
+        '<p class="detail-caption">해당 주일을 찾을 수 없습니다.</p>' +
+        '</div></div>';
+      return;
+    }
+    renderSermon(entry, all);
+  })
+  .catch(function(){
+    document.getElementById('content').innerHTML =
+      '<div class="detail-header"><div class="detail-header-inner"><p class="detail-caption">불러오지 못했습니다.</p></div></div>';
+  });
+</script>
+
+</body>
+</html>

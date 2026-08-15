@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>헬라어 원어 강해 — 말씀잔치</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">2026</span>
+    <span class="brand-name">참된평화를만드는사람들</span>
+  </div>
+  <span class="nav-sub">말씀잔치</span>
+</nav>
+
+<div class="reading-toolbar">
+  <div class="toolbar-group">
+    <span class="toolbar-label">글씨크기</span>
+    <button class="fontsize-btn" data-size="sm" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
+    <button class="fontsize-btn active" data-size="md" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
+    <button class="fontsize-btn" data-size="lg" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+  </div>
+</div>
+
+<div id="content" data-tts-scope>
+  <div class="detail-header">
+    <div class="detail-header-inner">
+      <p class="detail-caption">불러오는 중…</p>
+    </div>
+  </div>
+</div>
+
+<button class="fab-top" id="fabTop" onclick="scrollToTop()" aria-label="맨 위로">↑</button>
+<div class="scroll-track" id="scrollTrack"><div class="scroll-thumb" id="scrollThumb"></div></div>
+
+<script src="../assets/app.js"></script>
+<script>
+var TRANS_ORDER = ["새번역", "NIV", "KJV", "ASV"];
+
+function renderGreek(entry) {
+  document.title = '헬라어 원어 강해 · ' + entry.scripture + ' — 말씀잔치';
+
+  var cardsHtml = '';
+  entry.verses.forEach(function(v){
+    var noteHtml = v.note ? '<p class="greek-note">' + esc(v.note) + '</p>' : '';
+    var transHtml = '';
+    if (v.translations && v.translations.length) {
+      var byLabel = {};
+      v.translations.forEach(function(t){ byLabel[t.label] = t.text; });
+      var rows = '';
+      TRANS_ORDER.forEach(function(label){
+        if (byLabel[label]) {
+          rows += '<div class="trans-row">' +
+            '<span class="trans-label">' + esc(label) + '</span>' +
+            '<span class="trans-text">' + esc(byLabel[label]) + '</span>' +
+          '</div>';
+        }
+      });
+      transHtml = '<div class="trans-block">' + rows + '</div>';
+    }
+    cardsHtml += '<article class="greek-verse-card">' +
+      '<span class="greek-verse-num">' + esc(v.num) + '</span>' +
+      '<p class="greek-text">' + esc(v.greek) + '</p>' +
+      '<p class="greek-summary">' + esc(v.summary) + '</p>' +
+      noteHtml + transHtml +
+    '</article>';
+  });
+
+  document.getElementById('content').innerHTML =
+    '<div class="detail-header">' +
+      '<div class="ghost-num">GR</div>' +
+      '<div class="detail-header-inner">' +
+        '<a class="back-btn" href="../index.html">← 목차</a>' +
+        '<button class="print-btn" onclick="handlePrint()" title="인쇄하기">🖨 인쇄</button>' +
+        '<p class="detail-caption">헬라어 원어 강해</p>' +
+        '<h2 class="detail-title">' + esc(entry.week) + '</h2>' +
+        '<p class="detail-scripture">' + esc(entry.scripture) + '</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="detail-body">' + cardsHtml +
+      '<div class="page-nav"><span></span><a class="pn-btn" href="../index.html">목차로 돌아가기 ›</a></div>' +
+    '</div>';
+
+  updateScrollThumb();
+}
+
+var params = new URLSearchParams(window.location.search);
+var id = params.get('id');
+
+fetch('../data/greek.json')
+  .then(function(r){ return r.json(); })
+  .then(function(all){
+    var entry = all.find(function(g){ return g.id === id; });
+    if (!entry) {
+      document.getElementById('content').innerHTML =
+        '<div class="detail-header"><div class="detail-header-inner">' +
+        '<a class="back-btn" href="../index.html">← 목차</a>' +
+        '<p class="detail-caption">해당 강해를 찾을 수 없습니다.</p>' +
+        '</div></div>';
+      return;
+    }
+    renderGreek(entry);
+  })
+  .catch(function(){
+    document.getElementById('content').innerHTML =
+      '<div class="detail-header"><div class="detail-header-inner"><p class="detail-caption">불러오지 못했습니다.</p></div></div>';
+  });
+</script>
+
+</body>
+</html>

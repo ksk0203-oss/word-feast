@@ -1,0 +1,146 @@
+[
+  {
+    "id": "01",
+    "month": "8",
+    "week_label": "첫번째주",
+    "date": "2026.8.2",
+    "scripture": "마태복음 14:13-21",
+    "greek_id": "greek-0802"
+  },
+  {
+    "id": "02",
+    "month": "8",
+    "week_label": "두번째주",
+    "date": "2026.8.9",
+    "scripture": "마태복음 14:22-33",
+    "greek_id": "greek-0809"
+  },
+  {
+    "id": "03",
+    "month": "8",
+    "week_label": "세번째주",
+    "date": "2026.8.16",
+    "scripture": "마태복음 15:10-20, 21-28",
+    "greek_id": "greek-0816"
+  },
+  {
+    "id": "04",
+    "month": "8",
+    "week_label": "네번째주",
+    "date": "2026.8.23",
+    "scripture": "마태복음 16:13-20",
+    "greek_id": "greek-0823"
+  },
+  {
+    "id": "05",
+    "month": "8",
+    "week_label": "다섯번째주",
+    "date": "2026.8.30",
+    "scripture": "마태복음 16:21-28",
+    "greek_id": null
+  },
+  {
+    "id": "06",
+    "month": "9",
+    "week_label": "첫번째주",
+    "date": "2026.9.6",
+    "scripture": "마태복음 18:15-20",
+    "greek_id": null
+  },
+  {
+    "id": "07",
+    "month": "9",
+    "week_label": "두번째주",
+    "date": "2026.9.13",
+    "scripture": "마태복음 18:21-35",
+    "greek_id": null
+  },
+  {
+    "id": "08",
+    "month": "9",
+    "week_label": "세번째주",
+    "date": "2026.9.20",
+    "scripture": "마태복음 20:1-16",
+    "greek_id": null
+  },
+  {
+    "id": "09",
+    "month": "9",
+    "week_label": "네번째주",
+    "date": "2026.9.27",
+    "scripture": "마태복음 21:23-32",
+    "greek_id": null
+  },
+  {
+    "id": "10",
+    "month": "10",
+    "week_label": "첫번째주",
+    "date": "2026.10.4",
+    "scripture": "마태복음 21:33-46",
+    "greek_id": null
+  },
+  {
+    "id": "11",
+    "month": "10",
+    "week_label": "두번째주",
+    "date": "2026.10.11",
+    "scripture": "마태복음 22:1-14",
+    "greek_id": null
+  },
+  {
+    "id": "12",
+    "month": "10",
+    "week_label": "세번째주",
+    "date": "2026.10.18",
+    "scripture": "마태복음 22:15-22",
+    "greek_id": null
+  },
+  {
+    "id": "13",
+    "month": "10",
+    "week_label": "네번째주",
+    "date": "2026.10.25",
+    "scripture": "마태복음 22:34-46",
+    "greek_id": null
+  },
+  {
+    "id": "14",
+    "month": "11",
+    "week_label": "첫번째주",
+    "date": "2026.11.1",
+    "scripture": "마태복음 23:1-12",
+    "greek_id": null
+  },
+  {
+    "id": "15",
+    "month": "11",
+    "week_label": "두번째주",
+    "date": "2026.11.8",
+    "scripture": "마태복음 25:1-13",
+    "greek_id": null
+  },
+  {
+    "id": "16",
+    "month": "11",
+    "week_label": "세번째주",
+    "date": "2026.11.15",
+    "scripture": "마태복음 25:14-30",
+    "greek_id": null
+  },
+  {
+    "id": "17",
+    "month": "11",
+    "week_label": "네번째주",
+    "date": "2026.11.22",
+    "scripture": "마태복음 25:31-46",
+    "greek_id": null
+  },
+  {
+    "id": "18",
+    "month": "11",
+    "week_label": "다섯번째주",
+    "date": "2026.11.29",
+    "scripture": "마태복음 24:36-44",
+    "greek_id": null
+  }
+]
