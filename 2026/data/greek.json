@@ -914,5 +914,156 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-0906",
+    "week": "성령강림절 후 열다섯째 주일",
+    "scripture": "마태복음 18:15-20",
+    "verses": [
+      {
+        "num": "18:15",
+        "greek": "Ἐὰν δὲ ἁμαρτήσῃ* εἰς σὲ ὁ ἀδελφός σου, / ὕπαγε ἔλεγξον** αὐτὸν / μεταξὺ***σοῦ καὶ αὐτοῦ μόνου.**** ἐάν σου ἀκούσῃ, ἐκέρδησας* τὸν ἀδελφόν σου·",
+        "summary": "만약, 네 형제가 너에게 잘못을 저지른다면, 너는 가서 ‘너와 그 형제 사이에서 따로’ 그를 꾸짖어라. 만역 그가 너의 말을 듣는다면, 너는 네 형제를 되찾은 것이다.",
+        "note": "*가.과.능.3단 ἁμαρτάνω잘못하다, 죄를 짓다 **명.과.능.2단 ἐλέγχω지적하다, 꾸짖다 ***전치사 μεταξὺ둘 사이에서 ****형용사 μόνος홀로, 유일한 *직.과.능.2단 κερδαίνω이익을 얻다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "네 형제가 [너에게] 죄를 짓거든, 가서, 단 둘이 있는 자리에서 그에게 충고하여라. 그가 너의 말을 들으면, 너는 그 형제를 얻은 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"If your brother or sister sins, go and point out their fault, just between the two of you. If they listen to you, you have won them over."
+          },
+          {
+            "label": "KJV",
+            "text": "Moreover if thy brother shall trespass against thee, go and tell him his fault between thee and him alone: if he shall hear thee, thou hast gained thy brother."
+          },
+          {
+            "label": "ASV",
+            "text": "And if thy brother sin against thee, go, show him his fault between thee and him alone: if he hear thee, thou hast gained thy brother."
+          }
+        ]
+      },
+      {
+        "num": "18:16",
+        "greek": "ἐὰν δὲ μὴ ἀκούσῃ, / παράλαβε* μετὰ σοῦ ἔτι** ἕνα ἢ δύο, / ἵνα ἐπὶ στόματος δύο ἢ τριῶν μαρτύρων*** σταθῇ****πᾶν ῥῆμα·*",
+        "summary": "그러나 만약 그가 듣지 않는다면, 너는 ‘두세 사람 증인들의 입으로 모든 말이 확증되게 하기 위하여’ 너와 함께 한 두 사람을 더 데리고 가라.",
+        "note": "*명.2과.능.2단 παραλαμβάνω=παρά곁으로+λαμβάνω받다, 취하다 **부사 ἔτι더 ***명.소.남복 μάρτυς증인 ****가.과.수.3단 ἵνα+가정법, ἵστημι세우다 *명.주.중성단수 ῥῆμα말",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 듣지 않거든, 한두 사람을 더 데리고 가거라. 그가 하는 모든 말을, 두세 증인의 입을 빌어서 확정지으려는 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "But if they will not listen, take one or two others along, so that 'every matter may be established by the testimony of two or three witnesses.'"
+          },
+          {
+            "label": "KJV",
+            "text": "But if he will not hear thee, then take with thee one or two more, that in the mouth of two or three witnesses every word may be established."
+          },
+          {
+            "label": "ASV",
+            "text": "But if he hear thee not, take with thee one or two more, that at the mouth of two witnesses or three every word may be established."
+          }
+        ]
+      },
+      {
+        "num": "18:17",
+        "greek": "ἐὰν δὲ παρακούσῃ* αὐτῶν, / εἰπὸν τῇ ἐκκλησίᾳ· / ἐὰν δὲ καὶ τῆς ἐκκλησίας** παρακούσῃ, ἔστω*** σοι ὥσπερ****ὁ ἐθνικὸς* καὶ ὁ τελώνης.",
+        "summary": "그럼에도 만일 그가 그들의 말을 흘려듣는다면, 너는 교회에 말하라. 그래서 만약 그가 교회의 말마저도 흘려듣는다면, 그 사람은 너에게 ‘이방인과 세리 같다’고 여겨라",
+        "note": "*가.과.능.3단 παρακούω=παρά곁에서(흘려)+ἀκούω듣다 **명.소.여단 ἐκκλησία교회 ***명.현.능.3단 εἰμί이다, 되다 ****종속접속사 ὥσπερ~처럼, ~와 같이 *형(대명사적).주.남단 ἐθνικὸς이방인",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 그 형제가 그들의 말도 듣지 않거든, 교회에 말하여라. 교회의 말조차 듣지 않거든, 그를 이방 사람이나 세리와 같이 여겨라."
+          },
+          {
+            "label": "NIV",
+            "text": "If they still refuse to listen, tell it to the church; and if they refuse to listen even to the church, treat them as you would a pagan or a tax collector."
+          },
+          {
+            "label": "KJV",
+            "text": "And if he shall neglect to hear them, tell it unto the church: but if he neglect to hear the church, let him be unto thee as an heathen man and a publican."
+          },
+          {
+            "label": "ASV",
+            "text": "And if he refuse to hear them, tell it unto the church: and if he refuse to hear the church also, let him be unto thee as the Gentile and the publican."
+          }
+        ]
+      },
+      {
+        "num": "18:18",
+        "greek": "ἀμὴν λέγω ὑμῖν, / ἐὰν ὅσα* δήσητε** ἐπὶ τῆς γῆς / ἔσται*** δεδεμένα****ἐν οὐρανῷ καὶ ἐὰν ὅσα λύσητε ἐπὶ τῆς γῆς ἔσται λελυμένα* ⸁ἐν οὐρανῷ.",
+        "summary": "아멘, 내가 너희에게 말한다. 만약 무엇이든 너희가 땅위에서 묶는다면, 그것이 하늘에서 이미 묶여 있을 것이다. 또 만약 무엇이든 너희가 땅위에서 풀면, 그것이 하늘에서 이미 풀려있을 것이다.",
+        "note": "*관계대명사.목 ὅς무엇이든지 **가.과.능.2복 δέω묶다 ***직.미.중(디포).3단 εἰμί ****분.현완.수.주.중복 δέω묶다 *분.현완.수.주.중복 λύω풀다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "내가 진정으로 너희에게 말한다. 무엇이든지, 너희가 땅에서 매는 것은 하늘에서도 매일 것이요, 땅에서 푸는 것은 하늘에서도 풀릴 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"Truly I tell you, whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven."
+          },
+          {
+            "label": "KJV",
+            "text": "Verily I say unto you, Whatsoever ye shall bind on earth shall be bound in heaven: and whatsoever ye shall loose on earth shall be loosed in heaven."
+          },
+          {
+            "label": "ASV",
+            "text": "Verily I say unto you, what things soever ye shall bind on earth shall be bound in heaven; and what things soever ye shall loose on earth shall be loosed in heaven."
+          }
+        ]
+      },
+      {
+        "num": "18:19",
+        "greek": "ἀμὴν Πάλιν λέγω ὑμῖν / ὅτι ἐὰν δύο ἐξ ὑμῶν* συμφωνήσωσιν** ἐπὶ τῆς γῆς περὶ παντὸς πράγματος*** / οὗ ἐὰν αἰτήσωνται,**** / γενήσεται* αὐτοῖς παρὰ** τοῦ πατρός μου τοῦ ἐν οὐρανοῖς.",
+        "summary": "아멘, 내가 다시 너희에게 말한다. 만약 너의 가운데로부터 두 사람이 땅위에서 모든 일에 관하여 함께 뜻을 모아 무엇이든 구하면, 그 일이 하늘에 계신 나의 아버지로부터 그들에게 이루어질 것이다.",
+        "note": "*인칭대명사.속.2복 ἐξ~부터+ὑμῶν **가.과.능.3복 σύν함께+φωνέω목소리를 내다 ***명.소.중성단수 πρᾶγμα일, 사건 ****가.과.중.3복 αἰτέω구하다, 요청하다 *직.미.중(디포)3단  γίνομαι되다, 이루다 **전치사 παρὰ+속격~부터, 함께",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "내가 [진정으로] 거듭 너희에게 말한다. 땅에서 너희 가운데 두 사람이 합심하여 무슨 일이든지 구하면, 하늘에 계신 내 아버지께서 그들에게 이루어 주실 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"Again, truly I tell you that if two of you on earth agree about anything they ask for, it will be done for them by my Father in heaven."
+          },
+          {
+            "label": "KJV",
+            "text": "Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven."
+          },
+          {
+            "label": "ASV",
+            "text": "Again I say unto you, that if two of you shall agree on earth as touching anything that they shall ask, it shall be done for them of my Father who is in heaven."
+          }
+        ]
+      },
+      {
+        "num": "18:20",
+        "greek": "οὗ* γάρ εἰσιν συνηγμένοι** δύο ἢ τρεῖς εἰς τὸ ἐμὸν ὄνομα,***/ ἐκεῖ εἰμι ἐν μέσῳ****αὐτῶν.",
+        "summary": "왜냐하면 두세 사람이라도 내 이름 안에서 함께 모이는 곳, 그곳에서 내가 그들 가운데 있기 때문이다.",
+        "note": "*종속접속사(관계대명사) ὅς그곳 **분.현완.수.남복 συνάγω=συν함께+ἄγω이끌다 ***명.목 ὄνομα이름 ****형(대명사적).여격 μέσος가운데",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "두세 사람이 내 이름으로 모여 있는 자리, 거기에 내가 그들 가운데 있다."
+          },
+          {
+            "label": "NIV",
+            "text": "For where two or three gather in my name, there am I with them.\""
+          },
+          {
+            "label": "KJV",
+            "text": "For where two or three are gathered together in my name, there am I in the midst of them."
+          },
+          {
+            "label": "ASV",
+            "text": "For where two or three are gathered together in my name, there am I in the midst of them."
+          }
+        ]
+      }
+    ]
   }
 ]
