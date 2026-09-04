@@ -58,8 +58,17 @@
 <script>
 var TRANS_ORDER = ["새번역", "NIV", "KJV", "ASV"];
 
-function renderGreek(entry) {
+// sermonId: 이 원어 강해와 연결된 주일 설교(본문) id. 없으면 링크 생략.
+function renderGreek(entry, sermonId) {
   document.title = '헬라어 원어 강해 · ' + entry.scripture + ' — 말씀잔치';
+
+  var sermonHref = sermonId ? '../sermon/detail.html?id=' + encodeURIComponent(sermonId) : '';
+  var topLinkHtml = sermonId
+    ? '<a class="sticker-row" href="' + sermonHref + '">' +
+        '<span class="sticker-icon-inline" title="이 주일 본문(설교) 보기">📖</span>' +
+        '<span class="sticker-row-label">이 주일 본문(설교)으로 돌아가기</span>' +
+      '</a>'
+    : '';
 
   var cardsHtml = '';
   entry.verses.forEach(function(v){
@@ -87,6 +96,10 @@ function renderGreek(entry) {
     '</article>';
   });
 
+  var navLeft = sermonId
+    ? '<a class="pn-btn" href="' + sermonHref + '">‹ 본문으로</a>'
+    : '<span></span>';
+
   document.getElementById('content').innerHTML =
     '<div class="detail-header">' +
       '<div class="ghost-num">GR</div>' +
@@ -98,8 +111,8 @@ function renderGreek(entry) {
         '<p class="detail-scripture">' + esc(entry.scripture) + '</p>' +
       '</div>' +
     '</div>' +
-    '<div class="detail-body">' + cardsHtml +
-      '<div class="page-nav"><span></span><a class="pn-btn" href="../index.html">목차로 돌아가기 ›</a></div>' +
+    '<div class="detail-body">' + topLinkHtml + cardsHtml +
+      '<div class="page-nav">' + navLeft + '<a class="pn-btn" href="../index.html">목차로 돌아가기 ›</a></div>' +
     '</div>';
 
   updateScrollThumb();
@@ -108,9 +121,14 @@ function renderGreek(entry) {
 var params = new URLSearchParams(window.location.search);
 var id = params.get('id');
 
-fetch('../data/greek.json')
-  .then(function(r){ return r.json(); })
-  .then(function(all){
+// 원어 강해(greek.json)와 목차(toc.json)를 함께 읽어, 이 강해에 연결된
+// 주일 설교 id를 찾아 본문으로 돌아가는 링크를 만든다.
+Promise.all([
+  fetch('../data/greek.json').then(function(r){ return r.json(); }),
+  fetch('../data/toc.json').then(function(r){ return r.json(); }).catch(function(){ return []; })
+])
+  .then(function(res){
+    var all = res[0], toc = res[1] || [];
     var entry = all.find(function(g){ return g.id === id; });
     if (!entry) {
       document.getElementById('content').innerHTML =
@@ -120,7 +138,8 @@ fetch('../data/greek.json')
         '</div></div>';
       return;
     }
-    renderGreek(entry);
+    var tocEntry = toc.find(function(t){ return t.greek_id === id; });
+    renderGreek(entry, tocEntry ? tocEntry.id : null);
   })
   .catch(function(){
     document.getElementById('content').innerHTML =
