@@ -1065,5 +1065,372 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-0913",
+    "week": "성령강림절 후 열여섯째 주일",
+    "scripture": "마태복음 18:21-35",
+    "verses": [
+      {
+        "num": "18:21",
+        "greek": "Τότε προσελθὼν* ὁ Πέτρος εἶπεν· αὐτῷ / Κύριε, ποσάκις** / ἁμαρτήσει*** εἰς ἐμὲ ὁ ἀδελφός μου καὶ ἀφήσω****αὐτῷ; ἕως ἑπτάκις*;",
+        "summary": "그때 베드로가 예수에게 와서 말했다. “주님, 제 형제가 저를 거슬러 죄를 지으면, 제가 몇 번이나 그를 용서해야 할까요? 일곱 번까지 할까요?”",
+        "note": "*분.2과.능.주.남단 προσέρχομαι가까이 오다(가다) **의문부사 ποσάκις몇 번이나? ***직.미래.능.3단 ἁμαρτάνω죄를 짓다, ἁμαρτάνω+εἰς +사람(거스르다, 잘못하다) ****직.미래.능.1단 ἀφίημι+여격(내가 그를 용서 하겠다) *부사 ἑπτάκις일곱 번",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그 때에 베드로가 예수께 다가와서 말하였다. \"주님, 내 형제가 나에게 자꾸 죄를 지으면, 내가 몇 번이나 용서하여 주어야 합니까? 일곱 번까지 하여야 합니까?\""
+          },
+          {
+            "label": "NIV",
+            "text": "Then Peter came to Jesus and asked, \"Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times?\""
+          },
+          {
+            "label": "KJV",
+            "text": "Then came Peter to him, and said, Lord, how oft shall my brother sin against me, and I forgive him? till seven times?"
+          },
+          {
+            "label": "ASV",
+            "text": "Then came Peter and said to him, Lord, how oft shall my brother sin against me, and I forgive him? until seven times?"
+          }
+        ]
+      },
+      {
+        "num": "18:22",
+        "greek": "λέγει αὐτῷ ὁ Ἰησοῦς· / Οὐ* λέγω σοι ἕως ἑπτάκις ἀλλὰ** ἕως ἑβδομηκοντάκις*** / ἑπτά.****",
+        "summary": "예수가 베드로에게 말한다. “나는 그대에게 일곱 번까지라고 말하지 않겠다. 오히려 일곱 번의 일흔 번 까지라고 말한다.”",
+        "note": "*부정부사 Οὐ+λέγω(말하지 않는다) **접속사 οὐ A, ἀλλὰ B ~하지 않고 오히려 ~하다 ***부사 ἑβδομήκοντα일흔(70)-κις차례(번) ****형(대명사적).수(기수).소 ἑπτά일곱의",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "예수께서 대답하셨다. \"일곱 번만이 아니라, 일흔 번을 일곱 번이라도 하여야 한다."
+          },
+          {
+            "label": "NIV",
+            "text": "Jesus answered, \"I tell you, not seven times, but seventy-seven times."
+          },
+          {
+            "label": "KJV",
+            "text": "Jesus saith unto him, I say not unto thee, Until seven times: but, Until seventy times seven."
+          },
+          {
+            "label": "ASV",
+            "text": "Jesus saith unto him, I say not unto thee, Until seven times; but, Until seventy times seven."
+          }
+        ]
+      },
+      {
+        "num": "18:23",
+        "greek": "Διὰ* τοῦτο / ὡμοιώθη** / ἡ βασιλεία*** τῶν οὐρανῶν / ἀνθρώπῳ βασιλεῖ**** ὃς ἠθέλησεν* συνᾶραι** λόγον*** / μετὰ*** τῶν δούλων αὐτοῦ·",
+        "summary": "이렇기 때문에 하늘나라는 자기 종들과 함께 셈을 결산하려고 작정한 어떤 왕의 경우와 같게 되고 말았다.",
+        "note": "*전치사 διὰ+대격 ~때문에 **직.과.수.3단 ὁμοιόω~와 같게 하다 ***명.주 βασιλεία나라(왕권, 통치) ****명.여격 βασιλεύς왕 *직.과.능.3단 θέλω원하다, ~하고자 하다 **부.과.능 συναίρω=σύν함께+αἴρω들어 올리다 ***명.목 λόγος셈(장부) ****전치사 μετὰ+속격 ~과 함께 ※ὡμοιώθη~과 같게 되었다 / ὁμοία ἐστίν~과 같다 / ὁμοιώσω~과 같다고 할까?",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러므로, 하늘 나라는 마치 자기 종들과 셈을 가리려고 하는 어떤 왕과 같다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"Therefore, the kingdom of heaven is like a king who wanted to settle accounts with his servants."
+          },
+          {
+            "label": "KJV",
+            "text": "Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants."
+          },
+          {
+            "label": "ASV",
+            "text": "Therefore is the kingdom of heaven likened unto a certain king, who would make a reckoning with his servants."
+          }
+        ]
+      },
+      {
+        "num": "18:24",
+        "greek": "ἀρξαμένου* δὲ αὐτοῦ συναίρειν** / προσηνέχθη*** αὐτῷ / εἷς ὀφειλέτης****μυρίων* ταλάντων.",
+        "summary": "그 왕이 결산하기를 시작하자 만 달란트 빚진 종 한명이 왕에게 끌려왔다.",
+        "note": "*분.과.중.소.남단(속격분사+속격주어) ἄρχομαι시작하다 **부.현.능 συναίρω함께 결산하다 ***직.과.수.3단 πρός~에게로+φέρω데려오다, 가져오다 ****형.주.남단 ὀφειλέτης빚진 사람 *형.기수.속.중복 μυρίων일만의",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "왕이 셈을 가리기 시작하니, 만 달란트 빚진 종 하나가 왕 앞에 끌려왔다."
+          },
+          {
+            "label": "NIV",
+            "text": "As he began the settlement, a man who owed him ten thousand bags of gold was brought to him."
+          },
+          {
+            "label": "KJV",
+            "text": "And when he had begun to reckon, one was brought unto him, which owed him ten thousand talents."
+          },
+          {
+            "label": "ASV",
+            "text": "And when he had begun to reckon, one was brought unto him, that owed him ten thousand talents."
+          }
+        ]
+      },
+      {
+        "num": "18:25",
+        "greek": "μὴ δὲ ἔχοντος* αὐτοῦ ἀποδοῦναι** / ἐκέλευσεν*** ὁ κύριος πραθῆναι**** / αὐτὸν καὶ τὴν γυναῖκα καὶ τὰ τέκνα καὶ πάντα ὅσα* ἔχει** / καὶ ἀποδοθῆναι.***",
+        "summary": "그러나 그 종이 갚을 것을 가지고 있지 않았다. 주인이 ‘그 종 자신과 아내와 자녀들과 그가 가지고 있는 모든 것들을 팔아서 빚을 갚으라고’ 명령했다.",
+        "note": "*분.현.능.소.남단(속격분사+속격주어) ἔχω가지다 **부.2과.능 ἀποδίδωμι=ἀπό~로부터+δίδωμι주다 ***직.과.능.3단 κελεύω명령하다 ****부.과.수 πιπράσκω팔다 *관계대명사.목.중복 ὅσος얼마나 많은 **직.현.능.3단 ἔχω가지다 ***부.과.수 ἀποδίδωμι갚다, 돌려주다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그런데 그는 빚을 갚을 돈이 없으므로, 주인은 그 종에게, 자신과 그 아내와 자녀들과 그 밖에 그가 가진 것을 모두 팔아서 갚으라고 명령하였다."
+          },
+          {
+            "label": "NIV",
+            "text": "Since he was not able to pay, the master ordered that he and his wife and his children and all that he had be sold to repay the debt."
+          },
+          {
+            "label": "KJV",
+            "text": "But forasmuch as he had not to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made."
+          },
+          {
+            "label": "ASV",
+            "text": "But forasmuch as he had not wherewith to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made."
+          }
+        ]
+      },
+      {
+        "num": "18:26",
+        "greek": "πεσὼν* οὖν ὁ δοῦλος προσεκύνει**αὐτῷ λέγων·***/Μακροθύμησον****ἐπ’ ἐμοί, / καὶ πάντα ἀποδώσω* σοι.",
+        "summary": "그러므로 그 종이 엎드려 왕에게 절하며 부르짖는다. “저를 참아주소서. 그러면 제가 당신께 빚을 갚겠습니다.”",
+        "note": "*분.2과.능.주.남단 πίπτω떨어지다, 고꾸라지다 **직.미완.능.3단 πρός~에게+κυνέω입맞추다 ***분.현.주.남단 λέγω말하다 ****명.과.능.2단 μακροθυμέω오래 참다, 관용을 베풀다 *직.미.능.1단 ἀποδίδωμι갚다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그랬더니 종이 그 앞에 무릎을 꿇고, '참아 주십시오. 다 갚겠습니다' 하고 애원하였다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"The servant fell on his knees before him. 'Be patient with me,' he begged, 'and I will pay back everything.'"
+          },
+          {
+            "label": "KJV",
+            "text": "The servant therefore fell down, and worshipped him, saying, Lord, have patience with me, and I will pay thee all."
+          },
+          {
+            "label": "ASV",
+            "text": "The servant therefore fell down and worshipped him, saying, Lord, have patience with me, and I will pay thee all."
+          }
+        ]
+      },
+      {
+        "num": "18:27",
+        "greek": "σπλαγχνισθεὶς* δὲ ὁ κύριος τοῦ δούλου ἐκείνου / ἀπέλυσεν** αὐτόν, / καὶ τὸ δάνειον***ἀφῆκεν****αὐτῷ.",
+        "summary": "그러자 그 종의 주인이 그 종을 불쌍히 여겨, 그를 풀어주고, 그에게서 그 빚을 탕감해(미루어) 주었다.",
+        "note": "*분.과.수(디포).주.남단 σπλαγχνίζομαι불쌍히 여기다 **직.과.능.3단  ἀπολύω=ἀπό~로부터+λύω풀다 ***명.목 δάνειον빚, 빚진 돈 ****직.과.능.3단 ἀφίημι용서(탕감)하다, 내버려두다 ※로마제국의 후원제도(patronage=patronus/cliens), 세금징수청부업자·공공계약(금융)회사(publicani/publicanus) / 서기101년 트라야누스 황제 때 벌어졌던 금융위기(트라야누스 난간)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "주인은 그 종을 가엾게 여겨서, 그를 놓아주고, 빚을 없애 주었다."
+          },
+          {
+            "label": "NIV",
+            "text": "The servant's master took pity on him, canceled the debt and let him go."
+          },
+          {
+            "label": "KJV",
+            "text": "Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt."
+          },
+          {
+            "label": "ASV",
+            "text": "And the lord of that servant, being moved with compassion, released him, and forgave him the debt."
+          }
+        ]
+      },
+      {
+        "num": "18:28",
+        "greek": "ἐξελθὼν δὲ ὁ δοῦλος ἐκεῖνος / εὗρεν* ἕνα τῶν συνδούλων** αὐτοῦ / ὃς ὤφειλεν αὐτῷ ἑκατὸν***δηνάρια, καὶ κρατήσας****αὐτὸν ἔπνιγεν* λέγων· / Ἀπόδος** εἴ*** τι ὀφείλεις.****",
+        "summary": "그러나 그 종은 나가서 ‘자기 동료 종들 가운데서 그에게 백 데나리온 빚진 한 사람’을 찾아냈다. 그리고 그 종이 그 사람을 붙잡아 멱살을 움켜쥐고 윽박지른다. 너는 ‘네가 빚진 것을 모조리’ 갚아라.",
+        "note": "*직.2과.능.3단 εὑρίσκω찾아내다 **명.소.남복 σύν함께하는+δουλος종 ***형.기수.목.중복 ἑκατόν백 ****분.과.능.주.남단 κρατέω붙잡다 *직.미완.능.3단 πνίγω목을 조르다 **명.2과.능.2단 ἀποδίδωμι갚다 ***종속접속사 εἴ τι그것이 무엇이든(모조리) ****직.현.능.2단 ὀφείλω빚지다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 그 종은 나가서, 자기에게 백 데나리온 빚진 동료 하나를 만나자, 붙들어서 멱살을 잡고 말하기를 '내게 빚진 것을 갚아라' 하였다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"But when that servant went out, he found one of his fellow servants who owed him a hundred silver coins. He grabbed him and began to choke him. 'Pay back what you owe me!' he demanded."
+          },
+          {
+            "label": "KJV",
+            "text": "But the same servant went out, and found one of his fellowservants, which owed him an hundred pence: and he laid hands on him, and took him by the throat, saying, Pay me that thou owest."
+          },
+          {
+            "label": "ASV",
+            "text": "But that servant went out, and found one of his fellow-servants, who owed him a hundred shillings: and he laid hold on him, and took him by the throat, saying, Pay what thou owest."
+          }
+        ]
+      },
+      {
+        "num": "18:29",
+        "greek": "πεσὼν οὖν ὁ σύνδουλος* αὐτοῦ παρεκάλει** αὐτὸν λέγων· / Μακροθύμησον ἐπ’ ἐμοί, / καὶ ἀποδώσω σοι.",
+        "summary": "그러므로 그의 동료 종이 엎드려서 그에게 사정사정하며 말한다. “저를 참아주소서. 그러면 제가 당신에게 갚겠습니다.”",
+        "note": "*명.주.남단 σύνδουλος동료 종, 함께하는 종 **직.미완.능.3단 παρακαλέω=παρά가까이+καλέω부르다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그 동료는 엎드려 간청하였다. '참아 주게. 내가 갚겠네.'"
+          },
+          {
+            "label": "NIV",
+            "text": "\"His fellow servant fell to his knees and begged him, 'Be patient with me, and I will pay it back.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And his fellowservant fell down at his feet, and besought him, saying, Have patience with me, and I will pay thee all."
+          },
+          {
+            "label": "ASV",
+            "text": "So his fellow-servant fell down and besought him, saying, Have patience with me, and I will pay thee."
+          }
+        ]
+      },
+      {
+        "num": "18:30",
+        "greek": "ὁ δὲ οὐκ ἤθελεν,* / ἀλλὰ ἀπελθὼν ἔβαλεν** αὐτὸν εἰς φυλακὴν*** ἕως ἀποδῷ τὸ ὀφειλόμενον.****",
+        "summary": "그러나 그 종은 그걸 바라지 않았다. 도리어 그 종은 가서 ‘빚진 것을 갚을 때까지’ 그의 동료 종을 감옥에 집어넣었다.",
+        "note": "*직.과.능.3단 θέλω원하다, 바라다 **직.과.능.3단 βάλλω던지다 ***명.목 φυλακή감옥, 구금 ****분.현.수.목.중성단수 ὀφείλω빚지다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 그는 들어주려 하지 않고, 가서 그 동료를 감옥에 집어넣고, 빚진 돈을 갚을 때까지 갇혀 있게 하였다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"But he refused. Instead, he went off and had the man thrown into prison until he could pay the debt."
+          },
+          {
+            "label": "KJV",
+            "text": "And he would not: but went and cast him into prison, till he should pay the debt."
+          },
+          {
+            "label": "ASV",
+            "text": "And he would not: but went and cast him into prison, till he should pay that which was due."
+          }
+        ]
+      },
+      {
+        "num": "18:31",
+        "greek": "ἰδόντες* οἱ οὖν σύνδουλοι αὐτοῦ τὰ γενόμενα / ἐλυπήθησαν** σφόδρα, καὶ ἐλθόντες διεσάφησαν***τῷ κυρίῳ ἑαυτῶν / πάντα τὰ γενόμενα.*",
+        "summary": "그러므로 그 종의 동료 종들은 일어난 일들을 보고 안 후에 몹시 괴로워했다. 그래서 그들이 가서 자신들의 주인에게 일어난 모든 일들을 낱낱이 밝혔다.",
+        "note": "*분.2과.능.3단 εἴδω=εἶδον보아서+οἶδα알다 **직.과.수.3복 λυπέω슬프게 하다 ***직.과.능.3복 διασαφέω낱낱이 밝히다 ****분.2과.중(디포).목.중복 γίνομαι되다, 일어나다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "다른 종들이 이 광경을 보고, 매우 딱하게 여겨서, 가서 주인에게 그 일을 다 일렀다."
+          },
+          {
+            "label": "NIV",
+            "text": "When the other servants saw what had happened, they were outraged and went and told their master everything that had happened."
+          },
+          {
+            "label": "KJV",
+            "text": "So when his fellowservants saw what was done, they were very sorry, and came and told unto their lord all that was done."
+          },
+          {
+            "label": "ASV",
+            "text": "So when his fellow-servants saw what was done, they were exceeding sorry, and came and told unto their lord all that was done."
+          }
+        ]
+      },
+      {
+        "num": "18:32",
+        "greek": "τότε προσκαλεσάμενος* αὐτὸν ὁ κύριος αὐτοῦ / λέγει αὐτῷ· / Δοῦλε πονηρέ,** πᾶσαν τὴν ὀφειλὴν*** ἐκείνην ἀφῆκά σοι, / ἐπεὶ**** παρεκάλεσάς* με·",
+        "summary": "그 때 그 종의 주인이 그 종을 불러들인 후에 그 종에게 따진다. “악한 종아. 네가 나에게 간청할 때에, 나는 너에게 그 모든 빚을 탕감해(미루어) 주었다.”",
+        "note": "*분.과.중(디포).주.남단 προσκαλέομαι=προσ~에게로+καλέω부르다 **형.호격.남단 πονηρός나쁜, 악한 ***명.목.여단 ὀφειλή빚, 의무 ****종속접속사 ἐπεί~할 때, ~하기 때문에 *분.과.능.2단 παρακαλέω=παρα옆에서+καλέω부르다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러자 주인이 그 종을 불러다 놓고 말하였다. '이 악한 종아, 네가 애원하기에, 나는 너에게 그 빚을 다 없애 주었다."
+          },
+          {
+            "label": "NIV",
+            "text": "Then the master called the servant in. 'You wicked servant,' he said, 'I canceled all that debt of yours because you begged me to."
+          },
+          {
+            "label": "KJV",
+            "text": "Then his lord, after that he had called him, said unto him, O thou wicked servant, I forgave thee all that debt, because thou desiredst me:"
+          },
+          {
+            "label": "ASV",
+            "text": "Then his lord called him unto him, and saith to him, Thou wicked servant, I forgave thee all that debt, because thou besoughtest me:"
+          }
+        ]
+      },
+      {
+        "num": "18:33",
+        "greek": "οὐκ ἔδει* καὶ σὲ ἐλεῆσαι** τὸν σύνδουλόν σου, / ὡς*** κἀγὼ**** σὲ ἠλέησα;",
+        "summary": "“그렇다면 나 스스로도 너에게 자비를 베풀었던 것처럼, 너도 너의 동료 종에게 자비를 베푸는 것이 마땅하지 않았겠느냐?”",
+        "note": "*직.미완.능.3단 δεῖ~하는 것이 마땅하다, 합당하다 **부정사.과.능 ἐλεέω자비를 베풀다, 불쌍히 여기다 ***종속접속사 ὡς~처럼, ~와같이 ****부사+인칭대명사 καὶ+ἐγώ그리고 나도, 나 역시",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "내가 너를 불쌍히 여긴 것처럼, 너도 네 동료를 불쌍히 여겼어야 할 것이 아니냐?'"
+          },
+          {
+            "label": "NIV",
+            "text": "Shouldn't you have had mercy on your fellow servant just as I had on you?'"
+          },
+          {
+            "label": "KJV",
+            "text": "Shouldest not thou also have had compassion on thy fellowservant, even as I had pity on thee?"
+          },
+          {
+            "label": "ASV",
+            "text": "shouldest not thou also have had mercy on thy fellow-servant, even as I had mercy on thee?"
+          }
+        ]
+      },
+      {
+        "num": "18:34",
+        "greek": "καὶ ὀργισθεὶς* ὁ κύριος αὐτοῦ / παρέδωκεν** αὐτὸν τοῖς βασανισταῖς*** ἕως οὗ****ἀποδῷ* πᾶν τὸ ὀφειλόμενον.",
+        "summary": "그리고 그 종의 주인이 화가 치밀어서 ‘빚진 모든 것을 갚을 때까지’ 그 종을 전문추심원들에게 넘겼다.",
+        "note": "*분.과.수(디포).주.남단 ὀργίζομαι화를 내다 **직.과.능.3단 παραδίδωμι=παρά~에게+δίδωμι주다 ***명.여격.남복 βασανιστής고문하는 사람(전문추심원) ****관계대명사 ἕως οὗ~할 때까지 *가.2과.능.3단 ἀποδίδωμι=ἀπο~로부터+δίδωμι주다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "주인이 노하여, 그를 형무소 관리에게 넘겨주고, 빚진 것을 다 갚을 때까지 가두어 두게 하였다."
+          },
+          {
+            "label": "NIV",
+            "text": "In anger his master handed him over to the jailers to be tortured, until he should pay back all he owed."
+          },
+          {
+            "label": "KJV",
+            "text": "And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due unto him."
+          },
+          {
+            "label": "ASV",
+            "text": "And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due."
+          }
+        ]
+      },
+      {
+        "num": "18:35",
+        "greek": "Οὕτως* καὶ ὁ πατήρ μου ὁ οὐράνιος ποιήσει** ὑμῖν / ἐὰν μὴ ἀφῆτε*** ἕκαστος****τῷ ἀδελφῷ αὐτοῦ ἀπὸ τῶν καρδιῶν* ὑμῶν.",
+        "summary": "이와 같이, 만약 너희가 서로 자기 형제를 너희 마음으로부터 용서하지 않는다면, 하늘 나의 아버지도 너희에게 (이렇게) 행할 것이다.",
+        "note": "*부사 οὕτως이와 같이(이렇게) **직.미.능.3단 ποιέω만들다, 행하다 ***가.2과.능.2복 ἀφίημι용서하다 ****형(대명사적).주.남단 ἕκαστος각각, 서로 *명.소.여성복수 καρδία마음, 심장",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "너희가 각각 진심으로 자기 형제자매를 용서해 주지 않으면, 나의 하늘 아버지께서도 너희에게 그와 같이 하실 것이다.\""
+          },
+          {
+            "label": "NIV",
+            "text": "\"This is how my heavenly Father will treat each of you unless you forgive your brother or sister from your heart.\""
+          },
+          {
+            "label": "KJV",
+            "text": "So likewise shall my heavenly Father do also unto you, if ye from your hearts forgive not every one his brother their trespasses."
+          },
+          {
+            "label": "ASV",
+            "text": "So shall also my heavenly Father do unto you, if ye forgive not every one his brother from your hearts."
+          }
+        ]
+      }
+    ]
   }
 ]
