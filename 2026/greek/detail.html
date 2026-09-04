@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>헬라어 원어 강해 — 말씀잔치</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231C1C1C'/><text x='16' y='23' font-size='19' font-weight='700' text-anchor='middle' fill='%23fff' font-family='sans-serif'>말</text></svg>">
+<meta name="description" content="마태복음 본문을 헬라어 원어로 한 절씩 살피고, 새번역·NIV·KJV·ASV 번역과 함께 읽습니다.">
+<link rel="canonical" href="https://ksk0203-oss.github.io/word-feast/2026/greek/detail.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="말씀잔치">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="헬라어 원어 강해 — 말씀잔치">
+<meta property="og:description" content="마태복음 본문을 헬라어 원어로 한 절씩 살피고, 새번역·NIV·KJV·ASV 번역과 함께 읽습니다.">
+<meta property="og:url" content="https://ksk0203-oss.github.io/word-feast/2026/greek/detail.html">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -23,6 +33,13 @@
     <button class="fontsize-btn" data-size="sm" onclick="setFontSize('sm', this)" style="font-size:12px;">가</button>
     <button class="fontsize-btn active" data-size="md" onclick="setFontSize('md', this)" style="font-size:15px;">가</button>
     <button class="fontsize-btn" data-size="lg" onclick="setFontSize('lg', this)" style="font-size:18px;">가</button>
+  </div>
+  <div class="toolbar-group">
+    <button class="voice-btn" id="voicePlayBtn" onclick="toggleVoice()">▶ 듣기</button>
+    <span class="toolbar-label">배속</span>
+    <button class="rate-btn active" onclick="setRate(1, this)">1x</button>
+    <button class="rate-btn" onclick="setRate(1.25, this)">1.25x</button>
+    <button class="rate-btn" onclick="setRate(1.5, this)">1.5x</button>
   </div>
 </div>
 
