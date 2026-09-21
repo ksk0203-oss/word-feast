@@ -1823,5 +1823,252 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-0927",
+    "week": "성령강림절 후 열여덟째 주일",
+    "scripture": "마태복음 21:23-32",
+    "verses": [
+      {
+        "num": "21:23",
+        "greek": "Καὶ ἐλθόντος* αὐτοῦ εἰς τὸ ἱερὸν / προσῆλθον αὐτῷ διδάσκοντι** / οἱ ἀρχιερεῖς καὶ οἱ πρεσβύτεροι*** τοῦ λαοῦ / λέγοντες·**** / Ἐν ποίᾳ* ἐξουσίᾳ** ταῦτα*** ποιεῖς; καὶ τίς**** σοι ἔδωκεν***** τὴν ἐξουσίαν ταύτην;",
+        "summary": "예수가 성전 안으로 들어갔다. 대제사장과 백성(풀뿌리 사람들)의 장로들이 가르치는 예수에게 가까이 와서 묻는다. “당신은 어떤 권한으로 이일들을 하는 거요? 또 누가 당신에게 이 권한을 주었소?”",
+        "note": "*분.2과.능.소.남단(속격절대, 속격독립 절) ἔρχομαι가다, 오다 **분.현.능.여격.남단 διδάσκω가르치다 ***형.대.주.남복 πρεσβύτερος장로, 대제사장들과 백성의 장로들 ****분.현.능.주.남복 λέγω말하다(묻다) *의문형용사 ποῖος어떤, 어떤 종류의 **명.여격 ἐξουσία권위, 권한, 권세 ***지시대명사.목.중복 ταῦτα이일들을 ****의문대명사.주.남단 τίς누가? *****직.과.능.3단 δίδωμι주다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "예수께서 성전에 들어가서 가르치고 계실 때에, 대제사장들과 백성의 장로들이 다가와서 말하기를 '당신은 무슨 권한으로 이런 일을 합니까? 누가 당신에게 이런 권한을 주었습니까?' 하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "예수님이 성전에 들어가셨다. 거기서 가르치고 계실 때 대제사장들과 백성의 원로들이 예수님께 다가와서 따졌다. “당신은 무슨 권리로 이런 일을 하는 것이오? 누가 당신에게 이런 권리를 주었소?”"
+          },
+          {
+            "label": "NIV",
+            "text": "Jesus entered the temple courts, and, while he was teaching, the chief priests and the elders of the people came to him. 'By what authority are you doing these things?' they asked. 'And who gave you this authority?'"
+          },
+          {
+            "label": "KJV",
+            "text": "And when he was come into the temple, the chief priests and the elders of the people came unto him as he was teaching, and said, By what authority doest thou these things? and who gave thee this authority?"
+          }
+        ]
+      },
+      {
+        "num": "21:24",
+        "greek": "ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν αὐτοῖς· / Ἐρωτήσω* ὑμᾶς κἀγὼ** λόγον ἕνα,*** / ἐὰν ὃν εἴπητέ****μοι κἀγὼ ὑμῖν ἐρῶ* / ἐν ποίᾳ ἐξουσίᾳ / ταῦτα ποιῶ·",
+        "summary": "예수가 그들에게 대답하여 말했다. “나도 당신들에게 한 말 묻겠소. 만약 당신들이 나에게 대답(말)한다면, 나도 당신들에게 ‘내가 어떤 권한으로 이일들을 하는지’ 말하겠소.”",
+        "note": "*직.미래.능.1단 ἐρωτάω묻다 **부사 καὶ+ἐγώ나도 ***형.기수.목 εἷς하나 ****가.2과.능.2복 λέγω(불규칙과거εἶπον)말하다 *직.미래.능.1단 λέγω(불규칙미래ἐρῶ)말하다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "예수께서 그들에게 말씀하셨다. '나도 너희에게 한 가지를 물어 보겠다. 너희가 나에게 대답하면, 나도 무슨 권한으로 이런 일을 하는지를 너희에게 말하겠다.'"
+          },
+          {
+            "label": "새한글",
+            "text": "예수님이 그들에게 대답하셨다. “당신들에게 나도 한 말씀 좀 물어보겠소. 당신들이 나에게 대답을 하면, 무슨 권리로 이런 일을 하는지 나도 당신들에게 알려 주겠소."
+          },
+          {
+            "label": "NIV",
+            "text": "Jesus replied, 'I will also ask you one question. If you answer me, I will tell you by what authority I am doing these things.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And Jesus answered and said unto them, I also will ask you one thing, which if ye tell me, I in like wise will tell you by what authority I do these things."
+          }
+        ]
+      },
+      {
+        "num": "21:25",
+        "greek": "τὸ βάπτισμα τὸ Ἰωάννου πόθεν* ἦν; / ἐξ** οὐρανοῦ ἢ ἐξ ἀνθρώπων; οἱ δὲ διελογίζοντο***ἐν ἑαυτοῖς**** / λέγοντες· / Ἐὰν εἴπωμεν·* / Ἐξ οὐρανοῦ, ἐρεῖ ἡμῖν· / οὖν Διὰ τί** οὐκ ἐπιστεύσατε*** αὐτῷ;",
+        "summary": "“요한의 세례는 어디로부터 온 것이오? 하늘로부터 입니까, 아니면 사람들로부터 입니까?” 그러자 그들은 자기들끼리 서로 따지고 논의하며 말한다. “만약 우리가 ‘하늘로부터’라고 말한다면, 그가 우리에게 말할 것이다. 그렇다면 무엇 때문에 당신들은 요한을 믿지 않는 것이오?”",
+        "note": "*의문부사 πόθεν어디에서, 어디로부터 **전치사 ἐξ+속격~부터 ***직.미완.중간태.3복 διαλογίζομαι=δια이리저리+λογίζομαι계산하다, 생각하다 ****재귀대명사.여격.남복 ἑαυτοῦ자기의 *가.2과.능.1복 λέγω(불규칙과거εἶπον)말하다 **의문대명사 διὰ+τί무엇 때문에 ***직.과.능.2복 πιστεύω믿다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "'요한의 세례가 어디서 왔느냐? 하늘에서냐? 사람에게서냐?' 그러자 그들은 자기들끼리 의논하며 말하였다. '하늘에서 왔다'고 말하면 '어찌하여 그를 믿지 않았느냐'고 할 것이요,"
+          },
+          {
+            "label": "새한글",
+            "text": "요한의 세례는 어디서 비롯된 것이오? 하늘에서요, 사람에게서요?” 그들은 자기네끼리 이야기를 주고받으며 말했다. “‘하늘에서 비롯됐다.’라고 대답하면, 그가 우리에게 이렇게 말할 텐데요. ‘그러면 무엇 때문에 요한을 믿지 않았소?’"
+          },
+          {
+            "label": "NIV",
+            "text": "'John's baptism—where did it come from? Was it from heaven, or of human origin?' They discussed it among themselves and said, 'If we say, \"From heaven,\" he will ask, \"Then why didn't you believe him?\"'"
+          },
+          {
+            "label": "KJV",
+            "text": "The baptism of John, whence was it? from heaven, or of men? And they reasoned with themselves, saying, If we shall say, From heaven; he will say unto us, Why did ye not then believe him?"
+          }
+        ]
+      },
+      {
+        "num": "21:26",
+        "greek": "ἐὰν δὲ εἴπωμεν· / Ἐξ* ἀνθρώπων, / φοβούμεθα** τὸν ὄχλον,*** γὰρ πάντες ὡς****προφήτην ἔχουσιν* / τὸν Ἰωάννην.",
+        "summary": "“그러나 만일 우리가 ‘사람들로부터’ 라고 말한다면, 우리는 무리를 두려워해야 할 것이오. 왜냐하면 모든 사람들이 요한을 예언자처럼 여기기기 때문이오.”",
+        "note": "*전치사 Ἐξ~부터+ἀνθρώπων사람 **직.현.중수(디포).1복 φοβέομαι두려워하다 ***명.목 ὄχλος무리(풀뿌리사람들), 군중, 대중 ****종속접속사 ὡς~처럼+προφήτην예언자 *직.현.능.3복 ἔχω가지다(여기다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "또 '사람에게서 왔다'고 하자니, 무리가 무섭소. 그들은 모두 요한을 예언자로 여기니 말이오."
+          },
+          {
+            "label": "새한글",
+            "text": "‘사람에게서 비롯됐다.’라고 대답하자니, 무리가 두렵습니다. 모두가 요한을 예언자로 여기고 있으니까요.”"
+          },
+          {
+            "label": "NIV",
+            "text": "'But if we say, \"Of human origin\"—we are afraid of the people, for they all hold that John was a prophet.'"
+          },
+          {
+            "label": "KJV",
+            "text": "But if we shall say, Of men; we fear the people; for all hold John as a prophet."
+          }
+        ]
+      },
+      {
+        "num": "21:27",
+        "greek": "καὶ ἀποκριθέντες* τῷ Ἰησοῦ εἶπαν· / Οὐκ** οἴδαμεν. / ἔφη*** αὐτοῖς / καὶ****αὐτός· Οὐδὲ* ἐγὼ λέγω ὑμῖν / ἐν** ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.",
+        "summary": "그래서 그들이 예수에게 대답하여 말했다. “우리는 알지 못하오.” 예수 역시 그들에게 말했다. “나도 당신들에게 ‘내가 어떤 권한으로 이일들을 하는지’ 말하지 않겠소.”",
+        "note": "*분.과.수(디포).주.남복 ἀποκρίνομαι=ἀπό~로부터+κρίνω판단하다 **부사 Οὐκ아니다+οἴδαμεν알다 ***직.미완(2과).능.3단 φημί말하다 ****부사 καὶ+αὐτός그도, 그 자신도 *부사 οὐ아니다+δέ그리고 그러나 **전치사 ἐν~으로+ποίᾳ어떤, 무엇",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그래서 그들은 예수께 '모르겠습니다' 하고 대답하였다. 예수께서도 그들에게 말씀하셨다. '나도 내가 무슨 권한으로 이런 일을 하는지를 너희에게 말하지 않겠다.'"
+          },
+          {
+            "label": "새한글",
+            "text": "그래서 그들은 예수님께 대답하기를 “알지 못하오.” 하고 말했다. 예수님도 그들에게 말씀하셨다. “나도 무슨 권리로 이런 일들을 하는지 당신들에게 말하지 않겠소.”"
+          },
+          {
+            "label": "NIV",
+            "text": "So they answered Jesus, 'We don't know.' Then he said, 'Neither will I tell you by what authority I am doing these things.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And they answered Jesus, and said, We cannot tell. And he said unto them, Neither tell I you by what authority I do these things."
+          }
+        ]
+      },
+      {
+        "num": "21:28",
+        "greek": "Τί* δὲ ὑμῖν δοκεῖ;** / ἄνθρωπος εἶχεν*** τέκνα****δύο. / προσελθὼν* τῷ πρώτῳ** εἶπεν· Τέκνον, ὕπαγε σήμερον ἐργάζου*** ἐν τῷ ἀμπελῶνι.****",
+        "summary": "“그런데 당신들은 어떻게 생각하시오? 어떤 사람이 두 아들을 두었소. 그 사람이 첫째에게 다가가서 말했소. 애야, 너는 오늘 포도원으로 가서 일해라.”",
+        "note": "*의문대명사.주.중성단수 τίς어떤, 무엇 **직.현.능.3단 δοκέω생각하다, 여기다, ~처럼 보이다 ***직.미완.능.3단 ἔχω가지다 ****명.목.중복 τέκνον자녀, 아이, 아들 *분.2과.능.주.남단  προσέρχομαι=πρός~을 향하여+ἔρχομαι오다, 가다 **형(대명사적).서수.여격 πρῶτος첫 번째의 ***명.현.중수(디포).2단 ἐργάζομαι일하다 ****명.여격.남단  ἀμπελών포도원",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "너희는 어떻게 생각하느냐? 어떤 사람에게 아들이 둘 있는데, 아버지가 맏아들에게 가서 '얘야, 너 오늘 포도원에 가서 일해라' 하고 말하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "“당신들 생각에는 어떻소? 어떤 사람에게 자식이 둘 있었소. 그 사람이 첫째에게 다가가서 말했소. ‘얘야, 오늘 포도밭에 가서 일하도록 해라.’"
+          },
+          {
+            "label": "NIV",
+            "text": "'What do you think? There was a man who had two sons. He went to the first and said, \"Son, go and work today in the vineyard.\"'"
+          },
+          {
+            "label": "KJV",
+            "text": "But what think ye? A certain man had two sons; and he came to the first, and said, Son, go work to day in my vineyard."
+          }
+        ]
+      },
+      {
+        "num": "21:29",
+        "greek": "ὁ δὲ ἀποκριθεὶς εἶπεν· / Οὐ θέλω·* / ὕστερον** δὲ μεταμεληθεὶς*** ἀπῆλθεν.",
+        "summary": "“첫째가 대답하여 말했소. ‘나는 싫어요.’ 그러나 나중에 첫째가 뉘우친 후에 갔소.”",
+        "note": "*직.현.능.1단 θέλω원하다 **부사(형용사) ὕστερος나중에, 후에 ***분.과.수(디포).주.남단 μεταμέλομαι=μετά뒤에+μέλομαι관심 갖다, 마음에 두다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그런데 맏아들은 '싫습니다!' 하고 말하였다. 그러나 그 뒤에 뉘우치고 일하러 갔다."
+          },
+          {
+            "label": "새한글",
+            "text": "첫째가 ‘그러고 싶지 않아요.’ 하고 대답했소. 하지만 나중에 마음을 바꾸어 일하러 갔소."
+          },
+          {
+            "label": "NIV",
+            "text": "'I will not,' he answered, but later he changed his mind and went."
+          },
+          {
+            "label": "KJV",
+            "text": "He answered and said, I will not: but afterward he repented, and went."
+          }
+        ]
+      },
+      {
+        "num": "21:30",
+        "greek": "προσελθὼν δὲ τῷ δευτέρῳ(ἑτέρῳ)* εἶπεν ὡσαύτως·** / ὁ δὲ ἀποκριθεὶς εἶπεν· / Ἐγώ,*** κύριε·**** καὶ οὐκ* ἀπῆλθεν.",
+        "summary": "“또 그 사람이 둘째에게도 다가가서 똑같이 말했소. 둘째가 대답하여 말했소. ‘제가 가겠습니다, 아버지.’ 그러나 둘째는 가지 않았소.”",
+        "note": "*형(대명사적).서수.여격 δεύτερος둘째의, ἑτέρῳ다른 **부사 ὡσαύτως똑같이, 마찬가지로 ***인칭대명사.주.1단 ἐγώ나 ****명.호 κύριος?(아버지) *부사 οὐκ아니다+ἀπῆλθεν가다, 오다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "아버지가 둘째 아들에게 가서, 같은 말을 하였다. 작은 아들은 '예, 가겠습니다, 아버지!' 하고는 가지 않았다."
+          },
+          {
+            "label": "새한글",
+            "text": "한편 그 사람이 다른 아들에게도 가서 똑같이 말했소. 그 아들은 ‘제가 당연히 가야죠, 주님.’ 하고 대답했소. 그런데 가지 않았소."
+          },
+          {
+            "label": "NIV",
+            "text": "'Then the father went to the other son and said the same thing. He answered, \"I will, sir,\" but he did not go.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And he came to the second, and said likewise. And he answered and said, I go, sir: and went not."
+          }
+        ]
+      },
+      {
+        "num": "21:31",
+        "greek": "τίς ἐκ τῶν δύο ἐποίησεν* τὸ θέλημα** τοῦ πατρός; / λέγουσιν· / Ὁ πρῶτος. / λέγει αὐτοῖς ὁ Ἰησοῦς· Ἀμὴν λέγω ὑμῖν / ὅτι οἱ τελῶναι καὶ αἱ πόρναι*** προάγουσιν****ὑμᾶς / εἰς τὴν βασιλείαν τοῦ θεοῦ.*",
+        "summary": "“그 둘 가운데 누가 아버지의 뜻을 따랐소?” 그들이 말했다. “첫째입니다.” 예수가 그들에게 말한다. “아멘, 내가 당신들에게 ‘세리들과 창녀들이 당신들에 앞서서 하나님의 나라 안으로 들어가리라’고 말하오.",
+        "note": "*직.과.능.3단 ποιέω만들다, 하다 **명.목 θέλημα뜻 ***명.주.(여)복 οἱ τελῶναι καὶ αἱ πόρναι세리들과 창녀들 ****직.현.능.3복 προάγω=προ먼저(앞서서)+ἄγω이끌다 *명.소.남단 τοῦ θεοῦ하나님의 나라 / 하늘나라?",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그런데 이 둘 가운데에 누가 아버지의 뜻대로 하였느냐? 예수께서 이렇게 물으시니, 그들이 '맏아들입니다' 하고 대답하였다. 예수께서 그들에게 말씀하셨다. '내가 진정으로 너희에게 말한다. 세리와 창녀들이 오히려 너희보다 먼저 하나님의 나라에 들어간다."
+          },
+          {
+            "label": "새한글",
+            "text": "이 둘 가운데 누가 아버지의 뜻을 실행했소?” 그들이 대답한다. “첫째입니다.” 예수님이 그들에게 말씀하신다. “아멘 당신들에게 말하오. 세금업자들과 몸 파는 여자들이 당신들보다 앞서 하나님 나라로 들어가고 있소."
+          },
+          {
+            "label": "NIV",
+            "text": "'Which of the two did what his father wanted?' 'The first,' they answered. Jesus said to them, 'Truly I tell you, the tax collectors and the prostitutes are entering the kingdom of God ahead of you.'"
+          },
+          {
+            "label": "KJV",
+            "text": "Whether of them twain did the will of his father? They say unto him, The first. Jesus saith unto them, Verily I say unto you, That the publicans and the harlots go into the kingdom of God before you."
+          }
+        ]
+      },
+      {
+        "num": "21:32",
+        "greek": "ἦλθεν γὰρ Ἰωάννης πρὸς* ὑμᾶς ἐν ὁδῷ δικαιοσύνης,** / καὶ οὐκ ἐπιστεύσατε*** αὐτῷ· οἱ δὲ τελῶναι καὶ αἱ πόρναι ἐπίστευσαν αὐτῷ· / ὑμεῖς δὲ ἰδόντες****οὐδὲ μετεμελήθητε* ὕστερον τοῦ πιστεῦσαι** αὐτῷ.",
+        "summary": "“왜냐하면 요한이 당신들을 향하여 의의 길로 왔기 때문이오. 그러나 당신들이 그를 믿지 않았소. 하지만 세리들과 창녀들은 그를 믿었소. 그런데 당신들이 보아서 안 후에 나중에라도 ‘그를 믿으려고’ 뉘우치지 않았소.”",
+        "note": "*전치사 πρὸς+대격~향하여 **명.소.여단 δικαιοσύνη의(義) ***직.과.능.2복 πιστεύω믿다+(여격)목적어 ****분.2과.능.주.남복 ὁράω/εἴδω=εἶδον보았다+οἶδα알다 *직.과.수(디포).2복 μεταμέλομαι **부정사.과.소 πιστεύω믿다, τοῦ+부정사~하는 것",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "요한이 너희에게 와서, 옳은길을 보여 주었으나, 너희는 그를 믿지 않았다. 그러나, 세리와 창녀들은 믿었다. 너희는 그것을 보고도 끝내 뉘우치지 않았으며, 그를 믿지 않았다."
+          },
+          {
+            "label": "새한글",
+            "text": "요한이 당신들한테 와서 의의 길을 알려 주었지만, 당신들은 요한을 믿지 않았기 때문이오. 하지만 세금업자들과 몸 파는 여자들은 그를 믿었소. 그런데 당신들은 말이오, 그걸 보고서도 나중에라도 마음을 바꾸어 믿지 않았소.”"
+          },
+          {
+            "label": "NIV",
+            "text": "'For John came to you to show you the way of righteousness, and you did not believe him, but the tax collectors and the prostitutes did. And even after you saw this, you did not repent and believe him.'"
+          },
+          {
+            "label": "KJV",
+            "text": "For John came unto you in the way of righteousness, and ye believed him not: but the publicans and the harlots believed him: and ye, when ye had seen it, repented not afterward, that ye might believe him."
+          }
+        ]
+      }
+    ]
   }
 ]
