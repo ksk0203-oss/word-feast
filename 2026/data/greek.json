@@ -2756,5 +2756,204 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-1018",
+    "week": "성령강림절 후 스물한째 주일",
+    "scripture": "마태복음 22:15-22",
+    "verses": [
+      {
+        "num": "22:15",
+        "greek": "Τότε πορευθέντες οἱ Φαρισαῖοι συμβούλιον* ἔλαβον** / ὅπως*** αὐτὸν παγιδεύσωσιν**** ἐν λόγῳ.",
+        "summary": "그때에 바리새파 사람들이 나가서 ‘어떻게든 예수에게 말로 올가미를 씌우려고’ 음모를 꾸몄다.",
+        "note": "*명.목.중단 συμβούλιον회의(회합) **직.2과.능.3복 λαμβάνω받다(취하다) ***접속사(관계부사) ὅπως+가정법~하도록(하기위하여) ****가.과.능.3복 παγιδεύω올가미를 씌우다(덫을 놓아 잡다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그 때에 바리새파 사람들이 나가서, 어떻게 하면 말로 트집을 잡아서 예수를 올무에 걸리게 할까 의논하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "그때에 바리새파 사람들이 가서, 예수님이 하시는 말씀에 덫을 놓으려고 계획을 꾸몄다."
+          },
+          {
+            "label": "NIV",
+            "text": "Then the Pharisees went out and laid plans to trap him in his words."
+          },
+          {
+            "label": "KJV",
+            "text": "Then went the Pharisees, and took counsel how they might entangle him in his talk."
+          }
+        ]
+      },
+      {
+        "num": "22:16",
+        "greek": "καὶ ἀποστέλλουσιν* αὐτῷ τοὺς μαθητὰς αὐτῶν / μετὰ** τῶν Ἡρῳδιανῶν / λέγοντες·*** / Διδάσκαλε, οἴδαμεν**** / ὅτι ἀληθὴς* εἶ / καὶ τὴν ὁδὸν τοῦ θεοῦ** ἐν ἀληθείᾳ διδάσκεις,*** / καὶ οὐ μέλει****σοι περὶ*****οὐδενός, / γὰρ οὐ βλέπεις εἰς πρόσωπον** ἀνθρώπων·",
+        "summary": "바리새파 사람들이 예수에게 ‘헤롯당원들과 함께 그들의 제자들을 보내며’ 말하게 한다. “선생님, 우리는 알고 있습니다. 당신이 진실한 분이라는 것을, 또 하나님의 길(뜻)을 진실하게 가르친다는 것을, 또 누구라도 당신에게 거리끼지 않는 다는 것을. 왜냐하면 당신은 사람의 신분(얼굴)을 보지 않기 때문입니다.”",
+        "note": "*직.현.능.3복 ἀποστέλλω=ἀπο~부터+στέλλω보내다 **전치사 μετὰ+속격~와함께 ***분.현.능.주.남복 λέγω말하다 ****직.현완.능.1복 οἶδα알고 있다(알다) *형.주.남단 ἀληθὴς=ἀ부정 접두어+ λήθη숨김(잊음) **ὁδὸν τοῦ θεοῦ하나님의 길(뜻) ***직.현.능2단 διδάσκω가르치다 ****직.현.능.3단 μέλω관심 갖다(중요하다) *****전치사 περὶ+οὐδενός누구라도(아무라도) **명.목.중단 πρόσωπον얼굴(신분)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그런 다음에, 그들은 자기네 제자들을 헤롯 당원들과 함께 예수께 보내어, 이렇게 묻게 하였다. \"선생님, 우리는, 선생님이 진실한 분이시고, 하나님의 길을 참되게 가르치시며, 아무에게도 매이지 않으시는 줄 압니다. 선생님은 사람의 겉모습을 따지지 않으십니다."
+          },
+          {
+            "label": "새한글",
+            "text": "그들이 자기 제자들을 헤롯당 사람들과 함께 예수님께 보내어 말씀드리게 했다. “선생님, 우리가 알기로 선생님은 참된 분이셔서 하나님의 길을 참되게 가르치시고, 어느 누구의 눈치도 보시지 않습니다. 사람의 겉모습을 봐서 치우치지 않으시니까요."
+          },
+          {
+            "label": "NIV",
+            "text": "They sent their disciples to him along with the Herodians. \"Teacher,\" they said, \"we know that you are a man of integrity and that you teach the way of God in accordance with the truth. You aren't swayed by others, because you pay no attention to who they are."
+          },
+          {
+            "label": "KJV",
+            "text": "And they sent out unto him their disciples with the Herodians, saying, Master, we know that thou art true, and teachest the way of God in truth, neither carest thou for any man: for thou regardest not the person of men."
+          }
+        ]
+      },
+      {
+        "num": "22:17",
+        "greek": "εἰπὸν οὖν ἡμῖν / τί* σοι δοκεῖ·** / ἔξεστιν*** δοῦναι****ἔξεστιν κῆνσον* Καίσαρι ἢ οὔ;",
+        "summary": "“그러므로 당신이 우리에게 ‘어떤 것이 당신에게 합당하다고 생각되는지’ 말씀해 주십시오. 카이사르에게 세금을 바치는 것이 합당합니까 아니면 합당하지 않습니까?”",
+        "note": "*의문대명사.주.중단 τί어떤 것이? **직.현.능.3단 δοκέω+여격~라고 생각하다 ***직.현.능.3단 ἔξεστιν합당하다(허용되다)=ἐξ~로부터+ἔστι(ν)이다, 되다 ****부정사.2과.능 δίδωμι주다(바치다) *명.목.남단 κῆνσος(라틴어 census에서 유래)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러니 선생님의 생각은 어떤지 말씀하여 주십시오. 황제에게 세금을 바치는 것이 옳습니까, 옳지 않습니까?\""
+          },
+          {
+            "label": "새한글",
+            "text": "그러니까 우리에게 말씀해 주십시오. 선생님 생각에는 카이사르에게 주민세를 바쳐도 괜찮은가요, 괜찮지 않은가요?”"
+          },
+          {
+            "label": "NIV",
+            "text": "Tell us then, what is your opinion? Is it right to pay the imperial tax to Caesar or not?\""
+          },
+          {
+            "label": "KJV",
+            "text": "Tell us therefore, What thinkest thou? Is it lawful to give tribute unto Caesar, or not?"
+          }
+        ]
+      },
+      {
+        "num": "22:18",
+        "greek": "ὁ δὲ Ἰησοῦς γνοὺς* τὴν πονηρίαν** αὐτῶν εἶπεν· / Τί με πειράζετε,*** / ὑποκριταί;****",
+        "summary": "그러나 예수는 그들의 사악한음모를 알아챈 후에 말했다. “위선자들아, 너희는 무엇 때문에 나를 함정에 빠트리려고 시험하느냐?”",
+        "note": "*분.2과.능.주.남단 γινώσκω알다 **명.목.여성단수 πονηρία악한음모 ***직.현.능.2복 πειράζω시험하다(함정에 빠트리려고) ****명.호격.남복 ὑποκριτής위선자",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "예수께서 그들의 간악한 생각을 아시고 말씀하셨다. \"위선자들아, 어찌하여 나를 시험하느냐?"
+          },
+          {
+            "label": "새한글",
+            "text": "예수님이 그들의 악함을 알아차리시고 말씀하셨다. “겉 다르고 속 다른 사람들, 당신들은 어째서 나를 떠보는 것이오?"
+          },
+          {
+            "label": "NIV",
+            "text": "But Jesus, knowing their evil intent, said, \"You hypocrites, why are you trying to trap me?"
+          },
+          {
+            "label": "KJV",
+            "text": "But Jesus perceived their wickedness, and said, Why tempt ye me, ye hypocrites?"
+          }
+        ]
+      },
+      {
+        "num": "22:19",
+        "greek": "ἐπιδείξατέ* μοι τὸ νόμισμα** τοῦ κήνσου. / οἱ δὲ προσήνεγκαν*** αὐτῷ δηνάριον.****",
+        "summary": "“너희는 그 셋돈을 나에게 드러내어 보여라.” 그러자 그들이 예수에게 데나리온을 가져왔다.",
+        "note": "*명.과.능.2복 ἐπιδείκνυμι=ἐπι위에(드러내어)+δείκνυμι보이다 **명.목.중단 νόμισμα돈, 동전 ***직.과.능.3복 προσφέρω=προσ~쪽으로(에게)+φέρω가져오다 ****명.목.중단 δηνάριον(로마기축통화 dēnārius)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "세금으로 내는 돈을 나에게 보여 달라.\" 그들은 데나리온 한 닢을 예수께 가져다 드렸다."
+          },
+          {
+            "label": "새한글",
+            "text": "주민세로 내는 동전을 나에게 보여 주시오.” 그러자 그들이 예수님께 데나리온을 가져왔다."
+          },
+          {
+            "label": "NIV",
+            "text": "Show me the coin used for paying the tax.\" They brought him a denarius,"
+          },
+          {
+            "label": "KJV",
+            "text": "Shew me the tribute money. And they brought unto him a penny."
+          }
+        ]
+      },
+      {
+        "num": "22:20",
+        "greek": "καὶ λέγει αὐτοῖς· / Τίνος ἡ εἰκὼν* αὕτη καὶ ἡ ἐπιγραφή;**",
+        "summary": "예수가 그들에게 말한다. “이 모습과 위에 새긴 글이 누구 것이냐?”",
+        "note": "*명.주.여단 εἰκὼν모습(형상) **명.주.여단 ἐπι위에+γράφω쓰다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "\"이 초상은 누구의 것이며, 적힌 글자는 누구를 가리키느냐?\""
+          },
+          {
+            "label": "새한글",
+            "text": "예수님이 그들에게 물으신다. “이 돈에 새겨 놓은 모습과 이름은 누구의 것이오?”"
+          },
+          {
+            "label": "NIV",
+            "text": "and he asked them, \"Whose image is this? And whose inscription?\""
+          },
+          {
+            "label": "KJV",
+            "text": "And he saith unto them, Whose is this image and superscription?"
+          }
+        ]
+      },
+      {
+        "num": "22:21",
+        "greek": "λέγουσιν αὐτῷ· / Καίσαρος.* / τότε** λέγει αὐτοῖς· / Ἀπόδοτε*** οὖν τὰ Καίσαρος Καίσαρι**** / καὶ τὰ τοῦ θεοῦ* τῷ θεῷ.**",
+        "summary": "“그러므로 너희는 카이사르에게 카이사르의 것들을 돌려주어라. 그러나 너희는 하나님에게 하나님의 것들을 돌려 드려라.”",
+        "note": "*명.소.남단 Καίσαρος(Καῖσαρ)카이사르의 것 **부사 τότε그때 ***명령.2과.능.2단 ἀποδίδωμι돌려주다, ἀπο~부터+δίδωμι주다 ****명.여격.남단 Καίσαρι(Καῖσαρ)카이사라에게 *τὰ τοῦ θεοῦ하나님의 것들 **명.여격.남단 θεῷ(θεός)하나님에게",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그들이 대답하였다. \"황제의 것입니다.\" 그 때에 예수께서 그들에게 말씀하셨다. \"그렇다면, 황제의 것은 황제에게 돌려주고, 하나님의 것은 하나님께 돌려드려라.\""
+          },
+          {
+            "label": "새한글",
+            "text": "그들이 예수님께 대답한다. “카이사르의 것입니다.” 그때에 예수님이 그들에게 말씀하신다. “그러면 카이사르의 것은 카이사르에게, 하나님의 것은 하나님께 돌려드리시오.”"
+          },
+          {
+            "label": "NIV",
+            "text": "\"Caesar's,\" they replied. Then he said to them, \"So give back to Caesar what is Caesar's, and to God what is God's.\""
+          },
+          {
+            "label": "KJV",
+            "text": "They say unto him, Cæsar's. Then saith he unto them, Render therefore unto Cæsar the things which are Cæsar's; and unto God the things that are God's."
+          }
+        ]
+      },
+      {
+        "num": "22:22",
+        "greek": "καὶ ἀκούσαντες* ἐθαύμασαν,** / καὶ ἀφέντες*** αὐτὸν ἀπῆλθαν.****",
+        "summary": "그러자 그들이 들은 후에 깜짝 놀랐다. 그래서 그들은 예수를 내버려두고 황급히 자리를 떴다.",
+        "note": "*분.과.능.주.남복 ἀκούω듣다 **직.과.능.3복 θαυμάζω놀라다 ***분.2과.능.주.남복 ἀφίημι버리다(내버리다) ****직.과.능.3복 ἀπό~로부터(멀리)+ἔρχομαι오다, 가다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그들은 이 말씀을 듣고 탄복하였다. 그들은 예수를 남겨 두고 떠나갔다."
+          },
+          {
+            "label": "새한글",
+            "text": "그들이 듣고서 놀라워했다. 그리고 그들은 예수님을 내버려두고 떠나갔다."
+          },
+          {
+            "label": "NIV",
+            "text": "When they heard this, they were amazed. So they left him and went away."
+          },
+          {
+            "label": "KJV",
+            "text": "When they had heard these words, they marvelled, and left him, and went their way."
+          }
+        ]
+      }
+    ]
   }
 ]
