@@ -2955,5 +2955,220 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-1025",
+    "week": "성령강림절 후 스물두째 주일",
+    "scripture": "마태복음 22:34-46",
+    "verses": [
+      {
+        "num": "22:34",
+        "greek": "Οἱ δὲ Φαρισαῖοι* ἀκούσαντες** / ὅτι ἐφίμωσεν*** τοὺς Σαδδουκαίους**** / συνήχθησαν* ἐπὶ** τὸ αὐτό.",
+        "summary": "그러나 바리새파 사람들이 ‘예수가 사두개파 사람들 입에 재갈을 물렸다는 것을’ 들은 후에 함께 그곳으로 몰려들었다.",
+        "note": "*명.주.남복 Φαρισαῖος **분.과.능.주.남복 ἀκούω듣다 ***직.과.능.3단 φιμόω입에 재갈물리다(입을 막다) ****명.목.남복 Σαδδουκαῖος사두개파 사람 *직.과.능.3복 συνάγω=σύν함께+이끌다, 모으다 **전치사 ἐπὶ~에(~을 향하여)+αὐτό그곳(대격)",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "Hearing that Jesus had silenced the Sadducees, the Pharisees got together."
+          },
+          {
+            "label": "KJV",
+            "text": "But when the Pharisees had heard that he had put the Sadducees to silence, they were gathered together."
+          }
+        ]
+      },
+      {
+        "num": "22:35",
+        "greek": "καὶ ἐπηρώτησεν* εἷς ἐξ αὐτῶν νομικὸς** / πειράζων*** αὐτόν·",
+        "summary": "그들 가운데 율법학자 한 사람이 ‘예수를 시험하여’ 따져 물었다.",
+        "note": "*직.과.능.3단 ἐπί~에 대하여+ἐρωτάω묻다(요청하다) **형(대명사).대격.남단 νομικός율법(νόμος)을 전문으로 다루는 사람 ***분.현.능.주.남단 πειράζω시험하다(유혹하다)",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "One of them, an expert in the law, tested him with this question:"
+          },
+          {
+            "label": "KJV",
+            "text": "Then one of them, which was a lawyer, asked him a question, tempting him, and saying,"
+          }
+        ]
+      },
+      {
+        "num": "22:36",
+        "greek": "Διδάσκαλε,* / ποία** ἐντολὴ*** μεγάλη**** / ἐν τῷ νόμῳ;*",
+        "summary": "선생님, 율법 가운데서 어느 것이 가장 큰 계명입니까?",
+        "note": "*명.호.남단 διδάσκαλος선생님(선생님이여) **의문형용사.주.여단 ποῖος어느 것(어떤 것) ***명.주.여단 ἐντολή계명(명령) ****형.주.여단 μέγας큰(가장), 위대한 *명.여격.남단 νόμος율법",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"Teacher, which is the greatest commandment in the Law?\""
+          },
+          {
+            "label": "KJV",
+            "text": "Master, which is the great commandment in the law?"
+          }
+        ]
+      },
+      {
+        "num": "22:37",
+        "greek": "ὁ δὲ ἔφη* αὐτῷ· / Ἀγαπήσεις** κύριον*** τὸν θεόν σου / ἐν ὅλῃ****τῇ καρδίᾳ* σου / καὶ ἐν ὅλῃ ⸁τῇ ψυχῇ** σου / καὶ ἐν ὅλῃ τῇ διανοίᾳ*** σου·",
+        "summary": "그러자 예수가 율법학자에게 선언했다. “당신은 주님이신 당신의 하나님을 ‘당신의 온 맘으로, 온 생명으로, 온 뜻으로’ 사랑하시오(사랑해야 할 것이오)”",
+        "note": "*직.2과(미완료).능.3단 φημί(λέγω)말하다(선언하다) **직.미래.능.2단 ἀγαπάω사랑하다 ***명.대.남단 κύριος주님(이신) ****형.여격.여단 ὅλος온(전체의) *명.역격.여단 καρδία마음 **명.여격.여단 ψυχή생명(목구멍, 자기 자신), 영혼 ***명.여격.여단 διάνοια마음(뜻)=διά~통하여(단계를 거쳐)+νοῦς이해하는 능력(사고력, 지성) ※이절은 신명기 6:5의 헬라어 칠십인 역 인용했다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "Jesus replied: \"'Love the Lord your God with all your heart and with all your soul and with all your mind.'"
+          },
+          {
+            "label": "KJV",
+            "text": "Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind."
+          }
+        ]
+      },
+      {
+        "num": "22:38",
+        "greek": "αὕτη ἐστὶν ἡ μεγάλη καὶ πρώτη* ἐντολή.",
+        "summary": "이것이 가장 크고 으뜸가는 계명이오.",
+        "note": "*형.서.주.여단 πρῶτος첫째(으뜸)",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "This is the first and greatest commandment."
+          },
+          {
+            "label": "KJV",
+            "text": "This is the first and great commandment."
+          }
+        ]
+      },
+      {
+        "num": "22:39",
+        "greek": "Δευτέρα* δὲ ὁμοία** αὐτῇ· / Ἀγαπήσεις τὸν πλησίον*** σου / ὡς σεαυτόν.****",
+        "summary": "“그런데 버금가는 계명도 그와 똑같소. 당신은 당신의 이웃을 당신자신처럼 사랑하시오.”",
+        "note": "*형.서수.주.여단 δεύτερος두 번째(버금가는 계명) **형.주.여단 ὅμοιος(같은, 비슷한) ***부사 πλησίον이웃 ****재귀대명사.목.남단 σεαυτοῦ너 자신의, ὡς처럼(비교접속사)+σεαυτόν당신자신처럼 ※ 이절은 레위기 19:18을 인용했다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "And the second is like it: 'Love your neighbor as yourself.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And the second is like unto it, Thou shalt love thy neighbour as thyself."
+          }
+        ]
+      },
+      {
+        "num": "22:40",
+        "greek": "ἐν ταύταις ταῖς δυσὶν* ἐντολαῖς / ὅλος ὁ νόμος κρέμαται** / καὶ οἱ προφῆται.***",
+        "summary": "이 두 계명 안에 온 율법과 예언자들이 매여 있다.”",
+        "note": "*형.수.여격.여성복수 δύο둘 **직.현.중수.3단 κρέμαμαι매달려 있다(의존하다-상태 동사), κρεμάννυμι매달다 ***명.주.남복 προφήτης예언자 ※이절 문장 맨 앞에 ‘이 두 계명 안에’라는 전치사구 배치는 화제화(topic fronting)어법으로 쓰여 진 것일까?",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "All the Law and the Prophets hang on these two commandments.\""
+          },
+          {
+            "label": "KJV",
+            "text": "On these two commandments hang all the law and the prophets."
+          }
+        ]
+      },
+      {
+        "num": "22:41",
+        "greek": "Συνηγμένων* δὲ τῶν Φαρισαίων / ἐπηρώτησεν** αὐτοὺς ὁ Ἰησοῦς",
+        "summary": "그러자 예수가 ‘바리새파 사람들이 함께 모여 있는 가운데’ 그들에게 물었다.",
+        "note": "*분.현완.수.속.남복 συνάγω함께 모이다 **직.과.능.3단 ἐπερωτάω질문하다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "While the Pharisees were gathered together, Jesus asked them,"
+          },
+          {
+            "label": "KJV",
+            "text": "While the Pharisees were gathered together, Jesus asked them,"
+          }
+        ]
+      },
+      {
+        "num": "22:42",
+        "greek": "λέγων·* / Τί** ὑμῖν δοκεῖ*** περὶ τοῦ χριστοῦ; / τίνος υἱός**** ἐστιν; / λέγουσιν αὐτῷ· Τοῦ Δαυίδ.*",
+        "summary": "예수가 말한다. “당신들은 그리스도에 대해서 어떻게 생각하시오?” 그들이 예수에게 대답 한다. “다윗의 자손입니다.”",
+        "note": "*분.현.능.주.남단 λέγω말하다 **의문대명사.주.중성단수 τίς어떻게(무엇) ***직.현.능.3단 δοκέω생각하다(여기다) ****명.주.남단 τίνος누구의υἱός아들(자손) *명.소.남단 Δαυίδ다윗",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"What do you think about the Messiah? Whose son is he?\" \"The son of David,\" they replied."
+          },
+          {
+            "label": "KJV",
+            "text": "Saying, What think ye of Christ? whose son is he? They say unto him, The Son of David."
+          }
+        ]
+      },
+      {
+        "num": "22:43",
+        "greek": "λέγει αὐτοῖς· / Πῶς* οὖν Δαυὶδ ἐν** πνεύματι καλεῖ*** αὐτὸν κύριον",
+        "summary": "예수가 그들에게 말한다. “그렇다면 어떻게 ‘다윗이 성령으로 그리스도를 주님이라고 부르느냐’ 말이오?”",
+        "note": "*의문부사 πῶς **전치사 ἐν πνεύματι성령 안에서(으로) ***직.현.능.3단 καλέω부르다 ****분.현.능.주.남단 λέγω말하다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "He said to them, \"How is it then that David, speaking by the Spirit, calls him 'Lord'? For he says,"
+          },
+          {
+            "label": "KJV",
+            "text": "He saith unto them, How then doth David in spirit call him Lord, saying,"
+          }
+        ]
+      },
+      {
+        "num": "22:44",
+        "greek": "Εἶπεν κύριος τῷ κυρίῳ μου· / Κάθου* / ἐκ δεξιῶν** μου / ἕως ἂν θῶ*** / τοὺς ἐχθρούς****σου / ὑποκάτω* τῶν ποδῶν σου;",
+        "summary": "<주님께서 내 주에게 말했다. ‘너는 나의 오른편에 앉아있어라. 내가 너의 원수들을 너의 두발 아래에 놓을 때 까지.>",
+        "note": "*명령.현.중.2단 κάθημαι 앉아있다 **형(대명사적).소.중복 δεξιός오른편의 ***가.2과.능.1단 τίθημι두다(놓다) ****명.대.남복 ἐχθρός원수 *전치사 ὑπό아래에(~에 의해)+κάτω아래로(아래쪽에) ※이절은 시편110:1을 옮겨왔다.",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"'The Lord said to my Lord: \"Sit at my right hand until I put your enemies under your feet.\"'"
+          },
+          {
+            "label": "KJV",
+            "text": "The LORD said unto my Lord, Sit thou on my right hand, till I make thine enemies thy footstool?"
+          }
+        ]
+      },
+      {
+        "num": "22:45",
+        "greek": "εἰ οὖν Δαυὶδ καλεῖ αὐτὸν κύριον, / πῶς υἱὸς αὐτοῦ* ἐστιν;**",
+        "summary": "그러므로 만약 다윗이 그리스도를 주님이라고 부른다면, 어떻게 그리스도가 다윗의 자손이 될 수 있소?",
+        "note": "*인칭대명사.속.남단 αὐτός그(그 사람) **직.현.능.3단 εἰμί이다(되다)",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "If then David calls him 'Lord,' how can he be his son?\""
+          },
+          {
+            "label": "KJV",
+            "text": "If David then call him Lord, how is he his son?"
+          }
+        ]
+      },
+      {
+        "num": "22:46",
+        "greek": "καὶ οὐδεὶς* ἐδύνατο** ἀποκριθῆναι*** αὐτῷ λόγον, / οὐδὲ****ἐτόλμησέν* τις ἀπ’ ἐκείνης** / τῆς ἡμέρας / ἐπερωτῆσαι*** αὐτὸν οὐκέτι.*****",
+        "summary": "그러나 아무도 예수에게 ‘한마디라도 나서서 대답할 수’ 없었다. 또 어떤 사람도 감히 ‘그날로부터 더는 예수에게 캐물을 엄두’를 내지 못했다.",
+        "note": "*부정대명사.주.남단 οὐδεὶς아무도~하지 않다, οὐ아니다+εἷς하나(단 한사람도) **직.미완.중수(디포).3단 δύναμαι~할 수 있다 ***부정사.과.수(디포) ἀποκρίνομαι대답하다 ****등위접속사 οὐδέ또~하지 않다, οὐ아니다+δέ그리고 *직.과.능.3단 τολμάω감히~하다 **전치사 ἀπό~로부터+ἐκείνης τῆς ἡμέρας그날로 ***부정사.과.능 ἐπερωτάω캐묻다, ἐπί~에 대하여+ἐρωτάω묻다 ****부정부사 οὐκ아니다+ἔτι더하여",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "No one could say a word in reply, and from that day on no one dared to ask him any more questions."
+          },
+          {
+            "label": "KJV",
+            "text": "And no man was able to answer him a word, neither durst any man from that day forth ask him any more questions."
+          }
+        ]
+      }
+    ]
   }
 ]
