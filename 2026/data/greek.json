@@ -3274,5 +3274,220 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-1108",
+    "week": "성령강림절 후 스물넷째 주일",
+    "scripture": "마태복음 25:1-13",
+    "verses": [
+      {
+        "num": "25:1",
+        "greek": "Τότε ὁμοιωθήσεται* ἡ βασιλεία τῶν οὐρανῶν / δέκα παρθένοις,** / αἵτινες*** / λαβοῦσαι**** / τὰς λαμπάδας* ἑαυτῶν** / ἐξῆλθον*** / εἰς ὑπάντησιν**** τοῦ νυμφίου.*****",
+        "summary": "그때에 하늘나라는 ‘신랑을 맞이하기 위하여 자기들의 등불들을 챙겨서 나갔던’ 열 처녀들의 경우와 같게 될 것이다.",
+        "note": "*직.미래.수.3단(ὁμοιόω같다), ~와 같게 될 것이다 **명.여격.여복(παρθένος처녀), 열 처녀(결혼하지 않은)들, 신부들러리들? ***관계대명사.주.여복(ὅστις), ὅς~하는 사람+τις어떤 사람, ~한 처녀들은(관계절의 주어) ****분.2과.능.주.여복(λαμβάνω받다), 챙겨서(또는 받아서, 취해서) *명.목.여복(λαμπάς등불), 등불들 또는 횃불들 **재귀대명사.소.여3복(ἑαυτοῦ자기의), 자기(자신)들의 ***직.2과.능.3복(ἐξέρχομαι나가다), 나갔다 ****명.목.여단(ὑπάντησις만남, 마중), 맞이하기 위하여, ὑπαντάω에서 유래=ὑπό~아래에서+ἀντάω마주하다, 만나다 *****명.소.남단(νυμφίος), 신랑",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"At that time the kingdom of heaven will be like ten virgins who took their lamps and went out to meet the bridegroom."
+          },
+          {
+            "label": "KJV",
+            "text": "Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom."
+          }
+        ]
+      },
+      {
+        "num": "25:2",
+        "greek": "πέντε* δὲ ἐξ αὐτῶν** ἦσαν*** μωραὶ**** / καὶ πέντε φρόνιμοι.*",
+        "summary": "그런데 그 처녀들 가운데서 다섯 처녀들은 어리석었다. 그러나 다섯 처녀들은 슬기로웠다.",
+        "note": "*대명사적.불변화기수사(πέντε다섯), 다섯 처녀들은(다섯/다섯 대조) **전치사(ἐκ+속격), 그 처녀들 가운데서 ***직.미완.능.3복(εἰμί~이다), ~이었다 ****형.주.여복(μωρά어리석은), 어리석은 처녀들 *형.주.여복(φρονίμη슬기로운), 슬기로운 처녀들",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "Five of them were foolish and five were wise."
+          },
+          {
+            "label": "KJV",
+            "text": "And five of them were wise, and five were foolish."
+          }
+        ]
+      },
+      {
+        "num": "25:3",
+        "greek": "αἱ γὰρ* μωραὶ λαβοῦσαι τὰς λαμπάδας αὐτῶν / οὐκ ἔλαβον** μεθ’***ἑαυτῶν ἔλαιον·****",
+        "summary": "왜냐하면 어리석은 처녀들은 자기들의 등불들을 챙겼지만, 자기들의 등불과 함께 기름을 챙기지 않았기 때문이다.",
+        "note": "*종속접속사(γὰρ), 왜냐하면 ~때문에 **직.2과.능.3복(λαμβάνω받다, 취하다), 챙겨가지 않았기 ***전치사 μετά+속격 ~함께 ****명.주.중성단(ἔλαιον) 기름, 올리브기름",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "The foolish ones took their lamps but did not take any oil with them."
+          },
+          {
+            "label": "KJV",
+            "text": "They that were foolish took their lamps, and took no oil with them:"
+          }
+        ]
+      },
+      {
+        "num": "25:4",
+        "greek": "αἱ δὲ* φρόνιμοι ἔλαβον ἔλαιον / ἐν** τοῖς ἀγγείοις** / μετὰ τῶν λαμπάδων ἑαυτῶν.",
+        "summary": "그러나 슬기로운 처녀들은 ‘자기들의 등불과 함께 기름’을 그릇들에 담아 가져갔다.",
+        "note": "*접속사(δὲ대조), 그러나 **전치사(ἐν상태), 안에(담아) ***명.여.중복(ἀγγεῖον그릇), 그릇들(통들)에 담아",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "The wise ones, however, took oil in jars along with their lamps."
+          },
+          {
+            "label": "KJV",
+            "text": "But the wise took oil in their vessels with their lamps."
+          }
+        ]
+      },
+      {
+        "num": "25:5",
+        "greek": "χρονίζοντος* δὲ τοῦ νυμφίου / ἐνύσταξαν** πᾶσαι*** / καὶ ἐκάθευδον.****",
+        "summary": "그런데 신랑이 늦어지자, 열 처녀들이 모두 다 졸았다. 처녀들이 잠들어 있었다.",
+        "note": "*분.현.능.속.중단(χρονίζω늦어지다, χρόνος에서 유래), 신랑이 늦어지자(독립속격구문) **직.과.능.3복(νυστάζω졸다), 졸았다 ***형.주.여복(πᾶς모든), 열 처녀들이 모두 다 ****직.미완료.능.3복(καθεύδω잠자다), 잠들어 있었다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "The bridegroom was a long time in coming, and they all became drowsy and fell asleep."
+          },
+          {
+            "label": "KJV",
+            "text": "While the bridegroom tarried, they all slumbered and slept."
+          }
+        ]
+      },
+      {
+        "num": "25:6",
+        "greek": "μέσης* δὲ νυκτὸς κραυγὴ** γέγονεν·*** / Ἰδοὺ ὁ νυμφίος, / ἐξέρχεσθε****εἰς ἀπάντησιν* αὐτοῦ.",
+        "summary": "그러나 한밤중에 외치는 소리가 일어났다. “보라, 신랑이다! 신랑을 맞으러 나가라!”",
+        "note": "*형.속.여단(μέσος한가운데의), 한 밤중에 **명.주.여단(κραυγή외침, 부르짖음), 외치는 소리가 ***직.현완.중간태.3단(γίνομαι되다, 일어나다), 일어났다 ****명.현.중간태.2복(ἐξέρχομαι), 나가다 *명.목.여단(ἀπάντησις만남, 맞이함), 맞으러, ἀπαντάω에서 유래=ἀπό~로부터+ἀντάω마주하다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"At midnight the cry rang out: 'Here's the bridegroom! Come out to meet him!'"
+          },
+          {
+            "label": "KJV",
+            "text": "And at mid night there was a cry made, Behold, the bridegroom cometh; go ye out to meet him."
+          }
+        ]
+      },
+      {
+        "num": "25:7",
+        "greek": "τότε ἠγέρθησαν* πᾶσαι αἱ παρθένοι ἐκεῖναι** / καὶ ἐκόσμησαν*** τὰς λαμπάδας ἑαυτῶν.",
+        "summary": "그때 그 열 처녀들이 모두 다 깨어 일어났다. 그런 후에 처녀들이 자기들의 등불들을 가지런히 갖추었다.",
+        "note": "*직.과.수.3복(ἐγείρω일어나다), 깨어 일어났다 **지시대명사.주.여복(ἐκεῖνος), 그 열 처녀들 ***직.과.능.3복(κοσμέω정돈하다, 갖추다, κόσμος와 연계된 동사, 가지런히 갖추었다.",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"Then all the virgins woke up and trimmed their lamps."
+          },
+          {
+            "label": "KJV",
+            "text": "Then all those virgins arose, and trimmed their lamps."
+          }
+        ]
+      },
+      {
+        "num": "25:8",
+        "greek": "αἱ δὲ μωραὶ ταῖς φρονίμοις εἶπαν· / Δότε* ἡμῖν ἐκ** τοῦ ἐλαίου ὑμῶν, / ὅτι*** αἱ λαμπάδες ἡμῶν σβέννυνται.****",
+        "summary": "그러자 어리석은 처녀들이 슬기로운 처녀들에게 말했다. “너희의 기름 가운데서 우리에게 좀 나누어 다오. 왜냐하면 우리의 등불들이 꺼져가고 있기 때문이야.”",
+        "note": "*명.현.능.2단(δίδωμι주다) ~좀 다오 **전치사 ἐκ+속격 ~가운데서, ~로부터 ***접속사(ὅτι), 왜냐하면, ~때문에 ****직.현.중(수).3복(σβέννυμι불을끄다), 꺼져가고 있다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "The foolish ones said to the wise, 'Give us some of your oil; our lamps are going out.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And the foolish said unto the wise, Give us of your oil; for our lamps are gone out."
+          }
+        ]
+      },
+      {
+        "num": "25:9",
+        "greek": "ἀπεκρίθησαν* δὲ αἱ φρόνιμοι / λέγουσαι·** / Μήποτε*** οὐ μὴ ἀρκέσῃ**** / ἡμῖν καὶ ὑμῖν· / πορεύεσθε* μᾶλλον** πρὸς τοὺς πωλοῦντας*** / καὶ ἀγοράσατε****ἑαυταῖς.",
+        "summary": "그러나 슬기로운 처녀들이 대답하여 말한다. “어쩌면, 우리에게도 또 너희에게도 넉넉하지 않을 거야. 차라리 너희는 기름을 파는 사람들에게 가서 너희 자신들의 쓸 것을 사라.”",
+        "note": "*직.과.수.3복(ἀποκρίνομαι), 대답했다 **분.현.능.주.여복(λέγω), 말한다(말하기를) ***접속사/부사 μή아니다+ποτε어쩌면(혹시), 어쩌면 ~하지 않게 ****가.과.능.3단(ἀρκέω충분하다), οὐ μὴ+ἀρκέσῃ 넉넉하지 않을 거야 *명.현.중간태.2단(πορεύομαι가다(오다), 너희는 가라 **부사/비교불변사(μᾶλλον차라리, 오히려, 더욱), 차라리 ***분.현.능.대.남복(πωλέω팔다), 파는 사람들에게 ****명.과.능.2복(ἀγοράζω사다), 너희는 사라",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"'No,' they replied, 'there may not be enough for both us and you. Instead, go to those who sell oil and buy some for yourselves.'"
+          },
+          {
+            "label": "KJV",
+            "text": "But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves."
+          }
+        ]
+      },
+      {
+        "num": "25:10",
+        "greek": "ἀπερχομένων* δὲ αὐτῶν ἀγοράσαι / ἦλθεν ὁ νυμφίος, / καὶ αἱ ἕτοιμοι** εἰσῆλθον / μετ’ αὐτοῦ εἰς τοὺς γάμους, / καὶ ἐκλείσθη*** ἡ θύρα.",
+        "summary": "그런데 어리석은 처녀들이 기름을 사러 떠난 사이에 신랑이 왔다. 준비되어 있던 처녀들이 신랑과 함께 결혼잔치에 들어갔다. 그리고 문이 닫혔다.",
+        "note": "*분.현.중간태.속.여복(ἀπέρχομαι떠나가다), ἀπό~로부터+ἔρχομαι가다, 독립속격구문-떠난 사이 **형.주.여복(ἕτοιμος준비된), 준비되어 있던 처녀들이 ***직.과.수.3단(κλείω닫다), 닫혔다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"But while they were on their way to buy the oil, the bridegroom arrived. The virgins who were ready went in with him to the wedding banquet. And the door was shut."
+          },
+          {
+            "label": "KJV",
+            "text": "And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut."
+          }
+        ]
+      },
+      {
+        "num": "25:11",
+        "greek": "ὕστερον* δὲ ἔρχονται καὶ αἱ λοιπαὶ** παρθένοι λέγουσαι· / Κύριε κύριε, ἄνοιξον*** ἡμῖν·",
+        "summary": "그래서 나중에, 나머지 처녀들이 와서 말한다. “주님, 주님, 우리에게 문을 열어주세요.”",
+        "note": "*부사(ὕστερος나중에, 그 후에 **형.주.여복(λοιπός), 나머지, 남은 ***명.2과.능.2단(ἀνοίγω), 열어주세요",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"Later the others also came. 'Lord, Lord,' they said, 'open the door for us!'"
+          },
+          {
+            "label": "KJV",
+            "text": "Afterward came also the other virgins, saying, Lord, Lord, open to us."
+          }
+        ]
+      },
+      {
+        "num": "25:12",
+        "greek": "ὁ δὲ ἀποκριθεὶς εἶπεν· / Ἀμὴν λέγω ὑμῖν, / οὐκ οἶδα** ὑμᾶς.",
+        "summary": "그러나 신랑이 대답하여 말했다. “진실로 내가 너희에게 말한다. 나는 너희를 알지 못한다.”",
+        "note": "*직.현완.능.1단, οἶδα알다, εἴδω보아서 알다=εἶδον보았다+οἶδα알았다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"But he replied, 'Truly I tell you, I don't know you.'"
+          },
+          {
+            "label": "KJV",
+            "text": "But he answered and said, Verily I say unto you, I know you not."
+          }
+        ]
+      },
+      {
+        "num": "25:13",
+        "greek": "οὖν, γρηγορεῖτε* / ὅτι οὐκ οἴδατε / τὴν ἡμέραν οὐδὲ** τὴν ὥραν.",
+        "summary": "“그러므로 너희는 깨어 있어라. 왜냐하면 너희는 ‘그 날도 그 시간도’ 알지 못하기 때문이다.”",
+        "note": "*명.현.능.2복(γρηγορέω깨어 있다), 너희는 깨어 있어라 **부정접속사/부사 οὐ아니다+δέ그리고, ~도 아니다",
+        "translations": [
+          {
+            "label": "NIV",
+            "text": "\"Therefore keep watch, because you do not know the day or the hour."
+          },
+          {
+            "label": "KJV",
+            "text": "Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh."
+          }
+        ]
+      }
+    ]
   }
 ]
