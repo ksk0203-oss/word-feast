@@ -130,3 +130,23 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   body{background:#fff}.d-hero{background:#fff!important;color:#000}.d-hero::before{display:none}
   .persp,.scripture{box-shadow:none;border:1px solid #ccc;break-inside:avoid-page}
 }
+
+/* ---------- GREEK EXEGESIS ---------- */
+.grtag{margin-left:auto;display:inline-grid;place-items:center;min-width:30px;height:22px;padding:0 8px;border-radius:8px;background:linear-gradient(135deg,#6B5CFF,#FF7AB6);color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em}
+.card .top{align-items:center}
+.gcard{margin-top:16px;background:var(--surface);border-radius:26px;padding:24px 24px 20px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.gnum{display:inline-block;margin-bottom:12px;padding:5px 12px;border-radius:999px;font-size:calc(13px*var(--fs));font-weight:800;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
+.greek-text{font-size:calc(19px*var(--fs));line-height:2;color:var(--ink);font-weight:500;margin-bottom:12px;word-break:normal;overflow-wrap:anywhere}
+.greek-summary{font-size:calc(17px*var(--fs));line-height:2.05;color:var(--body);margin-bottom:12px;text-align:justify}
+.greek-note{font-size:calc(13px*var(--fs));line-height:1.75;color:var(--mute);margin-bottom:12px;text-align:left}
+.trans-block{border-top:1px dashed var(--line);padding-top:12px;display:grid;gap:8px}
+.trans-row{display:flex;align-items:baseline;gap:10px}
+.trans-label{flex:none;min-width:42px;font-size:calc(11.5px*var(--fs));font-weight:800;color:var(--c);letter-spacing:.04em}
+.trans-text{font-size:calc(14px*var(--fs));line-height:1.75;color:var(--body);text-align:left}
+.g-credit{margin-top:22px;font-size:12px;line-height:1.7;color:var(--mute);text-align:left}
+@media(max-width:768px){
+  .greek-summary{text-align:left;font-size:calc(16.5px*var(--fs));line-height:2.05}
+  .greek-text{font-size:calc(17.5px*var(--fs))}
+  .gcard{padding:22px 20px 18px}
+}
+@media print{.gcard{box-shadow:none;border:1px solid #ccc;break-inside:avoid-page}.grtag,.gr{display:none!important}}

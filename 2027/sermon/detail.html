@@ -49,7 +49,7 @@
        '<div class="nav-row"><a class="back" href="../index.html">← 목차</a><button class="prt" onclick="doPrint()">🖨 인쇄</button></div>'+
        '<p class="d-cap">'+SEAS[e.season]+' · '+d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')</p>'+
        '<h2 class="d-title">'+esc(e.name)+'</h2><p class="d-scr">'+esc(e.book)+' '+esc(e.passage)+'</p></div></div>'+
-     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+body+
+     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+(e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
        '<div class="pager">'+(prev?'<a href="detail.html?id='+prev.id+'">‹ 이전 주일</a>':'<span></span>')+(next?'<a href="detail.html?id='+next.id+'">다음 주일 ›</a>':'<a href="../index.html">목차로 ›</a>')+'</div></div>';
     window.scrollTo(0,0);syncThumb();
   }).catch(function(){$('dContent').innerHTML='<p style="padding:24px">불러오지 못했습니다.</p>'});

@@ -49,7 +49,7 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
       list.forEach(function(e){
         var d=pd(e.date),wk=ORD[Math.floor((d.getDate()-1)/7)];
         h+='<a class="card" data-s="'+e.season+'" href="sermon/detail.html?id='+encodeURIComponent(e.id)+'">'+
-          '<div class="top"><span class="wk">'+wk+'</span><span class="num">'+e.id+'</span></div>'+
+          '<div class="top"><span class="wk">'+wk+'</span><span class="num">'+e.id+'</span>'+(e.greek_id?'<span class="grtag" title="헬라어 원어 강해" onclick="event.stopPropagation();event.preventDefault();location.href=\'greek/detail.html?id='+encodeURIComponent(e.greek_id)+'\'">GR</span>':'')+'</div>'+
           '<div class="date">'+(d.getMonth()+1)+'.'+d.getDate()+'<small>'+WD[d.getDay()]+'</small></div>'+
           '<div class="nm">'+esc(e.name)+'</div>'+
           '<div class="sc"><b>'+esc(e.book)+'</b> '+esc(e.passage)+'</div></a>';

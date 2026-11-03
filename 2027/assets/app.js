@@ -34,7 +34,7 @@ function pickVoice(){
   vs.sort(function(a,b){return score(b)-score(a)});return vs[0];
 }
 function sentences(){
-  var txt=[];document.querySelectorAll('#ttsScope .persp-body p:not(.note):not(.author), #ttsScope .persp-body h4, #ttsScope .scripture p').forEach(function(p){txt.push(p.textContent)});
+  var txt=[];document.querySelectorAll('#ttsScope .persp-body p:not(.note):not(.author), #ttsScope .persp-body h4, #ttsScope .scripture p, #ttsScope .greek-summary').forEach(function(p){txt.push(p.textContent)});
   var out=[];txt.join('\n').split(/\n+/).forEach(function(par){(par.match(/[^.!?。]+[.!?。]?["”’)]*/g)||[]).forEach(function(s){s=s.trim();if(s.length>1)out.push(s)})});return out;
 }
 function speakAt(i){
