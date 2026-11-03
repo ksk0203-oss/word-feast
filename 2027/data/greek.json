@@ -10,8 +10,22 @@
         "summary": "그러나 그 날들 가운데, 그 환난 이후에 해는 어두워질 것이다. 그리고 달은 자기 빛을 내지 않을 것이다.",
         "note": "*명.대 θλῖψις환난, 고난 **직.미.수.3단 σκοτίζομαι어두워지다(σκότος어둠) ***직.미.능.3단 δίδωμι주다 ****명.대 φέγγος빛, 광채",
         "translations": [
-          {"label": "KJV", "text": "But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,"},
-          {"label": "ASV", "text": "But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,"}
+          {
+            "label": "새번역",
+            "text": "“그러나 그 환난이 지난 뒤에, ‘그 날에는, 해가 어두워지고, 달이 빛을 내지 않고,"
+          },
+          {
+            "label": "새한글",
+            "text": "“그러나 바로 그런 날들에 그 큰 어려움 뒤에 ‘해가 어두워지고, 달이 그 빛을 내지 않을 것입니다."
+          },
+          {
+            "label": "KJV",
+            "text": "But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,"
+          },
+          {
+            "label": "ASV",
+            "text": "But in those days, after that tribulation, the sun shall be darkened, and the moon shall not give her light,"
+          }
         ]
       },
       {
@@ -20,8 +34,22 @@
         "summary": "별들은 하늘에서 떨어지고 있게 될 것이다. 그리고 하늘에 있는 권능들은 흔들릴 것이다.",
         "note": "*명.주 ἀστήρ별 **직.미.중(디포).3복 εἰμί이다, 있다 (ἔσονται+πίπτοντες는 ‘떨어지고 있게 될 것이다’라는 우회적 미래) ***분.현.능.주.남복 πίπτω떨어지다 ****명.주 δύναμις능력, 권능 *직.미.수.3복 σαλεύω흔들다",
         "translations": [
-          {"label": "KJV", "text": "And the stars of heaven shall fall, and the powers that are in heaven shall be shaken."},
-          {"label": "ASV", "text": "and the stars shall be falling from heaven, and the powers that are in the heavens shall be shaken."}
+          {
+            "label": "새번역",
+            "text": "별들이 하늘에서 떨어지고, 하늘의 세력들이 흔들릴 것이다.’"
+          },
+          {
+            "label": "새한글",
+            "text": "별들이 하늘에서 떨어지고, 하늘에 있는 권력들이 흔들릴 것입니다.’"
+          },
+          {
+            "label": "KJV",
+            "text": "And the stars of heaven shall fall, and the powers that are in heaven shall be shaken."
+          },
+          {
+            "label": "ASV",
+            "text": "and the stars shall be falling from heaven, and the powers that are in the heavens shall be shaken."
+          }
         ]
       },
       {
@@ -30,8 +58,22 @@
         "summary": "그리고 그때에 사람들은 인자(사람의 아들)가 구름 가운데서 큰 능력과 영광으로 오는 것을 볼 것이다.",
         "note": "*직.미.중(디포).3복 ὁράω보다 **ὁ υἱὸς τοῦ ἀνθρώπου사람의 아들(인자) ***분.현.중(디포).대.남단 ἔρχομαι오다 ****명.여.복 νεφέλη구름",
         "translations": [
-          {"label": "KJV", "text": "And then shall they see the Son of man coming in the clouds with great power and glory."},
-          {"label": "ASV", "text": "And then shall they see the Son of man coming in clouds with great power and glory."}
+          {
+            "label": "새번역",
+            "text": "그 때에 사람들이, 인자가 큰 권능과 영광에 싸여 구름을 타고 오는 것을 볼 것이다."
+          },
+          {
+            "label": "새한글",
+            "text": "그때에 인자가 구름에 둘러싸여 큰 능력과 영광을 드러내며 오는 것을 사람들이 볼 것입니다."
+          },
+          {
+            "label": "KJV",
+            "text": "And then shall they see the Son of man coming in the clouds with great power and glory."
+          },
+          {
+            "label": "ASV",
+            "text": "And then shall they see the Son of man coming in clouds with great power and glory."
+          }
         ]
       },
       {
@@ -40,8 +82,22 @@
         "summary": "그리고 그때에 그가 천사들을 보낼 것이다. 그리고 그가 택하신 사람들을 사방의 바람으로부터, 땅 끝에서 하늘 끝까지 모을 것이다.",
         "note": "*직.미.능.3단 ἀποστέλλω=ἀπό~로부터+στέλλω보내다 **명.대 ἄγγελος천사, 사자 ***직.미.능.3단 ἐπισυνάγω=ἐπί위에+σύν함께+ἄγω이끌다 → 모으다 ****형.대 ἐκλεκτός택하신, 택함받은(ἐκλέγω선택하다) *명.소 ἄνεμος바람 (τεσσάρων ἀνέμων 네 바람=동서남북 사방)",
         "translations": [
-          {"label": "KJV", "text": "And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven."},
-          {"label": "ASV", "text": "And then shall he send forth the angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven."}
+          {
+            "label": "새번역",
+            "text": "그 때에 그는 천사들을 보내어, 땅 끝에서 하늘 끝까지, 사방에서 선택된 사람들을 모을 것이다.”"
+          },
+          {
+            "label": "새한글",
+            "text": "그때에 천사들을 보내어, 그가 선택하신 사람들을 땅끝부터 하늘 끝까지 사방에서 끌어모으실 것입니다.”"
+          },
+          {
+            "label": "KJV",
+            "text": "And then shall he send his angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven."
+          },
+          {
+            "label": "ASV",
+            "text": "And then shall he send forth the angels, and shall gather together his elect from the four winds, from the uttermost part of the earth to the uttermost part of heaven."
+          }
         ]
       },
       {
@@ -50,8 +106,22 @@
         "summary": "무화과나무로부터 비유를 배워라. 그 가지가 이미 연해지고 잎이 돋아나면, 너희는 여름이 가까운 줄 안다.",
         "note": "*명.소 συκῆ무화과나무 **명.2과.능.2복 μανθάνω배우다 ***명.대 παραβολή비유(παρά옆+βάλλω던지다) ****명.주 κλάδος가지 *가.2과.중(디포).3단 γίνομαι되다 **가.현.능.3단 ἐκφύω돋아나다, 싹트다 ***명.대 φύλλον잎 ****직.현.능.2복 γινώσκω알다 *명.주 θέρος여름 **직.현.능.3단 εἰμί이다 (ὅταν+가정법: ~할 때마다)",
         "translations": [
-          {"label": "KJV", "text": "Now learn a parable of the fig tree; When her branch is yet tender, and putteth forth leaves, ye know that summer is near:"},
-          {"label": "ASV", "text": "Now from the fig tree learn her parable: when her branch is now become tender, and putteth forth its leaves, ye know that the summer is nigh;"}
+          {
+            "label": "새번역",
+            "text": "“무화과나무에서 비유를 배워라. 그 가지가 연해지고 잎이 돋으면, 너희는 여름이 가까이 온 줄을 안다."
+          },
+          {
+            "label": "새한글",
+            "text": "“무화과나무로부터 끌어온 비유를 배우세요. 어느새 그 가지가 부드러워지고 이파리가 돋아나면, 여름이 가까운 줄 그대들은 알아차립니다."
+          },
+          {
+            "label": "KJV",
+            "text": "Now learn a parable of the fig tree; When her branch is yet tender, and putteth forth leaves, ye know that summer is near:"
+          },
+          {
+            "label": "ASV",
+            "text": "Now from the fig tree learn her parable: when her branch is now become tender, and putteth forth its leaves, ye know that the summer is nigh;"
+          }
         ]
       },
       {
@@ -60,8 +130,22 @@
         "summary": "이와 같이 너희도, 이런 일들이 일어나는 것을 보면 ‘그가(또는 그것이) 문 앞에 가까이 있음’을 알아라.",
         "note": "*가.2과.능.2복 ὁράω보다 **분.현.중(디포).대.중복 γίνομαι일어나다, 되다 ***직.현.능.2복 γινώσκω알다 ****직.현.능.3단 εἰμί이다 (※ἐστιν의 주어가 따로 없어 ‘그분(인자)’ 또는 ‘그것(그때)’ 모두 가능. KJV는 ‘it’, ASV는 ‘he’로 옮김) 참고: θύρα문",
         "translations": [
-          {"label": "KJV", "text": "So ye in like manner, when ye shall see these things come to pass, know that it is nigh, even at the doors."},
-          {"label": "ASV", "text": "even so ye also, when ye see these things coming to pass, know ye that he is nigh, even at the doors."}
+          {
+            "label": "새번역",
+            "text": "이와 같이, 너희도 이런 일들이 일어나는 것을 보거든, 인자가 문 앞에 가까이 온 줄을 알아라."
+          },
+          {
+            "label": "새한글",
+            "text": "마찬가지로 또한 그대들이야말로, 이런 일이 일어나는 것을 볼 때에, 때가 코앞에 가까이 와 있음을 알아차리세요."
+          },
+          {
+            "label": "KJV",
+            "text": "So ye in like manner, when ye shall see these things come to pass, know that it is nigh, even at the doors."
+          },
+          {
+            "label": "ASV",
+            "text": "even so ye also, when ye see these things coming to pass, know ye that he is nigh, even at the doors."
+          }
         ]
       },
       {
@@ -70,8 +154,22 @@
         "summary": "진실로 내가 너희에게 말한다. 이 모든 일이 일어날 때까지 이 세대는 결코 지나가지 않을 것이다.",
         "note": "*직.현.능.1단 λέγω말하다 **가.2과.능.3단 παρέρχομαι=παρά옆으로+ἔρχομαι지나가다 (οὐ μή+가정법: 결코 ~하지 않다, 강한 부정) ***명.주 γενεά세대 ****가.2과.중(디포).3단 γίνομαι일어나다 (μέχρις οὗ ~할 때까지)",
         "translations": [
-          {"label": "KJV", "text": "Verily I say unto you, that this generation shall not pass, till all these things be done."},
-          {"label": "ASV", "text": "Verily I say unto you, This generation shall not pass away, until all these things be accomplished."}
+          {
+            "label": "새번역",
+            "text": "내가 진정으로 너희에게 말한다. 이 세대가 끝나기 전에, 이 모든 일이 다 일어날 것이다."
+          },
+          {
+            "label": "새한글",
+            "text": "아멘 그대들에게 말합니다. 이 세대가 사라지는 일은 절대로 없을 것입니다, 이 모든 일이 일어날 때까지는요."
+          },
+          {
+            "label": "KJV",
+            "text": "Verily I say unto you, that this generation shall not pass, till all these things be done."
+          },
+          {
+            "label": "ASV",
+            "text": "Verily I say unto you, This generation shall not pass away, until all these things be accomplished."
+          }
         ]
       },
       {
@@ -80,8 +178,22 @@
         "summary": "하늘과 땅은 지나갈 것이다. 그러나 내 말들은 결코 지나가지 않을 것이다.",
         "note": "*직.미.중(디포).3복 παρέρχομαι지나가다 **명.주 λόγος말, 말씀",
         "translations": [
-          {"label": "KJV", "text": "Heaven and earth shall pass away: but my words shall not pass away."},
-          {"label": "ASV", "text": "Heaven and earth shall pass away: but my words shall not pass away."}
+          {
+            "label": "새번역",
+            "text": "하늘과 땅은 없어질지라도, 나의 말은 절대로 없어지지 않을 것이다.”"
+          },
+          {
+            "label": "새한글",
+            "text": "하늘과 땅은 사라지겠지만, 나의 말이 사라지는 일은 절대로 없을 것입니다.”"
+          },
+          {
+            "label": "KJV",
+            "text": "Heaven and earth shall pass away: but my words shall not pass away."
+          },
+          {
+            "label": "ASV",
+            "text": "Heaven and earth shall pass away: but my words shall not pass away."
+          }
         ]
       },
       {
@@ -90,8 +202,22 @@
         "summary": "그러나 그 날 또는 그 시간에 대해서는 아무도 알지 못한다. 하늘에 있는 천사들도, 아들도 알지 못하고 오직 아버지만 아신다.",
         "note": "*명.소 ὥρα시간, 때 **직.완(현재의미).능.3단 οἶδα알다 (οὐδεὶς 아무도 ~않다, οὐδὲ ~도 ~않다, εἰ μή ~외에는)",
         "translations": [
-          {"label": "KJV", "text": "But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father."},
-          {"label": "ASV", "text": "But of that day or that hour knoweth no one, not even the angels in heaven, neither the Son, but the Father."}
+          {
+            "label": "새번역",
+            "text": "“그러나 그 날과 그 때는 아무도 모른다. 하늘의 천사들도 모르고, 아들도 모르고, 오직 아버지만 아신다."
+          },
+          {
+            "label": "새한글",
+            "text": "“바로 그날이나 그 시각에 대해서 아는 사람은 아무도 없습니다. 하늘에 있는 천사들도 아들도 알지 못합니다. 아버지만 아십니다."
+          },
+          {
+            "label": "KJV",
+            "text": "But of that day and that hour knoweth no man, no, not the angels which are in heaven, neither the Son, but the Father."
+          },
+          {
+            "label": "ASV",
+            "text": "But of that day or that hour knoweth no one, not even the angels in heaven, neither the Son, but the Father."
+          }
         ]
       },
       {
@@ -100,8 +226,22 @@
         "summary": "살피라. 깨어 있으라. 그때가 언제인지 너희가 알지 못하기 때문이다.",
         "note": "*명.현.능.2복 βλέπω보다, 살피다 **명.현.능.2복 ἀγρυπνέω잠들지 않고 깨어 있다 ***직.완(현재의미).능.2복 οἶδα알다 ****명.주 καιρός때, 정해진 시기 *직.현.능.3단 εἰμί이다 (※일부 사본과 KJV·ASV는 ‘기도하라(καὶ προσεύχεσθε)’가 덧붙은 본문을 따름)",
         "translations": [
-          {"label": "KJV", "text": "Take ye heed, watch and pray: for ye know not when the time is."},
-          {"label": "ASV", "text": "Take ye heed, watch and pray: for ye know not when the time is."}
+          {
+            "label": "새번역",
+            "text": "조심하고, 깨어 있어라. 그 때가 언제인지를 너희가 모르기 때문이다."
+          },
+          {
+            "label": "새한글",
+            "text": "조심하세요, 정신 차리고 있으세요! 그때가 언제인지 그대들은 알지 못하니까요."
+          },
+          {
+            "label": "KJV",
+            "text": "Take ye heed, watch and pray: for ye know not when the time is."
+          },
+          {
+            "label": "ASV",
+            "text": "Take ye heed, watch and pray: for ye know not when the time is."
+          }
         ]
       },
       {
@@ -110,8 +250,22 @@
         "summary": "마치 집을 떠나 여행 중인 사람이, 자기 집을 남겨 두고 자기 종들에게 권한을 주되 각 사람에게 자기 일을 맡기고, 문지기에게는 깨어 있으라고 명령한 것과 같다.",
         "note": "*형.주 ἀπόδημος집을 떠나 있는, 여행 중인 **분.2과.능.주.남단 ἀφίημι=ἀπό~로부터+ἵημι보내다 → 떠나다, 남겨 두다 ***분.2과.능.주.남단 δίδωμι주다 ****명.여.복 δοῦλος종 *명.대 ἐξουσία권한, 권위 **명.대 ἔργον일 ***명.여 θυρωρός문지기 ****직.과.중(디포).3단 ἐντέλλομαι명령하다 *가.현.능.3단 γρηγορέω깨어 있다 (ἵνα+가정법: ~하도록) (※‘~와 같다’는 서술어가 생략된 문장. KJV·ASV는 보충해 번역)",
         "translations": [
-          {"label": "KJV", "text": "For the Son of man is as a man taking a far journey, who left his house, and gave authority to his servants, and to every man his work, and commanded the porter to watch."},
-          {"label": "ASV", "text": "It is as when a man, sojourning in another country, having left his house, and given authority to his servants, to each one his work, commanded also the porter to watch."}
+          {
+            "label": "새번역",
+            "text": "사정은 여행하는 어떤 사람의 경우와 같은데, 그가 집을 떠날 때에, 자기 종들에게 권한을 주어서, 각 사람에게 할 일을 맡기고, 문지기에게는 깨어 있으라고 명령한다."
+          },
+          {
+            "label": "새한글",
+            "text": "먼 길 나서는 어떤 사람의 경우와 마찬가지입니다. 그가 집을 두고 떠날 때 종들에게 저마다 권한을 주어 일을 맡깁니다. 또 문지기에게는 깨어 있으라고 명령하지요."
+          },
+          {
+            "label": "KJV",
+            "text": "For the Son of man is as a man taking a far journey, who left his house, and gave authority to his servants, and to every man his work, and commanded the porter to watch."
+          },
+          {
+            "label": "ASV",
+            "text": "It is as when a man, sojourning in another country, having left his house, and given authority to his servants, to each one his work, commanded also the porter to watch."
+          }
         ]
       },
       {
@@ -120,8 +274,22 @@
         "summary": "그러므로 깨어 있으라. 집주인이 언제 오는지 너희가 알지 못하기 때문이다. 저녁에 올지, 한밤중에 올지, 닭 울 때에 올지, 이른 아침에 올지.",
         "note": "*명.현.능.2복 γρηγορέω깨어 있다 **직.완(현재의미).능.2복 οἶδα알다 ***명.주 κύριος주인, 주 ****직.현.중(디포).3단 ἔρχομαι오다 *명.소 ἀλεκτοροφωνία닭 울 때(ἀλέκτωρ수탉+φωνή소리) 참고: ὀψέ저녁, μεσονύκτιον한밤중, πρωΐ이른 아침 (로마식 네 경점: 저녁·한밤중·닭 울 때·새벽)",
         "translations": [
-          {"label": "KJV", "text": "Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:"},
-          {"label": "ASV", "text": "Watch therefore: for ye know not when the lord of the house cometh, whether at even, or at midnight, or at cockcrowing, or in the morning;"}
+          {
+            "label": "새번역",
+            "text": "그러므로 깨어 있어라. 집주인이 언제 올는지, 저녁녘일지, 한밤중일지, 닭이 울 무렵일지, 이른 아침녘일지, 너희가 알지 못하기 때문이다."
+          },
+          {
+            "label": "새한글",
+            "text": "그러므로 깨어 있으세요! 집주인이 언제 올지 그대들은 알지 못하니까요. 저녁일지 한밤중일지 닭 울 때일지 새벽일지요."
+          },
+          {
+            "label": "KJV",
+            "text": "Watch ye therefore: for ye know not when the master of the house cometh, at even, or at midnight, or at the cockcrowing, or in the morning:"
+          },
+          {
+            "label": "ASV",
+            "text": "Watch therefore: for ye know not when the lord of the house cometh, whether at even, or at midnight, or at cockcrowing, or in the morning;"
+          }
         ]
       },
       {
@@ -130,8 +298,22 @@
         "summary": "그가 갑자기 와서 너희가 자고 있는 것을 발견하지 않도록 하라.",
         "note": "*분.2과.능.주.남단 ἔρχομαι오다 **부사 ἐξαίφνης갑자기 ***가.2과.능.3단 εὑρίσκω찾다, 발견하다 (μή+가정법: ~하지 않도록) ****분.현.능.대.남복 καθεύδω자다",
         "translations": [
-          {"label": "KJV", "text": "Lest coming suddenly he find you sleeping."},
-          {"label": "ASV", "text": "lest coming suddenly he find you sleeping."}
+          {
+            "label": "새번역",
+            "text": "주인이 갑자기 와서 너희가 잠자고 있는 것을 보게 되는 일이 없도록 하여라."
+          },
+          {
+            "label": "새한글",
+            "text": "주인이 갑자기 와서 그대들이 자고 있는 것을 보지 않도록 하세요."
+          },
+          {
+            "label": "KJV",
+            "text": "Lest coming suddenly he find you sleeping."
+          },
+          {
+            "label": "ASV",
+            "text": "lest coming suddenly he find you sleeping."
+          }
         ]
       },
       {
@@ -140,8 +322,22 @@
         "summary": "내가 너희에게 말하는 것을 모든 사람에게 말한다. 깨어 있으라.",
         "note": "*직.현.능.1단 λέγω말하다 **직.현.능.1단 λέγω말하다 ***명.현.능.2복 γρηγορέω깨어 있다 (πᾶσιν 모든 사람에게 — 막 13:3에서 따로 묻던 네 제자에게만이 아니라 모두에게)",
         "translations": [
-          {"label": "KJV", "text": "And what I say unto you I say unto all, Watch."},
-          {"label": "ASV", "text": "And what I say unto you I say unto all, Watch."}
+          {
+            "label": "새번역",
+            "text": "내가 너희에게 하는 말은 모든 사람에게 하는 말이다. 깨어 있어라.”"
+          },
+          {
+            "label": "새한글",
+            "text": "내가 그대들에게 말하는 것, 그것을 나는 모든 사람에게 말합니다. 깨어 있으세요!”"
+          },
+          {
+            "label": "KJV",
+            "text": "And what I say unto you I say unto all, Watch."
+          },
+          {
+            "label": "ASV",
+            "text": "And what I say unto you I say unto all, Watch."
+          }
         ]
       }
     ]
