@@ -49,7 +49,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .stat small{font-size:12px;color:rgba(255,255,255,.75)}
 .theme-toggle{position:absolute;top:18px;right:18px;z-index:2;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;font-size:18px}
 
-.toc{max-width:1040px;margin:-64px auto 0;padding:0 16px 96px;position:relative;z-index:2}
+.toc{max-width:1200px;margin:-64px auto 0;padding:0 16px 96px;position:relative;z-index:2}
 .toc-guide{display:inline-block;margin:0 0 10px 4px;padding:8px 14px;border-radius:12px;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);font-size:14px;color:var(--ink);font-weight:600}
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 4px 6px}
 .chip{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow);font-size:12.5px;font-weight:600;color:var(--ink)}
@@ -154,3 +154,23 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   .gcard{padding:22px 20px 18px}
 }
 @media print{.gcard{box-shadow:none;border:1px solid #ccc;break-inside:avoid-page}.grbox,.gr{display:none!important}}
+/* ---------- MONTH INDEX ---------- */
+.toc-layout{display:grid;grid-template-columns:132px minmax(0,1fr);gap:24px;align-items:start}
+.mnav{position:sticky;top:20px;display:flex;flex-direction:column;gap:6px;margin-top:44px;padding:10px;border-radius:22px;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);border:1px solid var(--line);max-height:calc(100vh - 40px);overflow:auto}
+.mnav a{display:flex;align-items:baseline;gap:6px;padding:10px 12px;border-radius:14px;color:var(--mute);font-weight:700;transition:background .2s,color .2s,transform .2s}
+.mnav a b{font-size:17px;letter-spacing:-.02em;font-weight:800;color:inherit}
+.mnav a small{font-size:11px;font-weight:700;letter-spacing:.06em;opacity:.75}
+.mnav a:hover{background:var(--surface-2);color:var(--ink)}
+.mnav a.on{color:#fff;background:linear-gradient(135deg,#6B5CFF,#FF7AB6);box-shadow:0 6px 14px rgba(107,92,255,.32)}
+.mnav a.on small{opacity:.9}
+.month{scroll-margin-top:0}
+@media(max-width:899px){
+  .toc-layout{display:block}
+  .mnav{position:sticky;top:0;z-index:20;flex-direction:row;gap:8px;margin:18px -16px 0;padding:10px 16px;border-radius:0;border-width:1px 0;overflow-x:auto;overflow-y:hidden;max-height:none;scrollbar-width:none}
+  .mnav::-webkit-scrollbar{display:none}
+  .mnav a{flex:none;padding:8px 14px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow)}
+  .mnav a b{font-size:15px}
+  .month{margin-top:28px;scroll-margin-top:56px}
+  .month-head{top:56px}
+}
+@media print{.mnav{display:none!important}}
