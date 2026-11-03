@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta name="theme-color" content="#14122B">
+<title>말씀잔치 2027</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section id="cover">
+  <header class="hero">
+    <button class="theme-toggle" id="themeBtn" aria-label="화면 모드 전환">◐</button>
+    <div class="hero-in">
+      <span class="pill"><i></i>대림절 2026 – 왕이신 그리스도 주일 2027</span>
+      <h1><span>말씀</span><span>잔치 2027</span></h1>
+      <p class="lead">매 주일, 신학적·주석적·목회적·설교적 네 가지 관점으로 만나는 말씀. 대림절 첫 주일부터 한 해의 교회력을 따라갑니다.</p>
+      <div class="stats">
+        <div class="stat"><b id="statN">52</b><small>주일 본문</small></div>
+        <div class="stat"><b>4</b><small>관점 해설</small></div>
+        <div class="stat"><b>B</b><small>마가복음의 해</small></div>
+      </div>
+    </div>
+  </header>
+  <main class="toc">
+    <p class="toc-guide">아래 목차에서 원하시는 주일을 선택해 주세요.</p>
+    <div class="legend" id="legend"></div>
+    <div id="months"></div>
+  </main>
+</section>
+<button class="fab" id="fab" aria-label="맨 위로">↑</button>
+<div class="track" id="track"><div class="thumb" id="thumb"></div></div>
+<script src="assets/app.js"></script>
+<script>
+var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번째주'];
+(function(){
+  var lg='';['advent','christmas','epiphany','lent','holy','easter','pentecost','ordinary','king'].forEach(function(k){lg+='<span class="chip" data-s="'+k+'">'+SEAS[k]+'</span>'});
+  $('legend').innerHTML=lg;
+  fetch('data/toc.json').then(function(r){return r.json()}).then(function(DATA){
+    $('statN').textContent=DATA.length;
+    var groups={},order=[];
+    DATA.forEach(function(e){var d=pd(e.date),key=d.getFullYear()+'-'+(d.getMonth()+1);if(!groups[key]){groups[key]=[];order.push(key)}groups[key].push(e)});
+    var h='';
+    order.forEach(function(key){
+      var p=key.split('-'),list=groups[key];
+      h+='<div class="month"><div class="month-head"><h2><em>'+p[1]+'월</em></h2><span>'+p[0]+'</span></div><div class="grid">';
+      list.forEach(function(e){
+        var d=pd(e.date),wk=ORD[Math.floor((d.getDate()-1)/7)];
+        h+='<a class="card" data-s="'+e.season+'" href="sermon/detail.html?id='+encodeURIComponent(e.id)+'">'+
+          '<div class="top"><span class="wk">'+wk+'</span><span class="num">'+e.id+'</span></div>'+
+          '<div class="date">'+(d.getMonth()+1)+'.'+d.getDate()+'<small>'+WD[d.getDay()]+'</small></div>'+
+          '<div class="nm">'+esc(e.name)+'</div>'+
+          '<div class="sc"><b>'+esc(e.book)+'</b> '+esc(e.passage)+'</div></a>';
+      });
+      h+='</div></div>';
+    });
+    $('months').innerHTML=h;
+    var back=sessionStorage&&sessionStorage.getItem('wf27-last');
+    if(back){var el=document.querySelector('a.card[href$="id='+back+'"]');if(el)el.scrollIntoView({block:'center'})}
+    syncThumb();
+  }).catch(function(){$('months').innerHTML='<p style="padding:24px">목차를 불러오지 못했습니다.</p>'});
+})();
+</script>
+</body>
+</html>
