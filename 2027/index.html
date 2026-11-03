@@ -76,7 +76,7 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
     $('months').innerHTML=h;
     /* monthly index: left column on desktop, sticky top bar on mobile */
     var nav=$('monthNav'),nh='';
-    order.forEach(function(key){var p=key.split('-');nh+='<a href="#m-'+key+'" data-m="m-'+key+'"><b>'+p[1]+'월</b></a>'});
+    order.forEach(function(key){var p=key.split('-');nh+='<a href="#m-'+key+'" data-m="m-'+key+'"><b>'+p[1]+'월</b><small>'+p[0]+'</small></a>'});
     nav.innerHTML=nh;
     var items=nav.querySelectorAll('a');
     function setActive(id){
