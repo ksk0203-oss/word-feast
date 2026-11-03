@@ -157,7 +157,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 /* ---------- MONTH INDEX ---------- */
 .toc-layout{display:grid;grid-template-columns:132px minmax(0,1fr);gap:24px;align-items:start}
 .mnav{position:sticky;top:20px;display:flex;flex-direction:column;gap:6px;margin-top:44px;padding:10px;border-radius:22px;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow);border:1px solid var(--line);max-height:calc(100vh - 40px);overflow:auto}
-.mnav a{display:flex;align-items:baseline;gap:6px;padding:10px 12px;border-radius:14px;color:var(--mute);font-weight:700;transition:background .2s,color .2s,transform .2s}
+.mnav a{display:flex;align-items:baseline;justify-content:center;gap:6px;padding:10px 12px;border-radius:14px;color:var(--mute);font-weight:700;transition:background .2s,color .2s,transform .2s}
 .mnav a b{font-size:17px;letter-spacing:-.02em;font-weight:800;color:inherit}
 .mnav a small{font-size:11px;font-weight:700;letter-spacing:.06em;opacity:.75}
 .mnav a:hover{background:var(--surface-2);color:var(--ink)}
