@@ -169,13 +169,13 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 @media(max-width:899px){
   .toc-layout{display:block}
   /* month index bar: its own deep-indigo band + month tiles, so it reads apart from the white week cards below */
-  .mnav{position:sticky;top:0;z-index:20;flex-direction:row;gap:6px;margin:18px -16px 0;padding:8px 12px;border-radius:0;border:0;overflow-x:auto;overflow-y:hidden;max-height:none;scrollbar-width:none;background:linear-gradient(135deg,#3B2FB5,#6A3FD0);box-shadow:0 8px 20px rgba(40,30,120,.28);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .mnav{position:sticky;top:0;z-index:20;flex-direction:row;gap:6px;margin:18px -16px 0;padding:8px 12px;border-radius:0;border:0;overflow-x:auto;overflow-y:hidden;max-height:none;scrollbar-width:none;background:linear-gradient(135deg,#5A4DD0,#8A62E3);box-shadow:0 8px 20px rgba(90,77,208,.24);backdrop-filter:none;-webkit-backdrop-filter:none}
   .mnav::-webkit-scrollbar{display:none}
-  .mnav a{position:relative;flex:none;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:58px;height:46px;padding:0 10px;border-radius:14px;background:rgba(255,255,255,.12);color:rgba(255,255,255,.82);box-shadow:none}
+  .mnav a{position:relative;flex:none;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:58px;height:46px;padding:0 10px;border-radius:14px;background:rgba(255,255,255,.17);color:rgba(255,255,255,.9);box-shadow:none}
   .mnav a b{font-size:16px;line-height:1.1}
   .mnav a small{display:block;font-size:10px;line-height:1.1;letter-spacing:.06em;opacity:.8}
-  .mnav a:hover{background:rgba(255,255,255,.2);color:#fff}
-  .mnav a.on{background:#fff;color:#3B2FB5;box-shadow:0 4px 10px rgba(10,6,60,.28)}
+  .mnav a:hover{background:rgba(255,255,255,.26);color:#fff}
+  .mnav a.on{background:#fff;color:#4A3FC9;box-shadow:0 4px 10px rgba(40,30,120,.22)}
   .mnav a.on small{opacity:.75}
   .mnav a.ny{margin-left:14px}
   .mnav a.ny::before{content:"";position:absolute;left:-10px;top:6px;bottom:6px;width:1px;background:rgba(255,255,255,.4)}
@@ -183,7 +183,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   .month-head{top:62px}
 }
 @media(max-width:899px) and (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) .mnav{background:linear-gradient(135deg,#221E5C,#3A2A80)}
+  :root:not([data-theme="light"]) .mnav{background:linear-gradient(135deg,#2D2878,#4A3597)}
 }
-:root[data-theme="dark"] .mnav{background:linear-gradient(135deg,#221E5C,#3A2A80)}
+:root[data-theme="dark"] .mnav{background:linear-gradient(135deg,#2D2878,#4A3597)}
 @media print{.mnav{display:none!important}}
