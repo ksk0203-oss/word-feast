@@ -168,8 +168,14 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   .toc-layout{display:block}
   .mnav{position:sticky;top:0;z-index:20;flex-direction:row;gap:8px;margin:18px -16px 0;padding:10px 16px;border-radius:0;border-width:1px 0;overflow-x:auto;overflow-y:hidden;max-height:none;scrollbar-width:none}
   .mnav::-webkit-scrollbar{display:none}
-  .mnav a{flex:none;padding:8px 14px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow)}
-  .mnav a b{font-size:15px}
+  .mnav{gap:2px;padding:0 10px;background:var(--surface);box-shadow:0 6px 16px rgba(27,26,46,.06)}
+  /* tab-bar look (text + underline) so it reads differently from the season chips above */
+  .mnav a{position:relative;flex:none;padding:14px 14px 13px;border-radius:0;background:none;box-shadow:none;color:var(--mute)}
+  .mnav a b{font-size:16px}
+  .mnav a:hover{background:none;color:var(--ink)}
+  .mnav a.on{background:none;box-shadow:none;color:var(--ink)}
+  .mnav a.on b{background:linear-gradient(135deg,#6B5CFF,#FF7AB6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .mnav a.on::after{content:"";position:absolute;left:14px;right:14px;bottom:5px;height:3px;border-radius:3px;background:linear-gradient(90deg,#6B5CFF,#FF7AB6)}
   .month{margin-top:28px;scroll-margin-top:56px}
   .month-head{top:56px}
 }
