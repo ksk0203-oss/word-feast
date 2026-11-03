@@ -132,7 +132,11 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 }
 
 /* ---------- GREEK EXEGESIS ---------- */
-.grtag{margin-left:auto;display:inline-grid;place-items:center;min-width:30px;height:22px;padding:0 8px;border-radius:8px;background:linear-gradient(135deg,#6B5CFF,#FF7AB6);color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em}
+.grbox{position:absolute;right:16px;top:42px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:56px;height:56px;border-radius:17px;color:#fff;background:linear-gradient(145deg,var(--c,#6B5CFF),color-mix(in srgb,var(--c,#6B5CFF) 45%,#FF7AB6));box-shadow:0 6px 14px color-mix(in srgb,var(--c,#6B5CFF) 38%,transparent),inset 0 1px 0 rgba(255,255,255,.38);cursor:pointer;transition:transform .2s ease,box-shadow .2s ease;outline-offset:3px}
+.grbox::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(120% 90% at 15% 0%,rgba(255,255,255,.34),transparent 55%);pointer-events:none}
+.grbox b{position:relative;font-size:19px;font-weight:900;letter-spacing:.02em;line-height:1}
+.grbox small{position:relative;font-size:10.5px;font-weight:700;letter-spacing:.06em;line-height:1;opacity:.92}
+.grbox:hover,.grbox:focus-visible{transform:translateY(-2px) rotate(-6deg) scale(1.06);box-shadow:0 10px 20px color-mix(in srgb,var(--c,#6B5CFF) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.4)}
 .card .top{align-items:center}
 .gcard{margin-top:16px;background:var(--surface);border-radius:26px;padding:24px 24px 20px;box-shadow:var(--shadow);border:1px solid var(--line)}
 .gnum{display:inline-block;margin-bottom:12px;padding:5px 12px;border-radius:999px;font-size:calc(13px*var(--fs));font-weight:800;color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
@@ -149,4 +153,4 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   .greek-text{font-size:calc(17.5px*var(--fs))}
   .gcard{padding:22px 20px 18px}
 }
-@media print{.gcard{box-shadow:none;border:1px solid #ccc;break-inside:avoid-page}.grtag,.gr{display:none!important}}
+@media print{.gcard{box-shadow:none;border:1px solid #ccc;break-inside:avoid-page}.grbox,.gr{display:none!important}}
