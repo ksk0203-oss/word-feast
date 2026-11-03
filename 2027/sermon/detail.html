@@ -53,6 +53,7 @@
     document.title=e.name+' — 말씀잔치 2027';
     $('detail').setAttribute('data-s',e.season);
     var body='';
+    if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
     e.sections.forEach(function(s,n){body+='<article class="persp"><span class="badge"><b>'+(n+1)+'</b>'+esc(s.title)+'</span><div class="persp-body">'+s.html+'</div></article>'});
     $('dContent').innerHTML=
      '<div class="d-hero" data-ghost="'+(d.getMonth()+1)+'월"><div class="d-hero-in">'+

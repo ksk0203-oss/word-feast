@@ -54,7 +54,8 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
   var lg='';['advent','christmas','epiphany','lent','holy','easter','pentecost','ordinary','king'].forEach(function(k){lg+='<span class="chip" data-s="'+k+'">'+SEAS[k]+'</span>'});
   $('legend').innerHTML=lg;
   fetch('data/toc.json').then(function(r){return r.json()}).then(function(DATA){
-    $('statN').textContent=DATA.length;
+    var sundays={};DATA.forEach(function(e){sundays[e.date]=1});
+    $('statN').textContent=Object.keys(sundays).length; /* 3/21 has two readings on one Sunday */
     var groups={},order=[];
     DATA.forEach(function(e){var d=pd(e.date),key=d.getFullYear()+'-'+(d.getMonth()+1);if(!groups[key]){groups[key]=[];order.push(key)}groups[key].push(e)});
     var h='';
@@ -63,7 +64,7 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
       h+='<div class="month" id="m-'+key+'"><div class="month-head"><h2><em>'+p[1]+'월</em></h2><span>'+p[0]+'</span></div><div class="grid">';
       list.forEach(function(e){
         var d=pd(e.date),wk=ORD[Math.floor((d.getDate()-1)/7)];
-        h+='<a class="card" data-s="'+e.season+'" href="sermon/detail.html?id='+encodeURIComponent(e.id)+'">'+
+        h+='<a class="card'+(e.soon?' soon':'')+'" data-s="'+e.season+'" href="sermon/detail.html?id='+encodeURIComponent(e.id)+'">'+
           '<div class="top"><span class="wk">'+wk+'</span><span class="num">'+e.id+'</span></div>'+
           (e.greek_id?'<span class="grbox" role="link" tabindex="0" title="헬라어 원어 강해 보기" aria-label="헬라어 원어 강해 보기" onclick="event.stopPropagation();event.preventDefault();location.href=\'greek/detail.html?id='+encodeURIComponent(e.greek_id)+'\'" onkeydown="if(event.key===\'Enter\'){event.stopPropagation();event.preventDefault();location.href=\'greek/detail.html?id='+encodeURIComponent(e.greek_id)+'\'}"><b>GR</b><small>원어</small></span>':'')+
           '<div class="date">'+(d.getMonth()+1)+'.'+d.getDate()+'<small>'+WD[d.getDay()]+'</small></div>'+
