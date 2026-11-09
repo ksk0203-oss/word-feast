@@ -3593,5 +3593,420 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-1115",
+    "week": "성령강림절 후 스물다섯째 주일",
+    "scripture": "마태복음 25:14-30",
+    "verses": [
+      {
+        "num": "25:14",
+        "greek": "Ὥσπερ γὰρ ἄνθρωπος* ἀποδημῶν** / ἐκάλεσεν*** τοὺς ἰδίους**** δούλους***** / καὶ παρέδωκεν* αὐτοῖς / τὰ ὑπάρχοντα** αὐτοῦ,",
+        "summary": "왜냐하면 [하늘나라는] 여행을 떠나는 어떤 사람이 자기 종들을 불러서 자기 소유를 그들에게 넘겨준 것과 같기 때문이다.",
+        "note": "*명.주.남단(ἄνθρωπος사람) **분.현.능.주.남단(ἀποδημέω여행을 떠나다) ***직.과.능.3단(καλέω부르다) ****형.목.남복(ἴδιος자기의, 고유한) *****명.목.남복(δοῦλος종) *직.과.능.3단(παραδίδωμι넘겨주다, 맡기다) **분.현.능.목.중복(ὑπάρχω존재하다; 분사: 소유물)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "\"또 하늘 나라는 이런 사정과 같다. 어떤 사람이 여행을 떠나면서, 자기 종들을 불러서, 자기의 재산을 그들에게 맡겼다."
+          },
+          {
+            "label": "새한글",
+            "text": "“그것은 먼 길 나서는 어떤 사람의 경우와 같아요. 그가 자기 종들을 불러서 그들에게 자기 재산을 맡겼습니다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"Again, it will be like a man going on a journey, who called his servants and entrusted his wealth to them."
+          },
+          {
+            "label": "KJV",
+            "text": "For the kingdom of heaven is as a man travelling into a far country, who called his own servants, and delivered unto them his goods."
+          }
+        ]
+      },
+      {
+        "num": "25:15",
+        "greek": "καὶ ᾧ μὲν ἔδωκεν* πέντε τάλαντα** / ᾧ δὲ δύο / ᾧ δὲ ἕν, / ἑκάστῳ*** κατὰ τὴν ἰδίαν**** δύναμιν,***** / καὶ ἀπεδήμησεν.* / εὐθέως**",
+        "summary": "그가 한 사람에게는 다섯 달란트를, 다른 사람에게는 둘을, 또 다른 사람에게는 하나를, 각자의 고유한 능력에 따라 주고서 길을 떠났다. 곧바로",
+        "note": "*직.과.능.3단(δίδωμι주다) **명.목.중복(τάλαντον달란트) ***형.여.남단(ἕκαστος각각의) ****형.목.여단(ἴδιος자기의, 고유한) *****명.목.여단(δύναμις능력) *직.과.능.3단(ἀποδημέω여행을 떠나다) **부사(εὐθέως곧바로)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그는 각 사람의 능력을 따라, 한 사람에게는 다섯 달란트를 주고, 또 한 사람에게는 두 달란트를 주고, 또 다른 한 사람에게는 한 달란트를 주고 떠났다."
+          },
+          {
+            "label": "새한글",
+            "text": "어떤 사람에게는 5달란트를, 어떤 사람에게는 2달란트를, 또 어떤 사람에게는 1달란트를 주었습니다. 저마다 그 사람의 능력에 따른 것이지요. 그러고는 먼 길을 떠났습니다."
+          },
+          {
+            "label": "NIV",
+            "text": "To one he gave five bags of gold, to another two bags, and to another one bag, each according to his ability. Then he went on his journey."
+          },
+          {
+            "label": "KJV",
+            "text": "And unto one he gave five talents, to another two, and to another one; to every man according to his several ability; and straightway took his journey."
+          }
+        ]
+      },
+      {
+        "num": "25:16",
+        "greek": "πορευθεὶς* / ὁ τὰ πέντε τάλαντα** λαβὼν*** / ἠργάσατο**** ἐν αὐτοῖς / καὶ ἐκέρδησεν***** ἄλλα* πέντε·",
+        "summary": "[곧바로] 가서, 다섯 달란트를 받은 자가 그것들로 일하여 다른 다섯 달란트를 벌었다.",
+        "note": "*분.과.수.주.남단(πορεύομαι가다) **명.목.중복(τάλαντον달란트) ***분.과.능.주.남단(λαμβάνω받다) ****직.과.중.3단(ἐργάζομαι일하다) *****직.과.능.3단(κερδαίνω이익을 얻다, 벌다) *형.목.중복(ἄλλος다른)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "다섯 달란트를 받은 사람은 곧 가서, 그것으로 장사를 하여, 다섯 달란트를 더 벌었다."
+          },
+          {
+            "label": "새한글",
+            "text": "5달란트 받은 종이 곧바로 나가서 그걸로 사업을 했어요. 그래서 이익으로 5달란트를 더 벌어들였습니다."
+          },
+          {
+            "label": "NIV",
+            "text": "The man who had received five bags of gold went at once and put his money to work and gained five bags more."
+          },
+          {
+            "label": "KJV",
+            "text": "Then he that had received the five talents went and traded with the same, and made them other five talents."
+          }
+        ]
+      },
+      {
+        "num": "25:17",
+        "greek": "ὡσαύτως* / ὁ τὰ δύο / ἐκέρδησεν** ἄλλα*** δύο·",
+        "summary": "이와 같이 둘을 받은 자도 다른 둘을 벌었다.",
+        "note": "*부사(ὡσαύτως이와 같이) **직.과.능.3단(κερδαίνω이익을 얻다, 벌다) ***형.목.중복(ἄλλος다른)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "두 달란트를 받은 사람도 그와 같이 하여, 두 달란트를 더 벌었다."
+          },
+          {
+            "label": "새한글",
+            "text": "마찬가지로 2달란트 받은 종도 이익으로 2달란트를 더 벌어들였습니다."
+          },
+          {
+            "label": "NIV",
+            "text": "So also, the one with two bags of gold gained two more."
+          },
+          {
+            "label": "KJV",
+            "text": "And likewise he that had received two, he also gained other two."
+          }
+        ]
+      },
+      {
+        "num": "25:18",
+        "greek": "ὁ δὲ τὸ ἓν λαβὼν* / ἀπελθὼν** / ὤρυξεν*** γῆν**** / καὶ ἔκρυψεν***** τὸ ἀργύριον* τοῦ κυρίου** αὐτοῦ.",
+        "summary": "그러나 하나를 받은 자는 떠나가서 땅을 파고 자기 주인의 은(돈)을 숨겼다.",
+        "note": "*분.과.능.주.남단(λαμβάνω받다) **분.과.능.주.남단(ἀπέρχομαι떠나가다) ***직.과.능.3단(ὀρύσσω(땅을) 파다) ****명.목.여단(γῆ땅) *****직.과.능.3단(κρύπτω숨기다) *명.목.중단(ἀργύριον은, 돈) **명.소.남단(κύριος주인, 주님)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 한 달란트 받은 사람은 가서, 땅을 파고, 주인의 돈을 숨겼다."
+          },
+          {
+            "label": "새한글",
+            "text": "그런데 1달란트 받은 종은 가서 땅을 파고 자기 주인의 은돈을 숨겨 두었어요."
+          },
+          {
+            "label": "NIV",
+            "text": "But the man who had received one bag went off, dug a hole in the ground and hid his master's money."
+          },
+          {
+            "label": "KJV",
+            "text": "But he that had received one went and digged in the earth, and hid his lord's money."
+          }
+        ]
+      },
+      {
+        "num": "25:19",
+        "greek": "μετὰ δὲ πολὺν* χρόνον** / ἔρχεται*** ὁ κύριος**** τῶν δούλων***** ἐκείνων / καὶ συναίρει* λόγον** μετ’ αὐτῶν",
+        "summary": "많은 시간이 지난 뒤에 그 종들의 주인이 와서 그들과 셈을 한다.",
+        "note": "*형.목.남단(πολύς많은) **명.목.남단(χρόνος시간) ***직.현.중.3단(ἔρχομαι오다) ****명.주.남단(κύριος주인, 주님) *****명.소.남복(δοῦλος종) *직.현.능.3단(συναίρω함께 들다; 셈하다) **명.목.남단(λόγος말; 셈, 계산)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "오랜 뒤에, 그 종들의 주인이 돌아와서, 그들과 셈을 하게 되었다."
+          },
+          {
+            "label": "새한글",
+            "text": "시간이 많이 흐른 뒤에 바로 그 종들의 주인이 돌아와서 그들과 장부를 맞춰 보았습니다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"After a long time the master of those servants returned and settled accounts with them."
+          },
+          {
+            "label": "KJV",
+            "text": "After a long time the lord of those servants cometh, and reckoneth with them."
+          }
+        ]
+      },
+      {
+        "num": "25:20",
+        "greek": "καὶ προσελθὼν* / ὁ τὰ πέντε τάλαντα** λαβὼν*** / προσήνεγκεν**** ἄλλα***** πέντε τάλαντα / λέγων·* / Κύριε,** / πέντε τάλαντά μοι παρέδωκας·*** / ἴδε ἄλλα πέντε τάλαντα ἐκέρδησα.****",
+        "summary": "그러자 다섯 달란트를 받은 자가 나아와 다른 다섯 달란트를 가져다 바치며 말한다. ‘주님, 제게 다섯 달란트를 맡기셨습니다. 보십시오, 다른 다섯 달란트를 벌었습니다.’",
+        "note": "*분.과.능.주.남단(προσέρχομαι나아오다) **명.목.중복(τάλαντον달란트) ***분.과.능.주.남단(λαμβάνω받다) ****직.과.능.3단(προσφέρω가져다 바치다) *****형.목.중복(ἄλλος다른) *분.현.능.주.남단(λέγω말하다) **명.호.남단(κύριος주인, 주님) ***직.과.능.2단(παραδίδωμι넘겨주다, 맡기다) ****직.과.능.1단(κερδαίνω이익을 얻다, 벌다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "다섯 달란트를 받은 사람은 다섯 달란트를 더 가지고 와서 말하기를 '주인님, 주인께서 다섯 달란트를 내게 맡기셨는데, 보십시오, 다섯 달란트를 더 벌었습니다' 하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "5달란트 받은 종이 다가왔는데, 5달란트를 더 가져와서 말했습니다. ‘주인님, 저에게 5달란트를 맡겨 주셨습니다. 그런데, 보십시오, 제가 이익으로 5달란트를 더 벌어들였습니다.’"
+          },
+          {
+            "label": "NIV",
+            "text": "The man who had received five bags of gold brought the other five. 'Master,' he said, 'you entrusted me with five bags of gold. See, I have gained five more.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And so he that had received five talents came and brought other five talents, saying, Lord, thou deliveredst unto me five talents: behold, I have gained beside them five talents more."
+          }
+        ]
+      },
+      {
+        "num": "25:21",
+        "greek": "ἔφη* αὐτῷ ὁ κύριος** αὐτοῦ· / Εὖ,*** δοῦλε**** ἀγαθὲ***** καὶ πιστέ,* / ἐπὶ ὀλίγα** ἦς*** πιστός,**** / ἐπὶ πολλῶν***** σε καταστήσω·* / εἴσελθε** εἰς τὴν χαρὰν*** τοῦ κυρίου**** σου.",
+        "summary": "그의 주인이 그에게 말했다. ‘잘했다, 선하고 신실한 종아. 적은 것에 신실했으니 많은 것 위에 너를 세우겠다. 네 주인의 기쁨 속으로 들어오너라.’",
+        "note": "*직.미완.능.3단(φημί말하다) **명.주.남단(κύριος주인, 주님) ***부사(εὖ잘) ****명.호.남단(δοῦλος종) *****형.호.남단(ἀγαθός선한) *형.호.남단(πιστός신실한) **형.목.중복(ὀλίγος적은) ***직.미완.능.2단(εἰμί이다) ****형.주.남단(πιστός신실한) *****형.소.중복(πολύς많은) *직.미래.능.1단(καθίστημι세우다) **명령.과.능.2단(εἰσέρχομαι들어가다) ***명.목.여단(χαρά기쁨) ****명.소.남단(κύριος주인, 주님)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그의 주인이 그에게 말하였다. '잘했다! 착하고 신실한 종아. 네가 적은 일에 신실하였으니, 이제 내가 많은 일을 네게 맡기겠다. 와서, 주인과 함께 기쁨을 누려라.'"
+          },
+          {
+            "label": "새한글",
+            "text": "주인이 그에게 말했습니다. ‘잘했다, 착하고 믿을 만한 종아! 적은 것에서 믿을 만했으니 너를 세워 많은 것을 맡게 하겠다. 들어와서 네 주인의 기쁨에 함께하여라.’"
+          },
+          {
+            "label": "NIV",
+            "text": "\"His master replied, 'Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master's happiness!'"
+          },
+          {
+            "label": "KJV",
+            "text": "His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord."
+          }
+        ]
+      },
+      {
+        "num": "25:22",
+        "greek": "προσελθὼν* δὲ καὶ ὁ τὰ δύο τάλαντα** εἶπεν·*** / Κύριε,**** / δύο τάλαντά μοι παρέδωκας·***** / ἴδε ἄλλα* δύο τάλαντα ἐκέρδησα.**",
+        "summary": "둘을 받은 자도 나아와 말했다. ‘주님, 제게 두 달란트를 맡기셨습니다. 보십시오, 다른 두 달란트를 벌었습니다.’",
+        "note": "*분.과.능.주.남단(προσέρχομαι나아오다) **명.목.중복(τάλαντον달란트) ***직.과.능.3단(λέγω말하다) ****명.호.남단(κύριος주인, 주님) *****직.과.능.2단(παραδίδωμι넘겨주다, 맡기다) *형.목.중복(ἄλλος다른) **직.과.능.1단(κερδαίνω이익을 얻다, 벌다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "두 달란트를 받은 사람도 다가와서 '주인님, 주인님께서 두 달란트를 내게 맡기셨는데, 보십시오, 두 달란트를 더 벌었습니다' 하고 말하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "한편 2달란트 받은 종도 다가와서 말했습니다. ‘주인님, 저에게 2달란트를 맡겨 주셨습니다. 그런데, 보십시오, 제가 이익으로 2달란트를 더 벌어들였습니다.’"
+          },
+          {
+            "label": "NIV",
+            "text": "\"The man with two bags of gold also came. 'Master,' he said, 'you entrusted me with two bags of gold; see, I have gained two more.'"
+          },
+          {
+            "label": "KJV",
+            "text": "He also that had received two talents came and said, Lord, thou deliveredst unto me two talents: behold, I have gained two other talents beside them."
+          }
+        ]
+      },
+      {
+        "num": "25:23",
+        "greek": "ἔφη* αὐτῷ ὁ κύριος** αὐτοῦ· / Εὖ,*** δοῦλε**** ἀγαθὲ***** καὶ πιστέ,* / ἐπὶ ὀλίγα** ἦς*** πιστός,**** / ἐπὶ πολλῶν***** σε καταστήσω·* / εἴσελθε** εἰς τὴν χαρὰν*** τοῦ κυρίου**** σου.",
+        "summary": "그의 주인이 그에게 말했다. ‘잘했다, 선하고 신실한 종아. 적은 것에 신실했으니 많은 것 위에 너를 세우겠다. 네 주인의 기쁨 속으로 들어오너라.’",
+        "note": "*직.미완.능.3단(φημί말하다) **명.주.남단(κύριος주인, 주님) ***부사(εὖ잘) ****명.호.남단(δοῦλος종) *****형.호.남단(ἀγαθός선한) *형.호.남단(πιστός신실한) **형.목.중복(ὀλίγος적은) ***직.미완.능.2단(εἰμί이다) ****형.주.남단(πιστός신실한) *****형.소.중복(πολύς많은) *직.미래.능.1단(καθίστημι세우다) **명령.과.능.2단(εἰσέρχομαι들어가다) ***명.목.여단(χαρά기쁨) ****명.소.남단(κύριος주인, 주님)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그의 주인이 그에게 말하였다. '잘했다, 착하고 신실한 종아! 네가 적은 일에 신실하였으니, 이제 내가 많은 일을 네게 맡기겠다. 와서, 주인과 함께 기쁨을 누려라.'"
+          },
+          {
+            "label": "새한글",
+            "text": "주인이 그에게 말했습니다. ‘잘했다, 착하고 믿을 만한 종아! 적은 것에서 믿을 만했으니 너를 세워 많은 것을 맡게 하겠다. 들어가서 네 주인의 기쁨에 함께하여라.’"
+          },
+          {
+            "label": "NIV",
+            "text": "\"His master replied, 'Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master's happiness!'"
+          },
+          {
+            "label": "KJV",
+            "text": "His lord said unto him, Well done, good and faithful servant; thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord."
+          }
+        ]
+      },
+      {
+        "num": "25:24",
+        "greek": "προσελθὼν* δὲ καὶ ὁ τὸ ἓν τάλαντον** εἰληφὼς*** εἶπεν·**** / Κύριε,***** / ἔγνων* σε ὅτι σκληρὸς** εἶ*** ἄνθρωπος,**** / θερίζων***** ὅπου οὐκ ἔσπειρας* / καὶ συνάγων** ὅθεν οὐ διεσκόρπισας·***",
+        "summary": "하나를 받았던 자도 나아와 말했다. ‘주님, 저는 당신이 굳은(가혹한) 사람이어서 심지 않은 곳에서 거두고 흩지 않은 곳에서 모으는 분임을 알았습니다.",
+        "note": "*분.과.능.주.남단(προσέρχομαι나아오다) **명.목.중단(τάλαντον달란트) ***분.현완.능.주.남단(λαμβάνω받다) ****직.과.능.3단(λέγω말하다) *****명.호.남단(κύριος주인, 주님) *직.과.능.1단(γινώσκω알다) **형.주.남단(σκληρός굳은, 가혹한) ***직.현.능.2단(εἰμί이다) ****명.주.남단(ἄνθρωπος사람) *****분.현.능.주.남단(θερίζω거두다) *직.과.능.2단(σπείρω(씨를) 뿌리다) **분.현.능.주.남단(συνάγω모으다) ***직.과.능.2단(διασκορπίζω흩뿌리다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러나 한 달란트를 받은 사람은 다가와서 말하였다. '주인님, 나는, 주인이 굳은 분이시라, 심지 않은 데서 거두시고, 뿌리지 않은 데서 모으시는 줄로 알고,"
+          },
+          {
+            "label": "새한글",
+            "text": "1달란트 받았던 종도 다가와서 말했습니다. ‘주인님, 주인님은 지독한 분이신 것을 제가 알았습니다. 주인님은 뿌리지 않은 데서 거두시고, 흩뿌리지 않은 것에서 모아들이시는 분입니다."
+          },
+          {
+            "label": "NIV",
+            "text": "\"Then the man who had received one bag of gold came. 'Master,' he said, 'I knew that you are a hard man, harvesting where you have not sown and gathering where you have not scattered seed."
+          },
+          {
+            "label": "KJV",
+            "text": "Then he which had received the one talent came and said, Lord, I knew thee that thou art an hard man, reaping where thou hast not sown, and gathering where thou hast not strawed:"
+          }
+        ]
+      },
+      {
+        "num": "25:25",
+        "greek": "καὶ φοβηθεὶς* ἀπελθὼν** / ἔκρυψα*** τὸ τάλαντόν**** σου ἐν τῇ γῇ·***** / ἴδε ἔχεις* τὸ σόν.**",
+        "summary": "그래서 두려워하여 나가서 당신의 달란트를 땅에 숨겼습니다. 보십시오, 당신의 것이 여기 있습니다.’",
+        "note": "*분.과.수.주.남단(φοβέομαι두려워하다) **분.과.능.주.남단(ἀπέρχομαι떠나가다) ***직.과.능.1단(κρύπτω숨기다) ****명.목.중단(τάλαντον달란트) *****명.여.여단(γῆ땅) *직.현.능.2단(ἔχω가지다) **형.목.중단(σός너의 (것))",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "무서워하여 물러가서, 그 달란트를 땅에 숨겨 두었습니다. 보십시오, 여기에 그 돈이 있으니, 받으십시오.'"
+          },
+          {
+            "label": "새한글",
+            "text": "그래서 두려운 나머지 나가서 주인님의 달란트를 땅속에 숨겨 두었습니다. 보십시오, 주인님의 달란트가 여기 있습니다.’"
+          },
+          {
+            "label": "NIV",
+            "text": "So I was afraid and went out and hid your gold in the ground. See, here is what belongs to you.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And I was afraid, and went and hid thy talent in the earth: lo, there thou hast that is thine."
+          }
+        ]
+      },
+      {
+        "num": "25:26",
+        "greek": "ἀποκριθεὶς* δὲ ὁ κύριος** αὐτοῦ εἶπεν*** αὐτῷ· / Πονηρὲ**** δοῦλε***** καὶ ὀκνηρέ,* / ᾔδεις** ὅτι θερίζω*** ὅπου οὐκ ἔσπειρα**** / καὶ συνάγω***** ὅθεν οὐ διεσκόρπισα;*",
+        "summary": "그러나 그의 주인이 대답하여 그에게 말했다. ‘악하고 게으른 종아, 내가 심지 않은 곳에서 거두고 흩지 않은 곳에서 모으는 줄 알았느냐?",
+        "note": "*분.과.수.주.남단(ἀποκρίνομαι대답하다) **명.주.남단(κύριος주인, 주님) ***직.과.능.3단(λέγω말하다) ****형.호.남단(πονηρός악한) *****명.호.남단(δοῦλος종) *형.호.남단(ὀκνηρός게으른) **직.과완.능.2단(οἶδα알다) ***직.현.능.1단(θερίζω거두다) ****직.과.능.1단(σπείρω(씨를) 뿌리다) *****직.현.능.1단(συνάγω모으다) *직.과.능.1단(διασκορπίζω흩뿌리다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그러자 그의 주인이 그에게 말하였다. '악하고 게으른 종아, 너는 내가 심지 않은 데서 거두고, 뿌리지 않은 데서 모으는 줄 알았다."
+          },
+          {
+            "label": "새한글",
+            "text": "주인이 그에게 대답했습니다. ‘악하고 게으른 종아! 네가 알고 있었느냐? 내가 씨 뿌리지 않은 데서 거두고 흩뿌리지 않은 것에서 모아들이는 것을?"
+          },
+          {
+            "label": "NIV",
+            "text": "\"His master replied, 'You wicked, lazy servant! So you knew that I harvest where I have not sown and gather where I have not scattered seed?"
+          },
+          {
+            "label": "KJV",
+            "text": "His lord answered and said unto him, Thou wicked and slothful servant, thou knewest that I reap where I sowed not, and gather where I have not strawed:"
+          }
+        ]
+      },
+      {
+        "num": "25:27",
+        "greek": "ἔδει* σε οὖν βαλεῖν** τὰ ἀργύριά*** μου τοῖς τραπεζίταις,**** / καὶ ἐλθὼν***** ἐγὼ ἐκομισάμην* ἂν τὸ ἐμὸν** σὺν τόκῳ.***",
+        "summary": "그렇다면 너는 내 은(돈)을 환전상들에게 맡겼어야 했다. 그랬다면 내가 돌아와 내 것을 이자와 함께 받았을 것이다.",
+        "note": "*직.미완.능.3단(δέω~해야 한다(ἔδει, 비인칭)) **부정사.과.능(βάλλω던지다, 두다) ***명.목.중복(ἀργύριον은, 돈) ****명.여.남복(τραπεζίτης환전상) *****분.과.능.주.남단(ἔρχομαι오다) *직.과.중.1단(κομίζω받다, 되찾다) **형.목.중단(ἐμός나의 (것)) ***명.여.남단(τόκος이자)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그렇다면, 너는 내 돈을 돈놀이 하는 사람에게 맡겼어야 했다. 그랬더라면, 내가 와서, 내 돈에 이자를 붙여 받았을 것이다."
+          },
+          {
+            "label": "새한글",
+            "text": "그렇다면 너는 내 은돈을 돈 굴려 주는 사람들에게 맡겼어야 마땅했다. 그랬으면 내가 와서 이자와 함께 내 돈을 되찾았을 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "Well then, you should have put my money on deposit with the bankers, so that when I returned I would have received it back with interest."
+          },
+          {
+            "label": "KJV",
+            "text": "Thou oughtest therefore to have put my money to the exchangers, and then at my coming I should have received mine own with usury."
+          }
+        ]
+      },
+      {
+        "num": "25:28",
+        "greek": "ἄρατε* οὖν ἀπ’ αὐτοῦ τὸ τάλαντον** / καὶ δότε*** τῷ ἔχοντι**** τὰ δέκα τάλαντα·*****",
+        "summary": "그러므로 그에게서 그 달란트를 빼앗아 열 달란트를 가진 자에게 주어라.",
+        "note": "*명령.과.능.2복(αἴρω들어 올리다, 빼앗다) **명.목.중단(τάλαντον달란트) ***명령.과.능.2복(δίδωμι주다) ****분.현.능.여.남단(ἔχω가지다) *****명.목.중복(τάλαντον달란트)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그에게서 그 한 달란트를 빼앗아서, 열 달란트 가진 사람에게 주어라."
+          },
+          {
+            "label": "새한글",
+            "text": "그러니 그에게서 그 달란트를 뺏어다가 10달란트 가진 종에게 주어라."
+          },
+          {
+            "label": "NIV",
+            "text": "\"'So take the bag of gold from him and give it to the one who has ten bags."
+          },
+          {
+            "label": "KJV",
+            "text": "Take therefore the talent from him, and give it unto him which hath ten talents."
+          }
+        ]
+      },
+      {
+        "num": "25:29",
+        "greek": "τῷ γὰρ ἔχοντι* παντὶ** δοθήσεται*** καὶ περισσευθήσεται·**** / τοῦ δὲ μὴ ἔχοντος***** / καὶ ὃ ἔχει* ἀρθήσεται** ἀπ’ αὐτοῦ.",
+        "summary": "가진 모든 자에게는 주어질 것이고 넘치게 될 것이다. 그러나 갖지 못한 자에게서는 가진 것마저 빼앗길 것이다.",
+        "note": "*분.현.능.여.남단(ἔχω가지다) **형.여.남단(πᾶς모든) ***직.미래.수.3단(δίδωμι주다) ****직.미래.수.3단(περισσεύω넘치다) *****분.현.능.소.남단(ἔχω가지다) *직.현.능.3단(ἔχω가지다) **직.미래.수.3단(αἴρω들어 올리다, 빼앗다)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "가진 사람에게는 더 주어서 넘치게 하고, 갖지 못한 사람에게서는 있는 것마저 빼앗을 것이다."
+          },
+          {
+            "label": "새한글",
+            "text": "누구든 가진 것이 있는 사람에게는 더 주셔서 차고 넘치게 하실 것이다. 그렇지만 가진 것이 없는 사람, 그 사람한테서는 있는 것조차 빼앗아 가실 것이다."
+          },
+          {
+            "label": "NIV",
+            "text": "For whoever has will be given more, and they will have an abundance. Whoever does not have, even what they have will be taken from them."
+          },
+          {
+            "label": "KJV",
+            "text": "For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath."
+          }
+        ]
+      },
+      {
+        "num": "25:30",
+        "greek": "καὶ τὸν ἀχρεῖον* δοῦλον** ἐκβάλετε*** / εἰς τὸ σκότος**** τὸ ἐξώτερον·***** / ἐκεῖ* ἔσται** ὁ κλαυθμὸς*** καὶ ὁ βρυγμὸς**** τῶν ὀδόντων.*****",
+        "summary": "그리고 그 쓸모없는 종을 바깥 어두운 곳으로 내던져라. 거기에 울부짖음과 이를 가는 일이 있을 것이다.’",
+        "note": "*형.목.남단(ἀχρεῖος쓸모없는) **명.목.남단(δοῦλος종) ***명령.과.능.2복(ἐκβάλλω내던지다, 쫓아내다) ****명.목.중단(σκότος어둠) *****형.목.중단(ἐξώτερος더 바깥의) *부사(ἐκεῖ거기에) **직.미래.중.3단(εἰμί이다) ***명.주.남단(κλαυθμός울부짖음) ****명.주.남단(βρυγμός이를 갊) *****명.소.남복(ὀδούς이(齒))",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "이 쓸모 없는 종을 바깥 어두운 데로 내쫓아라. 거기서 슬피 울며 이를 가는 일이 있을 것이다.'\""
+          },
+          {
+            "label": "새한글",
+            "text": "그리고 쓸모없는 그 종을 바깥 어두운 데로 내쫓아라. 거기서 그는 울부짖으며 이를 갈 것이다.’”"
+          },
+          {
+            "label": "NIV",
+            "text": "And throw that worthless servant outside, into the darkness, where there will be weeping and gnashing of teeth.'"
+          },
+          {
+            "label": "KJV",
+            "text": "And cast ye the unprofitable servant into outer darkness: there shall be weeping and gnashing of teeth."
+          }
+        ]
+      }
+    ]
   }
 ]
