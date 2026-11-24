@@ -196,15 +196,18 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 :root[data-theme="dark"] .mnav{background:linear-gradient(135deg,#2D2878,#4A3597)}
 @media print{.mnav{display:none!important}}
 
-/* ---------- SCRIPTURE LINK BUTTON (sits next to the passage in the hero) ---------- */
-.d-scr-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:12px}
-.d-scr-row .d-scr{margin-top:0}
-.scrbtn{display:inline-flex;align-items:center;gap:8px;padding:8px 8px 8px 16px;border-radius:999px;background:#fff;color:#1B1A2E;font-size:14px;font-weight:800;letter-spacing:-.01em;line-height:1;box-shadow:0 6px 16px rgba(10,6,40,.28);transition:transform .2s ease,box-shadow .2s ease}
-.scrbtn i{font-style:normal;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#1B1A2E;color:#fff;font-size:13px;font-weight:800}
-.scrbtn:hover,.scrbtn:focus-visible{transform:translateY(-2px);box-shadow:0 10px 22px rgba(10,6,40,.36)}
-.scrbtn:focus-visible{outline:2px solid #fff;outline-offset:3px}
-@media(max-width:768px){.scrbtn{font-size:13px;padding:7px 7px 7px 14px}.scrbtn i{width:22px;height:22px;font-size:12px}}
-@media print{.scrbtn{display:none}}
+/* ---------- SCRIPTURE LINK BOX (always beside the passage in the hero) ---------- */
+.d-scr-row{display:flex;flex-wrap:nowrap;align-items:center;gap:12px;margin-top:12px}
+.d-scr-row .d-scr{margin-top:0;min-width:0}
+.scrbox{display:inline-flex;align-items:stretch;flex:none;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 6px 16px rgba(10,6,40,.28);font-weight:800;line-height:1;letter-spacing:-.01em}
+.scrbox>b{display:flex;align-items:center;padding:0 12px;color:#1B1A2E;font-size:13.5px;font-weight:800}
+.scrbox>a{display:flex;align-items:center;gap:5px;padding:11px 13px;background:#1B1A2E;color:#fff;font-size:13.5px;white-space:nowrap;transition:background .2s ease}
+.scrbox>a+a{border-left:1px solid rgba(255,255,255,.24)}
+.scrbox>a i{font-style:normal;font-weight:800}
+.scrbox>a:hover,.scrbox>a:focus-visible{background:#35316A}
+.scrbox>a:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+@media(max-width:768px){.d-scr-row{gap:10px}.scrbox>b{padding:0 9px;font-size:12.5px}.scrbox>a{padding:10px 10px;font-size:12.5px;gap:4px}}
+@media print{.scrbox{display:none}}
 /* ---------- SEASON CHIPS = LINKS ---------- */
 a.chip{cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
 a.chip:hover,a.chip:focus-visible{transform:translateY(-2px);box-shadow:0 8px 18px color-mix(in srgb,var(--c) 30%,transparent)}

@@ -64,7 +64,7 @@
         var r=/-(\d+):(\d+)\s*$/.exec(part);if(r)add(+r[1],1); /* passage runs into the next chapter */
       });
       if(!links.length)return;
-      scr=links.map(function(l){return '<a class="scrbtn" href="'+l.url+'" target="_blank" rel="noopener" title="대한성서공회 개역개정 본문 열기">'+(links.length>1?'개역개정 '+l.ch+'장':'개역개정 본문 보기')+'<i>↗</i></a>'}).join('');
+      scr='<span class="scrbox"><b>개역개정</b>'+links.map(function(l){return '<a href="'+l.url+'" target="_blank" rel="noopener" title="대한성서공회 개역개정 본문 열기">'+(links.length>1?l.ch+'장':'본문 보기')+' <i>↗</i></a>'}).join('')+'</span>';
     })();
     if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
     e.sections.forEach(function(s,n){body+='<article class="persp"><span class="badge"><b>'+(n+1)+'</b>'+esc(s.title)+'</span><div class="persp-body">'+s.html+'</div></article>'});
