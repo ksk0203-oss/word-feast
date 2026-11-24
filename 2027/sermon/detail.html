@@ -53,6 +53,20 @@
     document.title=e.name+' — 말씀잔치 2027';
     $('detail').setAttribute('data-s',e.season);
     var body='';
+    var scr='';
+    (function(){
+      var CODE={'마태복음':'mat','마가복음':'mrk','누가복음':'luk','요한복음':'jhn'},code=CODE[e.book];
+      if(!code)return;
+      var links=[],seen={};
+      function add(ch,sec){if(seen[ch])return;seen[ch]=1;links.push({ch:ch,url:'https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book='+code+'&chap='+ch+'&sec='+sec})}
+      e.passage.replace(/[–—]/g,'-').split(';').forEach(function(part){
+        var m=/^\s*(\d+):\(?(\d+)/.exec(part);if(m)add(+m[1],+m[2]);
+        var r=/-(\d+):(\d+)\s*$/.exec(part);if(r)add(+r[1],1); /* passage runs into the next chapter */
+      });
+      if(!links.length)return;
+      var btns=links.map(function(l){return '<a href="'+l.url+'" target="_blank" rel="noopener">'+(links.length>1?'개역개정 '+l.ch+'장 보기':'개역개정 본문 보기')+' <i>↗</i></a>'}).join('');
+      scr='<div class="scr"><div class="t"><small>본문 말씀</small><b>'+esc(e.book)+' '+esc(e.passage)+'</b></div><div class="bt">'+btns+'</div></div>';
+    })();
     if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
     e.sections.forEach(function(s,n){body+='<article class="persp"><span class="badge"><b>'+(n+1)+'</b>'+esc(s.title)+'</span><div class="persp-body">'+s.html+'</div></article>'});
     $('dContent').innerHTML=
@@ -60,7 +74,7 @@
        '<div class="nav-row"><a class="back" href="../index.html">← 목차</a><button class="prt" onclick="doPrint()">🖨 인쇄</button></div>'+
        '<p class="d-cap">'+SEAS[e.season]+' · '+d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')</p>'+
        '<h2 class="d-title">'+esc(e.name)+'</h2><p class="d-scr">'+esc(e.book)+' '+esc(e.passage)+'</p></div></div>'+
-     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+(e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
+     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+scr+(e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
        '<div class="pager">'+(prev?'<a href="detail.html?id='+prev.id+'">‹ 이전 주일</a>':'<span></span>')+(next?'<a href="detail.html?id='+next.id+'">다음 주일 ›</a>':'<a href="../index.html">목차로 ›</a>')+'</div></div>';
     window.scrollTo(0,0);syncThumb();
   }).catch(function(){$('dContent').innerHTML='<p style="padding:24px">불러오지 못했습니다.</p>'});
