@@ -196,17 +196,15 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 :root[data-theme="dark"] .mnav{background:linear-gradient(135deg,#2D2878,#4A3597)}
 @media print{.mnav{display:none!important}}
 
-/* ---------- SCRIPTURE LINK (개역개정, 대한성서공회) ---------- */
-.scr{display:flex;align-items:center;justify-content:space-between;gap:12px 16px;flex-wrap:wrap;padding:18px 20px;border-radius:24px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
-.scr .t{display:grid;gap:3px}
-.scr .t small{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--c)}
-.scr .t b{font-size:calc(18px*var(--fs));font-weight:800;letter-spacing:-.02em;color:var(--ink)}
-.scr .bt{display:flex;flex-wrap:wrap;gap:8px}
-.scr .bt a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#4A3FC9,#7C58DF);color:#fff;font-size:14px;font-weight:700;box-shadow:0 6px 14px rgba(74,63,201,.28);transition:transform .2s ease,box-shadow .2s ease}
-.scr .bt a i{font-style:normal;font-weight:800}
-.scr .bt a:hover,.scr .bt a:focus-visible{transform:translateY(-2px);box-shadow:0 10px 20px rgba(74,63,201,.36)}
-@media(max-width:768px){.scr{padding:16px 16px}.scr .bt{width:100%}.scr .bt a{flex:1 1 auto;justify-content:center}}
-@media print{.scr .bt{display:none}}
+/* ---------- SCRIPTURE LINK BUTTON (sits next to the passage in the hero) ---------- */
+.d-scr-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:12px}
+.d-scr-row .d-scr{margin-top:0}
+.scrbtn{display:inline-flex;align-items:center;gap:8px;padding:8px 8px 8px 16px;border-radius:999px;background:#fff;color:#1B1A2E;font-size:14px;font-weight:800;letter-spacing:-.01em;line-height:1;box-shadow:0 6px 16px rgba(10,6,40,.28);transition:transform .2s ease,box-shadow .2s ease}
+.scrbtn i{font-style:normal;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#1B1A2E;color:#fff;font-size:13px;font-weight:800}
+.scrbtn:hover,.scrbtn:focus-visible{transform:translateY(-2px);box-shadow:0 10px 22px rgba(10,6,40,.36)}
+.scrbtn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media(max-width:768px){.scrbtn{font-size:13px;padding:7px 7px 7px 14px}.scrbtn i{width:22px;height:22px;font-size:12px}}
+@media print{.scrbtn{display:none}}
 /* ---------- SEASON CHIPS = LINKS ---------- */
 a.chip{cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
 a.chip:hover,a.chip:focus-visible{transform:translateY(-2px);box-shadow:0 8px 18px color-mix(in srgb,var(--c) 30%,transparent)}
