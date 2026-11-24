@@ -76,10 +76,9 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
     });
     $('months').innerHTML=h;
     /* monthly index: left column on desktop, sticky top bar on mobile */
-    var nav=$('monthNav'),nh='';
+    var nav=$('monthNav'),nh='<a class="ext" href="../2026/index.html" title="2026년 말씀잔치로 이동"><b>2026</b><small>버전 ↗</small></a>'; /* 2026 edition link sits first */
     var prevY=null;
     order.forEach(function(key){var p=key.split('-');nh+='<a href="#m-'+key+'" data-m="m-'+key+'"'+(prevY&&prevY!==p[0]?' class="ny"':'')+'><b>'+p[1]+'월</b><small>'+p[0]+'</small></a>';prevY=p[0]});
-    nh+='<a class="ny ext" href="../2026/index.html" title="2026년 말씀잔치로 이동"><b>2026</b><small>버전 ↗</small></a>';
     nav.innerHTML=nh;
     var items=nav.querySelectorAll('a[data-m]');
     function setActive(id){
