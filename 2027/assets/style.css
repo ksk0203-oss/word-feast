@@ -207,3 +207,13 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .scr .bt a:hover,.scr .bt a:focus-visible{transform:translateY(-2px);box-shadow:0 10px 20px rgba(74,63,201,.36)}
 @media(max-width:768px){.scr{padding:16px 16px}.scr .bt{width:100%}.scr .bt a{flex:1 1 auto;justify-content:center}}
 @media print{.scr .bt{display:none}}
+/* ---------- SEASON CHIPS = LINKS ---------- */
+a.chip{cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+a.chip:hover,a.chip:focus-visible{transform:translateY(-2px);box-shadow:0 8px 18px color-mix(in srgb,var(--c) 30%,transparent)}
+a.chip:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+a.chip.off{opacity:.45;cursor:default}
+.card{scroll-margin-top:96px}
+@keyframes cardPulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--c) 70%,transparent),var(--shadow)}60%{box-shadow:0 0 0 10px color-mix(in srgb,var(--c) 0%,transparent),var(--shadow)}100%{box-shadow:var(--shadow)}}
+.card.pulse{animation:cardPulse 1.3s ease-out 1}
+@media(max-width:899px){.card{scroll-margin-top:150px}}
+@media(prefers-reduced-motion:reduce){.card.pulse{animation:none;outline:3px solid var(--c);outline-offset:2px}}

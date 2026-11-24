@@ -52,7 +52,7 @@
 <script>
 var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번째주'];
 (function(){
-  var lg='';['advent','christmas','epiphany','lent','holy','easter','pentecost','ordinary','king'].forEach(function(k){lg+='<span class="chip" data-s="'+k+'">'+SEAS[k]+'</span>'});
+  var lg='';['advent','christmas','epiphany','lent','holy','easter','pentecost','ordinary','king'].forEach(function(k){lg+='<a class="chip" href="#" role="button" data-s="'+k+'" title="'+SEAS[k]+' 기간으로 이동">'+SEAS[k]+'</a>'});
   $('legend').innerHTML=lg;
   fetch('data/toc.json').then(function(r){return r.json()}).then(function(DATA){
     var sundays={};DATA.forEach(function(e){sundays[e.date]=1});
@@ -75,6 +75,16 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
       h+='</div></div>';
     });
     $('months').innerHTML=h;
+    /* season chips on the cover jump to the first week of that season */
+    document.querySelectorAll('#legend .chip').forEach(function(c){
+      var k=c.dataset.s,first=document.querySelector('a.card[data-s="'+k+'"]');
+      if(!first){c.classList.add('off');c.removeAttribute('href');c.removeAttribute('role');return}
+      c.onclick=function(ev){
+        ev.preventDefault();
+        first.scrollIntoView({behavior:'smooth',block:'start'});
+        document.querySelectorAll('a.card[data-s="'+k+'"]').forEach(function(x){x.classList.remove('pulse');void x.offsetWidth;x.classList.add('pulse')});
+      };
+    });
     /* monthly index: left column on desktop, sticky top bar on mobile */
     var nav=$('monthNav'),nh='<a class="ext" href="../2026/index.html" title="2026년 말씀잔치로 이동"><b>2026</b><small>버전 ↗</small></a>'; /* 2026 edition link sits first */
     var prevY=null;
