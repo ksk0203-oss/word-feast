@@ -34,6 +34,7 @@
         <div class="stat"><b>4</b><small>관점 해설</small></div>
         <div class="stat"><b>Mk</b><small>마가복음의 해</small></div>
       </div>
+      <a class="ver-link" href="../2026/index.html"><span>2026년 말씀잔치 보기</span><i>→</i></a>
     </div>
   </header>
   <main class="toc">
@@ -78,8 +79,9 @@ var ORD=['첫번째주','두번째주','세번째주','네번째주','다섯번�
     var nav=$('monthNav'),nh='';
     var prevY=null;
     order.forEach(function(key){var p=key.split('-');nh+='<a href="#m-'+key+'" data-m="m-'+key+'"'+(prevY&&prevY!==p[0]?' class="ny"':'')+'><b>'+p[1]+'월</b><small>'+p[0]+'</small></a>';prevY=p[0]});
+    nh+='<a class="ny ext" href="../2026/index.html" title="2026년 말씀잔치로 이동"><b>2026</b><small>버전 ↗</small></a>';
     nav.innerHTML=nh;
-    var items=nav.querySelectorAll('a');
+    var items=nav.querySelectorAll('a[data-m]');
     function setActive(id){
       items.forEach(function(a){var on=a.dataset.m===id;a.classList.toggle('on',on);if(on){a.setAttribute('aria-current','true');if(nav.scrollWidth>nav.clientWidth){nav.scrollTo({left:a.offsetLeft-(nav.clientWidth-a.offsetWidth)/2,behavior:'smooth'})}}else a.removeAttribute('aria-current')});
     }
