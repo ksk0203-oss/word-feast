@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta name="theme-color" content="#14122B">
+<title>성경 본문 — 말씀잔치 2027</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="../assets/style.css?v=20261124b">
+</head>
+<body>
+<section id="detail">
+  <div id="dContent"></div>
+</section>
+<script src="../assets/app.js?v=20261124b"></script>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var sid=q.get('sid'),url=q.get('u'),book=q.get('b')||'',passage=q.get('p')||'';
+  var backHref=sid?'../sermon/detail.html?id='+encodeURIComponent(sid):'../index.html';
+  if(book||passage)document.title=esc(book)+' '+esc(passage)+' — 말씀잔치 2027';
+  if(!url){
+    $('dContent').innerHTML='<div class="d-hero"><div class="d-hero-in"><p class="d-cap">성경 본문 링크를 찾을 수 없습니다.</p><a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a></div></div>';
+    return;
+  }
+  $('dContent').innerHTML=
+    '<div class="d-hero" data-ghost="GAE"><div class="d-hero-in">'+
+      '<p class="d-cap">개역개정 성경 본문</p>'+
+      '<h2 class="d-title">'+esc(book)+' '+esc(passage)+'</h2>'+
+    '</div></div>'+
+    '<div class="d-body" style="margin-top:-28px">'+
+      '<a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a>'+
+      '<a class="gr" href="'+esc(url)+'" target="_blank" rel="noopener" style="margin-top:12px"><i>📜</i>개역개정 본문 열기 (새 창)</a>'+
+      '<p class="scripture-tip">위 버튼을 누르면 대한성서공회 성경플랫폼이 새 창(새 탭)으로 열립니다. 다 읽으신 뒤에는 그 창을 닫거나 탭을 전환해 이 화면으로 돌아오신 다음, 아래 버튼으로 해설을 이어서 보세요.</p>'+
+      '<a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a>'+
+    '</div>';
+})();
+</script>
+</body>
+</html>
