@@ -74,7 +74,8 @@
       var U=code.toUpperCase(),btns;
       if(MOB){
         var url='https://bible.bskorea.or.kr/bible/NKRV/'+U+'.'+st[0]+'.'+st[1]+'-'+U+'.'+en[0]+'.'+en[1];
-        btns='<a href="'+url+'" target="_blank" rel="noopener" title="대한성서공회 성경플랫폼 개역개정 본문 열기">본문 보기 <i>↗</i></a>';
+        /* same tab (no target=_blank): lets the phone's native 뒤로가기 return here, unlike a new tab with no way back */
+        btns='<a href="'+url+'" title="대한성서공회 성경플랫폼 개역개정 본문 열기 (뒤로가기로 돌아올 수 있어요)">본문 보기 <i>↗</i></a>';
       }else{
         var links=[],seen={};
         function add(ch,sec){if(seen[ch])return;seen[ch]=1;links.push({ch:ch,url:'https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book='+code+'&chap='+ch+'&sec='+sec})}
