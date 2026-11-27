@@ -17,6 +17,38 @@ function setFS(v){document.documentElement.style.setProperty('--fs',v);document.
 document.querySelectorAll('.fs-btn').forEach(function(b){b.onclick=function(){setFS(b.dataset.fs)}});
 try{var sv=localStorage.getItem('wf27-fs');if(sv)setFS(sv)}catch(e){}
 
+/* ---- pinch-to-zoom = font size, not the whole page ----
+   Two fingers spreading/pinching resizes text (via --fs) instead of the browser's
+   native whole-page zoom. We block the native gesture and drive --fs ourselves. */
+(function(){
+  var MIN=0.8,MAX=1.7;
+  var startDist=null,startFS=1;
+  function curFS(){var v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--fs'));return v||1}
+  function dist(a,b){return Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY)}
+  document.addEventListener('touchstart',function(e){
+    if(e.touches.length===2){startDist=dist(e.touches[0],e.touches[1]);startFS=curFS()}
+  },{passive:true});
+  document.addEventListener('touchmove',function(e){
+    if(e.touches.length===2&&startDist){
+      e.preventDefault();
+      var r=dist(e.touches[0],e.touches[1])/startDist;
+      var v=Math.max(MIN,Math.min(MAX,startFS*r));
+      document.documentElement.style.setProperty('--fs',v.toFixed(2));
+    }
+  },{passive:false});
+  function endPinch(e){if(!e.touches||e.touches.length<2){if(startDist)setFS(curFS().toFixed(2));startDist=null}}
+  document.addEventListener('touchend',endPinch,{passive:true});
+  document.addEventListener('touchcancel',endPinch,{passive:true});
+  /* Safari's proprietary gesture events fire alongside/instead of touch events on iOS */
+  document.addEventListener('gesturestart',function(e){e.preventDefault();startFS=curFS()},{passive:false});
+  document.addEventListener('gesturechange',function(e){
+    e.preventDefault();
+    var v=Math.max(MIN,Math.min(MAX,startFS*e.scale));
+    document.documentElement.style.setProperty('--fs',v.toFixed(2));
+  },{passive:false});
+  document.addEventListener('gestureend',function(){setFS(curFS().toFixed(2))});
+})();
+
 /* ---- print ---- */
 function doPrint(){
   var ua=navigator.userAgent||'';
