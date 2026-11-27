@@ -54,10 +54,10 @@
     $('detail').setAttribute('data-s',e.season);
     var body='';
     var scr='';
-    /* scripture_id means we host the 개역개정 text ourselves (2027/scripture/detail.html) — a page we
-       control, with its own "해설로 돌아가기" button, same pattern as 헬라어 원어 강해. No scripture_id yet
-       → fall back to a plain link out to 대한성서공회 (no button of ours can appear on their page). */
-    if(!e.scripture_id)(function(){
+    /* scripture_html means the 개역개정 text is baked right into this entry (shown inline below, same spot
+       as the 2026 edition) — no need for any external link. Weeks without it yet fall back to a plain
+       link out to 대한성서공회. */
+    if(!e.scripture_html)(function(){
       var CODE={'마태복음':'mat','마가복음':'mrk','누가복음':'luk','요한복음':'jhn'},code=CODE[e.book];
       if(!code)return;
       /* phones get the responsive 성경플랫폼 (highlights the passage); desktop gets the classic reader that jumps to the first verse */
@@ -86,6 +86,7 @@
       }
       scr='<span class="scrbox"><b>개역개정</b>'+btns+'</span>';
     })();
+    var scriptureHtml=e.scripture_html?'<div class="scripture"><span class="tag">개역개정</span><p>'+e.scripture_html+'</p></div>':'';
     if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
     e.sections.forEach(function(s,n){body+='<article class="persp"><span class="badge"><b>'+(n+1)+'</b>'+esc(s.title)+'</span><div class="persp-body">'+s.html+'</div></article>'});
     $('dContent').innerHTML=
@@ -93,8 +94,7 @@
        '<div class="nav-row"><a class="back" href="../index.html">← 목차</a><button class="prt" onclick="doPrint()">🖨 인쇄</button></div>'+
        '<p class="d-cap">'+SEAS[e.season]+' · '+d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')</p>'+
        '<h2 class="d-title">'+esc(e.name)+'</h2><div class="d-scr-row"><p class="d-scr">'+esc(e.book)+' '+esc(e.passage)+'</p>'+scr+'</div></div></div>'+
-     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+
-       (e.scripture_id?'<a class="gr" href="../scripture/detail.html?id='+encodeURIComponent(e.scripture_id)+'"><i>GAE</i>개역개정 성경 본문 보기</a>':'')+
+     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+scriptureHtml+
        (e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
        '<div class="pager">'+(prev?'<a href="detail.html?id='+prev.id+'">‹ 이전 주일</a>':'<span></span>')+(next?'<a href="detail.html?id='+next.id+'">다음 주일 ›</a>':'<a href="../index.html">목차로 ›</a>')+'</div></div>';
     window.scrollTo(0,0);syncThumb();

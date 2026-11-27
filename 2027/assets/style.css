@@ -93,9 +93,10 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .d-title{margin-top:8px;font-size:clamp(28px,6.4vw,46px);line-height:1.2;font-weight:800;letter-spacing:-.035em}
 .d-scr{margin-top:12px;font-size:clamp(17px,3.4vw,21px);font-weight:500;opacity:.95}
 .d-body{max-width:760px;margin:-28px auto 0;padding:0 14px 90px;position:relative}
-.scripture{background:var(--surface);border-radius:26px;padding:26px 24px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.scripture{margin-top:16px;background:var(--surface);border-radius:26px;padding:26px 24px;box-shadow:var(--shadow);border:1px solid var(--line)}
 .scripture .tag{display:inline-block;font-size:12px;font-weight:800;color:var(--c);letter-spacing:.08em;margin-bottom:10px}
-.scripture p{font-size:calc(17px*var(--fs));line-height:2.05;color:var(--body)}
+.scripture p{font-size:calc(17px*var(--fs));line-height:2.05;color:var(--body);text-align:justify}
+.scripture sup{font-size:.68em;font-weight:800;color:var(--c);margin-right:2px}
 .ph{border:2px dashed var(--line);border-radius:14px;padding:18px;text-align:center;color:var(--mute);font-size:14.5px;line-height:1.8}
 .persp{margin-top:16px;background:var(--surface);border-radius:26px;padding:26px 24px 22px;box-shadow:var(--shadow);border:1px solid var(--line)}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;font-weight:800;font-size:calc(16px*var(--fs));color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent);margin-bottom:14px}
