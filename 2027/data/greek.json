@@ -341,5 +341,204 @@
         ]
       }
     ]
+  },
+  {
+    "id": "greek-1206",
+    "week": "대림절 두 번째 주일",
+    "scripture": "마가복음 1:1-8",
+    "verses": [
+      {
+        "num": "1:1",
+        "greek": "Ἀρχὴ* τοῦ εὐαγγελίου** / Ἰησοῦ χριστοῦ υἱοῦ θεοῦ.",
+        "summary": "하나님의 아들 예수 그리스도 복음의 시작",
+        "note": "*명.주.여단 (ἀρχή시작, 처음, 근원) **명.속.중단 (εὐαγγέλιον복음), εὖ좋은+ἄγγελος소식(사자, 전달자)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "하나님의 아들 예수 그리스도의 복음의 시작은 이러하다."
+          },
+          {
+            "label": "새한글",
+            "text": "예수 그리스도, 곧 하나님의 아들의 복음의 시작."
+          },
+          {
+            "label": "NIV",
+            "text": "The beginning of the good news about Jesus the Messiah, the Son of God,"
+          },
+          {
+            "label": "KJV",
+            "text": "The beginning of the gospel of Jesus Christ, the Son of God;"
+          }
+        ]
+      },
+      {
+        "num": "1:2",
+        "greek": "Καθὼς* γέγραπται**/ἐν τῷ Ἠσαΐᾳ***τῷ προφήτῃ· / Ἰδοὺ ἀποστέλλω****τὸν ἄγγελόν μου / πρὸ προσώπου* σου, / ὃς** κατασκευάσει*** τὴν ὁδόν**** σου·",
+        "summary": "그 일은 이미 예언자 이사야의 글에 기록된 것과 같다. “보라, 내가 나의 사자에게 할 일을 주어 보낸다. 그가 너의 길을 닦을 것이다.”",
+        "note": "*접속사 (Καθὼς~와 같이, 한 대로, 처럼) **직.현완.수.3단 (γράφω기록하다) ***명.여격.남단 (Ἠσαΐας이사야) ****직.현.능.1단 (ἀποστέλλω 파송하다), ἀπό~로부터+στέλλω보내다 *명.속.중단 (πρόσωπον얼굴, 앞) **관계대명사.주.남단 (ὅς그가, ~하는 사람) ***직.미래.능.3단 (κατασκευάζω준비하다), κατά아래로(~따라)+σκευάζω갖추다, 준비하다 ****명.대.여단 (ὁδός길)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "예언자 이사야의 글에 기록하기를, “보아라, 내가 내 심부름꾼을 너보다 앞서 보낸다. 그가 네 길을 닦을 것이다.”"
+          },
+          {
+            "label": "새한글",
+            "text": "예언자 이사야의 글에 이렇게 적혀 있다. “보라, 나의 소식꾼을 너보다 앞서 보낸다. 그가 너의 길을 마련할 것이야."
+          },
+          {
+            "label": "NIV",
+            "text": "as it is written in Isaiah the prophet: “I will send my messenger ahead of you, who will prepare your way”—"
+          },
+          {
+            "label": "KJV",
+            "text": "As it is written in the prophets, Behold, I send my messenger before thy face, which shall prepare thy way before thee."
+          }
+        ]
+      },
+      {
+        "num": "1:3",
+        "greek": "φωνὴ βοῶντος* ἐν τῇ ἐρήμῳ·** Ἑτοιμάσατε*** τὴν ὁδὸν κυρίου, / εὐθείας****ποιεῖτε* τὰς τρίβους** αὐτοῦ,",
+        "summary": "“그는 광야에 외치는 소리다. ‘너희는 주님의 길을 준비하라. 너희는 그의 오솔길들을 고르게 닦아라.’”",
+        "note": "*분.현.능.속.남단 (βοάω외치다, 부르짖다) **형(대명사적).여격.여단 (ἔρημος광야) ***명.과.능.2복 (ἑτοιμάζω예비하다, 준비하다) ****형.대.여복 (εὐθύς곧은, 바른) *명.현.능2복 (ποιέω만들다, 하다) **명.대.여복 (τρίβος오솔길)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "“광야에서 외치는 이의 소리가 있다. ‘너희는 주님의 길을 예비하고, 그의 길을 곧게 하여라’”"
+          },
+          {
+            "label": "새한글",
+            "text": "광야에서 외치는 이의 소리이다. ‘너희는 닦으라, 주님의 길을. 곧게 만들어라, 주님 걸으실 좁은 길들을.’”"
+          },
+          {
+            "label": "NIV",
+            "text": "“a voice of one calling in the wilderness, ‘Prepare the way for the Lord, make straight paths for him.’”"
+          },
+          {
+            "label": "KJV",
+            "text": "The voice of one crying in the wilderness, Prepare ye the way of the Lord, make his paths straight."
+          }
+        ]
+      },
+      {
+        "num": "1:4",
+        "greek": "ἐγένετο* Ἰωάννης ὁ βαπτίζων** ἐν τῇ ἐρήμῳ / κηρύσσων*** βάπτισμα μετανοίας**** / εἰς ἄφεσιν* ἁμαρτιῶν.",
+        "summary": "세례요한이 ‘죄들의 용서함을 위한 회개의 세례를 선포하며’ 광야에 이르렀다.",
+        "note": "*직.과.중.3단 (γίνομαι되다, 일어나다) **분.현.능.주.남단 (βαπτίζω세례를 주다) ***분.현.능.주.남단 (κηρύσσω선포하다) ****명.속.여단 (μετάνοια회개), μετανοέω=μετα뒤+νοέω생각하다 *명.대.여단 (ἄφεσις용서, 죄 사함)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "한 것과 같이, 세례자 요한이 광야에 나타나서, 죄를 용서받게 하는 회개의 세례를 선포하였다."
+          },
+          {
+            "label": "새한글",
+            "text": "그와 같이, 요한이 광야에 이르러 세례를 주었다. 또 선포하기를, 회개하고 세례를 받아 죄를 용서받으라고 했다."
+          },
+          {
+            "label": "NIV",
+            "text": "And so John the Baptist appeared in the wilderness, preaching a baptism of repentance for the forgiveness of sins."
+          },
+          {
+            "label": "KJV",
+            "text": "John did baptize in the wilderness, and preach the baptism of repentance for the remission of sins."
+          }
+        ]
+      },
+      {
+        "num": "1:5",
+        "greek": "καὶ ἐξεπορεύετο* πρὸς αὐτὸν / πᾶσα** ἡ Ἰουδαία χώρα καὶ οἱ Ἱεροσολυμῖται*** πάντες, / καὶ ἐβαπτίζοντο ὑπ’ αὐτοῦ / ἐν τῷ Ἰορδάνῃ ποταμῷ / ἐξομολογούμενοι**** τὰς ἁμαρτίας αὐτῶν.",
+        "summary": "그러자 모든 유대 지역과 온 예루살렘 사람들이 세례요한에게 나아오고 있었다. 그리고 자기들의 죄들을 고백하는 사람들이 요단강에서 세례요한으로부터 세례를 받고 있었다.",
+        "note": "*직.미완료.중.3단 (ἐκπορεύομαι나오다), ἐκ~로부터+πορεύομαι나아가다(이동하다) **형.주.여단 (πᾶσα모든) ***명.주.남복 (Ἱεροσολυμίτης예루살렘사람) ****분.현.중.주.남복 (ἐξομολογέω고백하다, 인정하다), ἐξ ~로부터+ὁμολογέω인정하다, 동의하다",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그래서 온 유대 지방 사람들과 온 예루살렘 주민들이 그에게로 나아가서, 자기들의 죄를 고백하며, 요단 강에서 그에게 세례를 받았다."
+          },
+          {
+            "label": "새한글",
+            "text": "그러자 온 유대아 지역 사람들과 예루살렘 주민 모두가 요한한테 나아갔다. 그리고 요르단강에서 그에게 세례를 받으며 자기들의 죄를 털어놓았다."
+          },
+          {
+            "label": "NIV",
+            "text": "The whole Judean countryside and all the people of Jerusalem went out to him. Confessing their sins, they were baptized by him in the Jordan River."
+          },
+          {
+            "label": "KJV",
+            "text": "And there went out unto him all the land of Judaea, and they of Jerusalem, and were all baptized of him in the river of Jordan, confessing their sins."
+          }
+        ]
+      },
+      {
+        "num": "1:6",
+        "greek": "καὶ ἦν* ὁ Ἰωάννης / ἐνδεδυμένος** τρίχας καμήλου*** / καὶ ζώνην****δερματίνην / περὶ τὴν ὀσφὺν* αὐτοῦ, / καὶ ἔσθων** ἀκρίδας*** καὶ μέλι****ἄγριον.",
+        "summary": "그런데 요한은 약대의 털들로 만든 옷을 입고 그의 허리에 가죽 띠를 매고 있었다. 또 요한은 메뚜기와 야생 벌꿀을 먹으면서 살고 있었다.",
+        "note": "*직.미완료.능.3단 (εἰμί이다, 되다) **분.현완.수(중).주.남단 (ἐνδύω옷을 입히다), ἐν안으로+δύω들어가다, 잠기다 ***명.속.남단 (κάμηλος낙타) ****명.대.여단 (ζώνη띠) *명.대.여단 (ὀσφῦς허리) **분.현.능.주.남단 (ἐσθίω먹다) ***명.대.여복 (ἀκρίς메뚜기) ****명.대.중단 (μέλι꿀)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "요한은 낙타 털옷을 입고, 허리에 가죽 띠를 띠고, 메뚜기와 들꿀을 먹고 살았다."
+          },
+          {
+            "label": "새한글",
+            "text": "요한은 낙타 털가죽을 걸치고 가죽띠를 허리에 두르고 있었다. 그는 메뚜기와 들벌꿀을 먹고 살았다."
+          },
+          {
+            "label": "NIV",
+            "text": "John wore clothing made of camel’s hair, with a leather belt around his waist, and he ate locusts and wild honey."
+          },
+          {
+            "label": "KJV",
+            "text": "And John was clothed with camel’s hair, and with a girdle of a skin about his loins; and he did eat locusts and wild honey;"
+          }
+        ]
+      },
+      {
+        "num": "1:7",
+        "greek": "καὶ ἐκήρυσσεν / λέγων· / Ἔρχεται ὁ ἰσχυρότερός* μου / ὀπίσω** μου, / οὗ*** οὐκ εἰμὶ ἱκανὸς**** / κύψας* λῦσαι** / τὸν ἱμάντα*** τῶν ὑποδημάτων αὐτοῦ·",
+        "summary": "요한이 ‘이렇게’ 선포했다. “나보다 더 힘 있는 분이 내 뒤로 오십니다. 나는 몸을 굽혀서 ‘그 분의 신발 끈들을 푸는 것조차’ 자격이 없소.”",
+        "note": "*형(비교급).주.남단 (ἰσχυρός힘센, 강한) **전치사(부사) (ὀπίσω뒤로, 후에) ***관계대명사.속.남단 (ὅς 그것의) ****형.주.남단 (ἱκανός자격 있는) *분.과.능.주.남단 (κύπτω몸을 굽히다, 허리를 숙이다) **부정사.과.능 (λύω풀다) ***명.대.남단 (ἱμάς끈, 신발끈)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "그는 이렇게 선포하였다. “나보다 더 능력이 있는 이가 내 뒤에 오십니다. 나는 몸을 굽혀서 그의 신발 끈을 풀 자격조차 없습니다."
+          },
+          {
+            "label": "새한글",
+            "text": "요한이 선포했다. “나보다 더 힘 있는 분이 내 뒤에 오십니다. 나는 허리를 굽혀 그분의 샌들끈을 풀어 드릴 만한 사람도 못 됩니다."
+          },
+          {
+            "label": "NIV",
+            "text": "And this was his message: “After me comes the one more powerful than I, the straps of whose sandals I am not worthy to stoop down and untie."
+          },
+          {
+            "label": "KJV",
+            "text": "And preached, saying, There cometh one mightier than I after me, the latchet of whose shoes I am not worthy to stoop down and unloose."
+          }
+        ]
+      },
+      {
+        "num": "1:8",
+        "greek": "ἐγὼ ἐβάπτισα ὑμᾶς ὕδατι,* / δὲ αὐτὸς βαπτίσει ὑμᾶς ἐν πνεύματι** ἁγίῳ.",
+        "summary": "“나는 여러분에게 물로 세례를 베풀었습니다. 그러나 그분은 여러분에게 거룩한 영으로 세례를 베풀 것이오.”",
+        "note": "*명.여.중단 (ὕδωρ물) **명.여.중단 (πνεῦμα영)",
+        "translations": [
+          {
+            "label": "새번역",
+            "text": "나는 여러분에게 물로 세례를 주었지만, 그는 여러분에게 성령으로 세례를 주실 것입니다.”"
+          },
+          {
+            "label": "새한글",
+            "text": "나는, 여러분에게 세례를 줍니다, 물로요. 그러나 그분은, 여러분에게 세례를 주실 것입니다, 성령으로요.”"
+          },
+          {
+            "label": "NIV",
+            "text": "I baptize you with water, but he will baptize you with the Holy Spirit.”"
+          },
+          {
+            "label": "KJV",
+            "text": "I indeed have baptized you with water: but he shall baptize you with the Holy Ghost."
+          }
+        ]
+      }
+    ]
   }
 ]
