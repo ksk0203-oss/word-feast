@@ -5,37 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <meta name="theme-color" content="#14122B">
-<title>성경 본문 — 말씀잔치 2027</title>
-<meta name="robots" content="noindex">
+<title>개역개정 성경 본문 — 말씀잔치 2027</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="말씀잔치">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="개역개정 성경 본문 — 말씀잔치 2027">
+<meta property="og:description" content="주일 본문을 개역개정 성경으로 한 절씩 읽습니다.">
+<meta property="og:image" content="https://ksk0203-oss.github.io/word-feast/2027/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ksk0203-oss.github.io/word-feast/2027/assets/og.png">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="../assets/style.css?v=20261124b">
 </head>
 <body>
 <section id="detail">
+  <div class="bar" id="bar">
+    <div class="bar-in">
+      <div class="tg">
+        <span class="lb">글씨크기</span>
+        <button class="fs-btn" data-fs="0.9" style="font-size:12px">가</button>
+        <button class="fs-btn on" data-fs="1" style="font-size:15px">가</button>
+        <button class="fs-btn" data-fs="1.12" style="font-size:18px">가</button>
+      </div>
+      <div class="tg">
+        <button class="voice" id="voiceBtn">▶ 듣기</button>
+        <button class="rate-btn on" data-r="1">1×</button>
+        <button class="rate-btn" data-r="1.25">1.25×</button>
+        <button class="rate-btn" data-r="1.5">1.5×</button>
+      </div>
+    </div>
+  </div>
   <div id="dContent"></div>
 </section>
+<button class="fab" id="fab" aria-label="맨 위로">↑</button>
+<div class="track" id="track"><div class="thumb" id="thumb"></div></div>
 <script src="../assets/app.js?v=20261124b"></script>
 <script>
 (function(){
-  var q=new URLSearchParams(location.search);
-  var sid=q.get('sid'),url=q.get('u'),book=q.get('b')||'',passage=q.get('p')||'';
-  var backHref=sid?'../sermon/detail.html?id='+encodeURIComponent(sid):'../index.html';
-  if(book||passage)document.title=esc(book)+' '+esc(passage)+' — 말씀잔치 2027';
-  if(!url){
-    $('dContent').innerHTML='<div class="d-hero"><div class="d-hero-in"><p class="d-cap">성경 본문 링크를 찾을 수 없습니다.</p><a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a></div></div>';
-    return;
-  }
-  $('dContent').innerHTML=
-    '<div class="d-hero" data-ghost="GAE"><div class="d-hero-in">'+
-      '<p class="d-cap">개역개정 성경 본문</p>'+
-      '<h2 class="d-title">'+esc(book)+' '+esc(passage)+'</h2>'+
-    '</div></div>'+
-    '<div class="d-body" style="margin-top:-28px">'+
-      '<a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a>'+
-      '<a class="gr" href="'+esc(url)+'" target="_blank" rel="noopener" style="margin-top:12px"><i>📜</i>개역개정 본문 열기 (새 창)</a>'+
-      '<p class="scripture-tip">위 버튼을 누르면 대한성서공회 성경플랫폼이 새 창(새 탭)으로 열립니다. 다 읽으신 뒤에는 그 창을 닫거나 탭을 전환해 이 화면으로 돌아오신 다음, 아래 버튼으로 해설을 이어서 보세요.</p>'+
-      '<a class="gr" href="'+backHref+'"><i>📖</i>해설로 돌아가기</a>'+
-    '</div>';
+  var id=new URLSearchParams(location.search).get('id');
+  Promise.all([
+    fetch('../data/scripture.json').then(function(r){return r.json()}),
+    fetch('../data/toc.json').then(function(r){return r.json()}).catch(function(){return []})
+  ]).then(function(res){
+    var all=res[0],toc=res[1]||[];
+    var s=all.find(function(x){return x.id===id});
+    if(!s){$('dContent').innerHTML='<div class="d-hero"><div class="d-hero-in"><div class="nav-row"><a class="back" href="../index.html">← 목차</a></div><p class="d-cap">해당 본문을 찾을 수 없습니다.</p></div></div>';return}
+    var t=toc.find(function(x){return x.scripture_id===id});
+    var d=t?pd(t.date):null;
+    document.title=s.book+' '+s.passage+' — 말씀잔치 2027';
+    if(t)$('detail').setAttribute('data-s',t.season);
+    var sermonHref=t?'../sermon/detail.html?id='+encodeURIComponent(t.id):'';
+    var cards='';
+    s.verses.forEach(function(v){
+      cards+='<article class="gcard"><span class="gnum">'+esc(v.num)+'</span><p class="greek-summary" style="font-size:calc(17px*var(--fs))">'+esc(v.text)+'</p></article>';
+    });
+    $('dContent').innerHTML=
+      '<div class="d-hero" data-ghost="GAE"><div class="d-hero-in">'+
+        '<div class="nav-row"><a class="back" href="../index.html">← 목차</a><button class="prt" onclick="doPrint()">🖨 인쇄</button></div>'+
+        '<p class="d-cap">개역개정 성경 본문'+(d?' · '+d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')':'')+'</p>'+
+        '<h2 class="d-title">'+esc(s.book)+'</h2><p class="d-scr">'+esc(s.passage)+'</p></div></div>'+
+      '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+
+        (sermonHref?'<a class="gr" href="'+sermonHref+'"><i>📖</i>이 주일 본문(해설)으로 돌아가기</a>':'')+
+        cards+
+        '<p class="g-credit">성경전서 개역개정판 © 대한성서공회 1998. New Korean Revised Version © Korean Bible Society 1998.</p>'+
+        '<div class="pager">'+(sermonHref?'<a href="'+sermonHref+'">‹ 해설로</a>':'<span></span>')+'<a href="../index.html">목차로 ›</a></div>'+
+      '</div>';
+    window.scrollTo(0,0);syncThumb();
+  }).catch(function(){$('dContent').innerHTML='<p style="padding:24px">불러오지 못했습니다.</p>'});
 })();
 </script>
 </body>

@@ -54,7 +54,10 @@
     $('detail').setAttribute('data-s',e.season);
     var body='';
     var scr='';
-    (function(){
+    /* scripture_id means we host the 개역개정 text ourselves (2027/scripture/detail.html) — a page we
+       control, with its own "해설로 돌아가기" button, same pattern as 헬라어 원어 강해. No scripture_id yet
+       → fall back to a plain link out to 대한성서공회 (no button of ours can appear on their page). */
+    if(!e.scripture_id)(function(){
       var CODE={'마태복음':'mat','마가복음':'mrk','누가복음':'luk','요한복음':'jhn'},code=CODE[e.book];
       if(!code)return;
       /* phones get the responsive 성경플랫폼 (highlights the passage); desktop gets the classic reader that jumps to the first verse */
@@ -74,9 +77,7 @@
       var U=code.toUpperCase(),btns;
       if(MOB){
         var url='https://bible.bskorea.or.kr/bible/NKRV/'+U+'.'+st[0]+'.'+st[1]+'-'+U+'.'+en[0]+'.'+en[1];
-        /* route through our own scripture page first — it keeps an explicit "해설로 돌아가기" button on screen, instead of relying on the phone's back gesture */
-        var sUrl='../scripture/detail.html?sid='+encodeURIComponent(e.id)+'&u='+encodeURIComponent(url)+'&b='+encodeURIComponent(e.book)+'&p='+encodeURIComponent(e.passage);
-        btns='<a href="'+sUrl+'" title="대한성서공회 성경플랫폼 개역개정 본문 열기">본문 보기 <i>↗</i></a>';
+        btns='<a href="'+url+'" title="대한성서공회 성경플랫폼 개역개정 본문 열기 (뒤로가기로 돌아올 수 있어요)">본문 보기 <i>↗</i></a>';
       }else{
         var links=[],seen={};
         function add(ch,sec){if(seen[ch])return;seen[ch]=1;links.push({ch:ch,url:'https://www.bskorea.or.kr/bible/korbibReadpage.php?version=GAE&book='+code+'&chap='+ch+'&sec='+sec})}
@@ -84,14 +85,17 @@
         btns=links.map(function(l){return '<a href="'+l.url+'" target="_blank" rel="noopener" title="대한성서공회 개역개정 본문 열기">'+(links.length>1?l.ch+'장':'본문 보기')+' <i>↗</i></a>'}).join('');
       }
       scr='<span class="scrbox"><b>개역개정</b>'+btns+'</span>';
-    })();    if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
+    })();
+    if(e.soon||!e.sections.length){body='<article class="persp"><div class="ph">이 주일의 해설은 준비 중입니다.<br>본문: '+esc(e.book)+' '+esc(e.passage)+'</div></article>'}
     e.sections.forEach(function(s,n){body+='<article class="persp"><span class="badge"><b>'+(n+1)+'</b>'+esc(s.title)+'</span><div class="persp-body">'+s.html+'</div></article>'});
     $('dContent').innerHTML=
      '<div class="d-hero" data-ghost="'+(d.getMonth()+1)+'월"><div class="d-hero-in">'+
        '<div class="nav-row"><a class="back" href="../index.html">← 목차</a><button class="prt" onclick="doPrint()">🖨 인쇄</button></div>'+
        '<p class="d-cap">'+SEAS[e.season]+' · '+d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate()+' ('+WD[d.getDay()]+')</p>'+
        '<h2 class="d-title">'+esc(e.name)+'</h2><div class="d-scr-row"><p class="d-scr">'+esc(e.book)+' '+esc(e.passage)+'</p>'+scr+'</div></div></div>'+
-     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+(e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
+     '<div class="d-body" id="ttsScope" style="margin-top:-28px">'+
+       (e.scripture_id?'<a class="gr" href="../scripture/detail.html?id='+encodeURIComponent(e.scripture_id)+'"><i>GAE</i>개역개정 성경 본문 보기</a>':'')+
+       (e.greek_id?'<a class="gr" href="../greek/detail.html?id='+encodeURIComponent(e.greek_id)+'"><i>GR</i>헬라어 원어 강해 보기</a>':'')+body+
        '<div class="pager">'+(prev?'<a href="detail.html?id='+prev.id+'">‹ 이전 주일</a>':'<span></span>')+(next?'<a href="detail.html?id='+next.id+'">다음 주일 ›</a>':'<a href="../index.html">목차로 ›</a>')+'</div></div>';
     window.scrollTo(0,0);syncThumb();
   }).catch(function(){$('dContent').innerHTML='<p style="padding:24px">불러오지 못했습니다.</p>'});
